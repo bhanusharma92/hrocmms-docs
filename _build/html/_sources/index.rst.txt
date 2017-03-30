@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to hrocmms-docs's documentation!
+Welcome to hrocmms-docs's!
 ========================================
 
 .. toctree::
@@ -11,8 +11,7 @@ Welcome to hrocmms-docs's documentation!
    :caption: Contents:
 
    MIS Annual Report Changes
-
-
+   MIS Annual Report Procedure
 
 
 Indices and tables
