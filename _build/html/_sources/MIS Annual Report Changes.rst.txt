@@ -12,11 +12,25 @@ MIS Annual Report Changes
 2. In AllReportController.gsp
 
 	Search for 
-	
+
 	bhanu code start; date: 29-03-2017
 
-	new action added - bmwAnnualReport
+	new action added - bmwAnnualReport, bmwAnnualReportSearch, popAnnualReportPrintPreview, popAnnualReportPendingList,
+	popAnnualReportGrantList, popAnnualReportRejectedList, popAnnualReportPendingGrantRejectedList
 
 3. grails-app/views/allReports/bmwAnnualReport.gsp
 	
 	It is new file added
+	It is called when '4.BMW Annual Report' is clicked(MIS -> Waste Management)
+
+4. grails-app/views/allReports/popAnnualReportPrintPreview.gsp
+	
+	It is new file added
+	It is called when print preview is clicked on bmwAnnualReport.gsp
+
+5. grails-app/views/allReports/popAnnualReportPendingList.gsp
+
+	It is new file added
+	It is called when no of Annual application is clicked on bmwAnnualReport.gsp
+	It may be pending, granted, rejected or all(--)
+
