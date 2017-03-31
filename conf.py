@@ -36,9 +36,11 @@ import sphinx_rtd_theme
 html_theme = "sphinx_rtd_theme"
 
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
-# bhanu code ends
-extensions = []
-
+latex_engine = 'pdflatex'
+#extensions = ['rst2pdf.pdfbuilder']   
+#pdf_documents = [('index', u'hrocmms-docs', u'MIS Annual Report', u'Bhanu Sharma'),]
+# bhanu code ends extensions = []   
+# extensions before 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
