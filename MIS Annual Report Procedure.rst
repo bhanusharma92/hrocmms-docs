@@ -13,7 +13,7 @@ Step 2: Click on MIS At horizontal menu
 
 .. image:: images/MIS_Annual_Report_Procedure/002.JPG
 
-Step 3: Hover Waste Management and click 4. BMW Annual Report
+Step 3: Hover Annual Report Management and click 4. BMW Annual Report
 -------------------------------------------------------------
 
 .. image:: images/MIS_Annual_Report_Procedure/003.jpg
