@@ -76,14 +76,15 @@ Images
 
 2. Registration page for HSF
 
-	Requirement specified on mail dated 22-March-2017
+	Requirement specified on mail dated 22-March-2017:
+	
 	1. If user apply for Less than 20 bed then "Type of HCF for consent under water/air act &
-HWTM rules" need to view and its category type also.
+	HWTM rules" need to view and its category type also.
 
 	2. "Whether unit are Common treatment facility" with dropdown  "Yes" and "No" option is
-required. If user chose &quot;Yes&quot; then in drop down these options are required:
-STP, CETP,CBWTF, E-waste Dismantle/recycler/ collection center , Used oil refinery, Hazardous
-waste/TSDF, Battery recycler, plastic recycler required in all forms.	
+	required. If user chose &quot;Yes&quot; then in drop down these options are required:
+	STP, CETP,CBWTF, E-waste Dismantle/recycler/ collection center , Used oil refinery, Hazardous
+	waste/TSDF, Battery recycler, plastic recycler required in all forms.	
 
 .. image:: images/common_treatment_facility/002.JPG
 
