@@ -34,3 +34,7 @@ MIS Annual Report Changes
 	It is called when no of Annual application is clicked on bmwAnnualReport.gsp
 	It may be pending, granted, rejected or all(--)
 
+6. grails-app/views/industryRegMaster/show.gsp
+
+	search for bhanu code start; date: 06-04-2017
+
