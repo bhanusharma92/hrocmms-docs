@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>MIS Annual Report Changes &mdash; hrocmms-docs  documentation</title>
+  <title>Annual Report &mdash; hrocmms-docs  documentation</title>
   
 
   
@@ -34,8 +34,7 @@
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="hrocmms-docs  documentation" href="index.html"/>
-        <link rel="next" title="MIS Annual Report Procedure" href="MIS Annual Report Procedure.html"/>
-        <link rel="prev" title="Welcome to hrocmms-docs’s!" href="index.html"/> 
+        <link rel="prev" title="Common treatment facility added in industry registration" href="Common treatment facility added in industry registration.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -82,10 +81,13 @@
             
                 <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">MIS Annual Report Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MIS Annual Report Changes.html">MIS Annual Report Changes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="MIS Annual Report Procedure.html">MIS Annual Report Procedure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Common treatment facility added in industry registration.html">Common treatment facility added in industry registration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Annual Report.html">Annual Report</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Annual Report</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#adding-delete-application">Adding delete application</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -116,11 +118,11 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li>MIS Annual Report Changes</li>
+    <li>Annual Report</li>
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="_sources/MIS Annual Report Changes.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/Annual Report.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -130,49 +132,50 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="mis-annual-report-changes">
-<h1>MIS Annual Report Changes<a class="headerlink" href="#mis-annual-report-changes" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="annual-report">
+<h1>Annual Report<a class="headerlink" href="#annual-report" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="adding-delete-application">
+<h2>Adding delete application<a class="headerlink" href="#adding-delete-application" title="Permalink to this headline">¶</a></h2>
+<p>Adding functionality in which admin can delete application
+Application get deleted from every table</p>
+<p>changes:</p>
 <ol class="arabic">
-<li><p class="first">grails-app/views/userMaster/reportAdminMenuVerticalPage.gsp</p>
+<li><p class="first">grails-app/views/bmwRenew/bmwRenewAdminVertical.gsp</p>
 <blockquote>
-<div><p>search for</p>
-<p>bhanu code start; date: 31-03-2017</p>
-<p>added link to call the bmwAnnualReport action</p>
+<div><p>Search for - bhanu code start date: 07-04-2017</p>
+<p>Added verical menu to delete application</p>
 </div></blockquote>
 </li>
-<li><p class="first">In AllReportController.gsp</p>
+<li><p class="first">BmwRenewController.groovy</p>
 <blockquote>
-<div><p>Search for</p>
-<p>bhanu code start; date: 29-03-2017</p>
-<p>new action added - bmwAnnualReport, bmwAnnualReportSearch, popAnnualReportPrintPreview, popAnnualReportPendingList,
-popAnnualReportGrantList, popAnnualReportRejectedList, popAnnualReportPendingGrantRejectedList</p>
+<div><p>Search for - bhanu code start; date: 07-04-2017</p>
+<p>action added - deleteApplicationByAdmin, deleteApplicationByAdminActualWork</p>
 </div></blockquote>
 </li>
-<li><p class="first">grails-app/views/allReports/bmwAnnualReport.gsp</p>
+<li><p class="first">new file added</p>
 <blockquote>
-<div><p>It is new file added
-It is called when &#8216;4.BMW Annual Report&#8217; is clicked(MIS -&gt; Waste Management)</p>
-</div></blockquote>
-</li>
-<li><p class="first">grails-app/views/allReports/popAnnualReportPrintPreview.gsp</p>
-<blockquote>
-<div><p>It is new file added
-It is called when print preview is clicked on bmwAnnualReport.gsp</p>
-</div></blockquote>
-</li>
-<li><p class="first">grails-app/views/allReports/popAnnualReportPendingList.gsp</p>
-<blockquote>
-<div><p>It is new file added
-It is called when no of Annual application is clicked on bmwAnnualReport.gsp
-It may be pending, granted, rejected or all(&#8211;)</p>
-</div></blockquote>
-</li>
-<li><p class="first">grails-app/views/industryRegMaster/show.gsp</p>
-<blockquote>
-<div><p>search for bhanu code start; date: 06-04-2017</p>
+<div><p>grails-app/views/bmwRenew/deleteApplicationByAdmin.gsp</p>
 </div></blockquote>
 </li>
 </ol>
+<p>Images:</p>
+<ol class="arabic simple">
+<li>Click on BMW Annual Report</li>
+</ol>
+<img alt="_images/0011.JPG" src="_images/0011.JPG" />
+<ol class="arabic simple" start="2">
+<li>Click on delete Application</li>
+</ol>
+<img alt="_images/0021.JPG" src="_images/0021.JPG" />
+<ol class="arabic simple" start="3">
+<li>Enter Application id and click delete</li>
+</ol>
+<img alt="_images/003.JPG" src="_images/003.JPG" />
+<ol class="arabic simple" start="4">
+<li>Message is shown when application is deleted</li>
+</ol>
+<img alt="_images/0041.JPG" src="_images/0041.JPG" />
+</div>
 </div>
 
 
@@ -182,10 +185,8 @@ It may be pending, granted, rejected or all(&#8211;)</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="MIS Annual Report Procedure.html" class="btn btn-neutral float-right" title="MIS Annual Report Procedure" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-      
-        <a href="index.html" class="btn btn-neutral" title="Welcome to hrocmms-docs’s!" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="Common treatment facility added in industry registration.html" class="btn btn-neutral" title="Common treatment facility added in industry registration" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

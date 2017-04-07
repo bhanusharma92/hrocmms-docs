@@ -2,14 +2,14 @@ MIS Annual Report Procedure
 ===========================
 
 Step 1: Login with admin and click MIS
-------------------------
+--------------------------------------
 	
 login with admin user id and password
 
 .. image:: images/MIS_Annual_Report_Procedure/001.JPG
 
 Step 2: Hover Annual Report Management and click 1. BMW Annual Report
--------------------------------------------------------------
+---------------------------------------------------------------------
 
 .. image:: images/MIS_Annual_Report_Procedure/002.JPG
 
