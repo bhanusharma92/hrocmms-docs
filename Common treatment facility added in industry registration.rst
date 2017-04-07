@@ -66,6 +66,12 @@ HWTM rules' need to view and its category type also.
 	search for
 	bhanu code start; date: 05-04-2017
 
+code changes after merging
+--------------------------
+
+1. grails-app/views/industryRegMaster/create1.gsp
+	remove 'sss' after <!-- bhanu code ends -->
+
 
 Images
 ------
