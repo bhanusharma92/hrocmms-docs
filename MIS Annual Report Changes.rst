@@ -38,3 +38,40 @@ MIS Annual Report Changes
 
 	search for bhanu code start; date: 06-04-2017
 
+
+Adding Annual Report Management at Employee side
+------------------------------------------------
+
+1. grails-app/views/userMaster/reportEmployeeMenuVerticalPage.gsp
+
+	Search for bhanu code start; date: 07-04-2017
+
+	image:
+
+	.. image:: images/MIS_Annual_Report_Changes/adding_annual_report_management_at_emp/001.JPG
+
+Changes after test link
+-----------------------
+
+1. grails-app/views/allReports/bmwAnnualReport.gsp
+
+	replace this file 
+
+2. grails-app/views/allReports/popAnnualReportPrintPreview.gsp
+
+	replace this file
+
+	image before:
+
+	.. image:: images/MIS_Annual_Report_Changes/changes_after_test_link/001.JPG
+
+	image after:
+
+	.. image:: images/MIS_Annual_Report_Changes/changes_after_test_link/002.JPG	
+
+	after clicking print preview
+
+	.. image:: images/MIS_Annual_Report_Changes/changes_after_test_link/003.JPG
+
+
+

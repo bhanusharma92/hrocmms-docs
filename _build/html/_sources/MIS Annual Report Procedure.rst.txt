@@ -36,3 +36,6 @@ Step 6: Click on either number of Annual Report - received, pending, granted, re
 
 .. image:: images/MIS_Annual_Report_Procedure/007.JPG
 
+
+
+
