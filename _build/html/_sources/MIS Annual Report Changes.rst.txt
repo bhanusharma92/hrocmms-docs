@@ -63,7 +63,7 @@ Changes after test link
 
 	image before:
 
-	.. image:: images/MIS_Annual_Report_Changes/changes_after_test_link/001.JPG
+	.. image:: images/MIS_Annual_Report_Changes/changes_after_test_link/001.jpg
 
 	image after:
 

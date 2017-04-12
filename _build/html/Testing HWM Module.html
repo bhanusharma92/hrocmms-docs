@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>MIS Annual Report Changes &mdash; hrocmms-docs  documentation</title>
+  <title>Testing HWM Module &mdash; hrocmms-docs  documentation</title>
   
 
   
@@ -34,8 +34,7 @@
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="hrocmms-docs  documentation" href="index.html"/>
-        <link rel="next" title="MIS Annual Report Procedure" href="MIS Annual Report Procedure.html"/>
-        <link rel="prev" title="Welcome to hrocmms-docs’s!" href="index.html"/> 
+        <link rel="prev" title="Annual Report" href="Annual Report.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -82,15 +81,11 @@
             
                 <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">MIS Annual Report Changes</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#adding-annual-report-management-at-employee-side">Adding Annual Report Management at Employee side</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#changes-after-test-link">Changes after test link</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="MIS Annual Report Changes.html">MIS Annual Report Changes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="MIS Annual Report Procedure.html">MIS Annual Report Procedure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Common treatment facility added in industry registration.html">Common treatment facility added in industry registration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Annual Report.html">Annual Report</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testing HWM Module.html">Testing HWM Module</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Testing HWM Module</a></li>
 </ul>
 
             
@@ -121,11 +116,11 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li>MIS Annual Report Changes</li>
+    <li>Testing HWM Module</li>
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="_sources/MIS Annual Report Changes.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/Testing HWM Module.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -135,82 +130,72 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="mis-annual-report-changes">
-<h1>MIS Annual Report Changes<a class="headerlink" href="#mis-annual-report-changes" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="testing-hwm-module">
+<h1>Testing HWM Module<a class="headerlink" href="#testing-hwm-module" title="Permalink to this headline">¶</a></h1>
 <ol class="arabic">
-<li><p class="first">grails-app/views/userMaster/reportAdminMenuVerticalPage.gsp</p>
+<li><p class="first">Attach district in HWM - ditrict are not in alphabetically sorted order</p>
+</li>
+<li><p class="first">Delete application at industry side is not working</p>
+</li>
+<li><p class="first">Forwarding rights - tabs design -&gt; on line commented</p>
+</li>
+<li><p class="first">On clicking HWM -&gt; Apply authorization -&gt; Hazardeous waste new ==&gt; body on load problem</p>
+</li>
+<li><p class="first">On clicking HWM -&gt; Apply authorization -&gt; Hazardeous waste new</p>
 <blockquote>
-<div><p>search for</p>
-<p>bhanu code start; date: 31-03-2017</p>
-<p>added link to call the bmwAnnualReport action</p>
+<div><p>if appliaction is not saved in-progress, application instance is saved in inprogress list</p>
 </div></blockquote>
 </li>
-<li><p class="first">In AllReportController.gsp</p>
+<li><p class="first">Delete application is not showing in select at industry side</p>
 <blockquote>
-<div><p>Search for</p>
-<p>bhanu code start; date: 29-03-2017</p>
-<p>new action added - bmwAnnualReport, bmwAnnualReportSearch, popAnnualReportPrintPreview, popAnnualReportPendingList,
-popAnnualReportGrantList, popAnnualReportRejectedList, popAnnualReportPendingGrantRejectedList</p>
+<div><p>grails-app/views/industryRegMaster/delAppWaste.gsp
+search for - bhanu code start; date: 07-04-2017</p>
+<p>Fixed partially</p>
 </div></blockquote>
 </li>
-<li><p class="first">grails-app/views/allReports/bmwAnnualReport.gsp</p>
+<li><dl class="first docutils">
+<dt>HWM -&gt; Apply Authorization -&gt; Hazardeous waste</dt>
+<dd><p class="first last">Document upload no list of documnet is shown</p>
+</dd>
+</dl>
+</li>
+<li><p class="first">In view clarification popup(Green C) - No link to download file attatched by officer when clarification is raised</p>
+</li>
+<li><p class="first">On submitting clarification by officer we go to /HSPCB/wasteManagementPendingDetails/pendingList</p>
 <blockquote>
-<div><p>It is new file added
-It is called when &#8216;4.BMW Annual Report&#8217; is clicked(MIS -&gt; Waste Management)</p>
+<div><p>which is BMW Module page</p>
 </div></blockquote>
 </li>
-<li><p class="first">grails-app/views/allReports/popAnnualReportPrintPreview.gsp</p>
+<li><p class="first">on clicking - &#8216;View form&#8217; at officer side server gets busy</p>
+</li>
+<li><p class="first">on clciking orange i - no download link to download &#8216;file attached when inspection is raised&#8217;</p>
+</li>
+<li><p class="first">Name change - consent to hwm - on cliking submit hwm inspection report</p>
 <blockquote>
-<div><p>It is new file added
-It is called when print preview is clicked on bmwAnnualReport.gsp</p>
+<div><p>point no 2. - Date of Receipt of Consent Application at regional office</p>
 </div></blockquote>
 </li>
-<li><p class="first">grails-app/views/allReports/popAnnualReportPendingList.gsp</p>
-<blockquote>
-<div><p>It is new file added
-It is called when no of Annual application is clicked on bmwAnnualReport.gsp
-It may be pending, granted, rejected or all(&#8211;)</p>
-</div></blockquote>
+<li><dl class="first docutils">
+<dt>in submit hwm inspection report</dt>
+<dd><p class="first">add - Fourth Stage Treatment Details Of Effluent
+no data is comming in fourth stage list select dropdown</p>
+<p class="last">Hence i was not able to submit the report</p>
+</dd>
+</dl>
 </li>
-<li><p class="first">grails-app/views/industryRegMaster/show.gsp</p>
+<li><p class="first">Even after setting approval right. Approval field is not shown to the officer.</p>
+</li>
+<li><p class="first">There is no link to prepare SCN Certificate</p>
+</li>
+<li><p class="first">There is no link to prepare approval/reject certificate</p>
+</li>
+<li><p class="first">Waste application search - on clicking application no a view form gets open-&gt; on clicking Hazardeous Waste</p>
 <blockquote>
-<div><p>search for bhanu code start; date: 06-04-2017</p>
+<div><p>Generation Details tab -&gt; click view -&gt; a popup window gets open and http 404 error is shown</p>
 </div></blockquote>
 </li>
 </ol>
-<div class="section" id="adding-annual-report-management-at-employee-side">
-<h2>Adding Annual Report Management at Employee side<a class="headerlink" href="#adding-annual-report-management-at-employee-side" title="Permalink to this headline">¶</a></h2>
-<ol class="arabic">
-<li><p class="first">grails-app/views/userMaster/reportEmployeeMenuVerticalPage.gsp</p>
-<blockquote>
-<div><p>Search for bhanu code start; date: 07-04-2017</p>
-<p>image:</p>
-<img alt="_images/0013.JPG" src="_images/0013.JPG" />
-</div></blockquote>
-</li>
-</ol>
-</div>
-<div class="section" id="changes-after-test-link">
-<h2>Changes after test link<a class="headerlink" href="#changes-after-test-link" title="Permalink to this headline">¶</a></h2>
-<ol class="arabic">
-<li><p class="first">grails-app/views/allReports/bmwAnnualReport.gsp</p>
-<blockquote>
-<div><p>replace this file</p>
-</div></blockquote>
-</li>
-<li><p class="first">grails-app/views/allReports/popAnnualReportPrintPreview.gsp</p>
-<blockquote>
-<div><p>replace this file</p>
-<p>image before:</p>
-<img alt="_images/001.jpg" src="_images/001.jpg" />
-<p>image after:</p>
-<img alt="_images/0023.JPG" src="_images/0023.JPG" />
-<p>after clicking print preview</p>
-<img alt="_images/0032.JPG" src="_images/0032.JPG" />
-</div></blockquote>
-</li>
-</ol>
-</div>
+<p>Note : further testing cannot be done due to point no. - 13, 14, 15, 16</p>
 </div>
 
 
@@ -220,10 +205,8 @@ It may be pending, granted, rejected or all(&#8211;)</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="MIS Annual Report Procedure.html" class="btn btn-neutral float-right" title="MIS Annual Report Procedure" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-      
-        <a href="index.html" class="btn btn-neutral" title="Welcome to hrocmms-docs’s!" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="Annual Report.html" class="btn btn-neutral" title="Annual Report" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

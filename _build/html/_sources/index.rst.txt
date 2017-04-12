@@ -13,7 +13,8 @@ Welcome to hrocmms-docs's!
    MIS Annual Report Changes
    MIS Annual Report Procedure
    Common treatment facility added in industry registration
-   Annual Report 
+   Annual Report
+   Testing HWM Module 
 
 
 Indices and tables
