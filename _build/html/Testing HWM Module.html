@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -34,6 +36,7 @@
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="hrocmms-docs  documentation" href="index.html"/>
+        <link rel="next" title="Database Changes" href="Database Changes.html"/>
         <link rel="prev" title="Annual Report" href="Annual Report.html"/> 
 
   
@@ -43,6 +46,7 @@
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -79,13 +83,20 @@
           
             
             
-                <p class="caption"><span class="caption-text">Contents:</span></p>
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="MIS Annual Report Changes.html">MIS Annual Report Changes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="MIS Annual Report Procedure.html">MIS Annual Report Procedure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Common treatment facility added in industry registration.html">Common treatment facility added in industry registration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Annual Report.html">Annual Report</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Testing HWM Module</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Testing HWM Module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#deleted-appplication-in-bmw-module">Deleted appplication in bmw module</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Database Changes.html">Database Changes</a></li>
 </ul>
 
             
@@ -98,8 +109,10 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="index.html">hrocmms-docs</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">hrocmms-docs</a>
+        
       </nav>
 
 
@@ -108,23 +121,40 @@
         <div class="rst-content">
           
 
- 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="index.html">Docs</a> &raquo;</li>
-      
-    <li>Testing HWM Module</li>
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Testing HWM Module</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
+            
             <a href="_sources/Testing HWM Module.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -133,20 +163,50 @@
   <div class="section" id="testing-hwm-module">
 <h1>Testing HWM Module<a class="headerlink" href="#testing-hwm-module" title="Permalink to this headline">¶</a></h1>
 <ol class="arabic">
-<li><p class="first">Attach district in HWM - ditrict are not in alphabetically sorted order</p>
+<li><p class="first">Attach district in HWM - ditrict are not in alphabetically sorted order [Fixed]</p>
 </li>
-<li><p class="first">Delete application at industry side is not working</p>
+<li><p class="first">Delete application at industry and officer side is not working [Implemented]</p>
+<blockquote>
+<div><p>Admin and Employee vertical menu was same as BMW [made the different gsp and fixed it]</p>
+<p>Implementation:</p>
+<p>In IndustryRegMasterController.groovy
+Search for - bhanu code start; date: 10-04-2017
+actions added - delAppWasteHwm, delAppWasteActualHwm</p>
+<p>new file created - grails-app/views/industryRegMaster/delAppWasteHwm.gsp</p>
+<p>In UserMasterController.groovy
+Search for - bhanu code start; date: 11-04-2017
+actions added - wasteManagementAdminHwmVertical, wasteManagementEmpHwmVertical</p>
+<dl class="docutils">
+<dt>New files added - grails-app/views/userMaster/wasteManagementAdminHwmVerticalPage.gsp</dt>
+<dd><p class="first last">grails-app/views/userMaster/wasteManagementEmpHwmVerticalPage.gsp</p>
+</dd>
+<dt>Files edited</dt>
+<dd><ol class="first last loweralpha simple">
+<li><dl class="first docutils">
+<dt>grails-app/views/wasteManagementPendingDetails/hwmPendingList.gsp</dt>
+<dd>search for - bhanu code start; date: 11-04-2017</dd>
+</dl>
 </li>
-<li><p class="first">Forwarding rights - tabs design -&gt; on line commented</p>
+<li><dl class="first docutils">
+<dt>grails-app/views/hazardeousWasteAuthApp/searchHWMApp.gsp</dt>
+<dd>search for - bhanu code start; date: 11-04-2017</dd>
+</dl>
+</li>
+</ol>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p class="first">Forwarding rights - tabs design -&gt; on line commented [Fixed]</p>
 </li>
 <li><p class="first">On clicking HWM -&gt; Apply authorization -&gt; Hazardeous waste new ==&gt; body on load problem</p>
 </li>
-<li><p class="first">On clicking HWM -&gt; Apply authorization -&gt; Hazardeous waste new</p>
+<li><p class="first">On clicking HWM -&gt; Apply authorization -&gt; Hazardeous waste new [resolved by discussion with gajendra sir]</p>
 <blockquote>
-<div><p>if appliaction is not saved in-progress, application instance is saved in inprogress list</p>
+<div><p>if application is not saved in-progress, application instance is saved in inprogress list</p>
 </div></blockquote>
 </li>
-<li><p class="first">Delete application is not showing in select at industry side</p>
+<li><p class="first">Delete application is not showing in select at industry side [ignore it]</p>
 <blockquote>
 <div><p>grails-app/views/industryRegMaster/delAppWaste.gsp
 search for - bhanu code start; date: 07-04-2017</p>
@@ -168,7 +228,7 @@ search for - bhanu code start; date: 07-04-2017</p>
 </li>
 <li><p class="first">on clicking - &#8216;View form&#8217; at officer side server gets busy</p>
 </li>
-<li><p class="first">on clciking orange i - no download link to download &#8216;file attached when inspection is raised&#8217;</p>
+<li><p class="first">on clicking orange i - no download link to download &#8216;file attached when inspection is raised&#8217;</p>
 </li>
 <li><p class="first">Name change - consent to hwm - on cliking submit hwm inspection report</p>
 <blockquote>
@@ -176,37 +236,147 @@ search for - bhanu code start; date: 07-04-2017</p>
 </div></blockquote>
 </li>
 <li><dl class="first docutils">
-<dt>in submit hwm inspection report</dt>
+<dt>in submit hwm inspection report [Fixed]</dt>
 <dd><p class="first">add - Fourth Stage Treatment Details Of Effluent
 no data is comming in fourth stage list select dropdown</p>
+<p>data is directly filled to the table</p>
 <p class="last">Hence i was not able to submit the report</p>
 </dd>
 </dl>
 </li>
-<li><p class="first">Even after setting approval right. Approval field is not shown to the officer.</p>
+<li><p class="first">Even after setting approval right. Approval field is not shown to the officer. [Fixed]</p>
 </li>
-<li><p class="first">There is no link to prepare SCN Certificate</p>
+<li><p class="first">There is no link to prepare SCN Certificate [Implemented]</p>
 </li>
-<li><p class="first">There is no link to prepare approval/reject certificate</p>
+<li><p class="first">There is no link to prepare approval/reject certificate [It is shown after the inspection is closed]</p>
 </li>
-<li><p class="first">Waste application search - on clicking application no a view form gets open-&gt; on clicking Hazardeous Waste</p>
+<li><p class="first">Waste application search - on clicking application no a view form gets open -&gt; on clicking Hazardeous Waste</p>
 <blockquote>
 <div><p>Generation Details tab -&gt; click view -&gt; a popup window gets open and http 404 error is shown</p>
 </div></blockquote>
 </li>
+<li><dl class="first docutils">
+<dt>SCN Certificate in HWM Module [Implemented]</dt>
+<dd><p class="first">Adding link to prepare and view scn certificate</p>
+<blockquote>
+<div><p>File edited - grails-app/views/wasteManagementProcessingDetails/appProcessing.gsp</p>
+<p>search for - bhanu code start; date: 11-04-2017</p>
+</div></blockquote>
+<p>Functionality of SCN link</p>
+<blockquote class="last">
+<div><p>File edited - WasteManagementProcessingDetailsController.groovy</p>
+<p>search for - bhanu code start; date: 11-04-2017</p>
+<p>actions added - scnCertificateHwm, popConditionsAddHwm, saveconditionsHwm, popConditionsViewHwm, popConditionsEditHwm,</p>
+<p>File added - grails-app/views/wasteManagementProcessingDetails/popConditionsAddHwm.gsp</p>
+<p>File added - SaveConditionsHWM.groovy</p>
+<p>File added - grails-app/views/wasteManagementProcessingDetails/popConditionsViewHwm.gsp</p>
+<p>File added - grails-app/views/wasteManagementProcessingDetails/popConditionsEditHwm.gsp</p>
+</div></blockquote>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Drop the table</dt>
+<dd><p class="first last">hwmInspectionReport
+RecordCertificateHWM - and update category_qty size to 65000
+FourthStagePollutionControlDevicesMaster - add value to this table</p>
+</dd>
+</dl>
+</li>
+<li><p class="first">Refusal Certificate in HWM Module [Implemented]</p>
+<blockquote>
+<div><p>Some other changes -</p>
+<p>HazardeousWasteAuthAppController.groovy
+search for bhanu</p>
+</div></blockquote>
+</li>
+<li><p class="first">Grant certificate for HWM</p>
+<blockquote>
+<div><p>grails-app/views/hazardeousWasteAuthApp/insrtCertDetailsForNew.gsp
+search for bhanu code start; date: 24-04-2017</p>
+</div></blockquote>
+</li>
+<li><p class="first">View form link in appProcessing  page + download attached file in them</p>
+<blockquote>
+<div><p>grails-app/views/wasteManagementProcessingDetails/appProcessing.gsp</p>
+<p>search for bhanu code start; date: 18-04-2017</p>
+<p>work on date 20-04-2017:</p>
+<ol class="loweralpha simple">
+<li>Provide copy of the Emergency - name=&#8221;erpAttach&#8221; - file51.description = &#8220;ERP Attachment&#8221; - file51.typeOfFile = &#8220;ERP&#8221;</li>
+<li>Provide undertaking or declaration - name=&#8221;undertakingOrDeclaration&#8221; - file51.description = &#8220;UndertakingOrDeclaration Attachment&#8221; - file51.typeOfFile = &#8220;undertakingOrDeclaration&#8221;</li>
+<li>Process description including process - name=&#8221;processDescription_new&#8221; - file51.description = &#8220;processDescription_new Attachment&#8221; - file51.typeOfFile = &#8220;processDescription_new&#8221;</li>
+<li>Hazardous and other wastes generated  - name=&#8221;generatedWastesAttach&#8221; - file51.description = &#8220;generatedWastes Attachment&#8221; - file51.typeOfFile = &#8220;generatedWastesAttach&#8221;</li>
+<li>Copy of prior Environmental Clearance - name=&#8221;priorEnv&#8221; - file51.description = &#8220;priorEnv Attachment&#8221; -       file51.typeOfFile = &#8220;priorEnv&#8221;</li>
+<li>Installed capacity as per registration - name=&#8221;furnishInstalledCapacity&#8221; - file51.description = &#8220;furnishInstalledCapacity Attachment&#8221; - file51.typeOfFile = &#8220;furnishInstalledCapacity&#8221;</li>
+</ol>
+<p>it is still not working properly</p>
+</div></blockquote>
+</li>
+<li><p class="first">Forwarded by shows only new arrival in hwm pending list [Fixed]</p>
+<blockquote>
+<div><p>grails-app/views/wasteManagementPendingDetails/hwmPendingList.gsp</p>
+<p>search for bhanu code start; date: 19-04-2017
+search for bhanu code commented; date: 19-04-2017</p>
+<p>WasteManagementProcessingDetailsController.groovy</p>
+<p>search for bhanu code start; date: 19-04-2017</p>
+<p>New file added - grails-app/views/wasteManagementProcessingDetails/showNewFormatHwm.gsp</p>
+</div></blockquote>
+</li>
 </ol>
 <p>Note : further testing cannot be done due to point no. - 13, 14, 15, 16</p>
+<div class="section" id="deleted-appplication-in-bmw-module">
+<h2>Deleted appplication in bmw module<a class="headerlink" href="#deleted-appplication-in-bmw-module" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Add appDel column in BioMedicalWaste.groovy</li>
+<li>wasteManagementAdminVerticalPage.gsp(userMaster) search satish</li>
+<li>set appDel = false in BioMedicalWaste table (UPDATE bio_medical_waste SET app_del = FALSE ;)</li>
+<li>file added - grails-app/views/industryRegMaster/deletedAppsBmw.gsp</li>
+<li><dl class="first docutils">
+<dt>grails-app/views/allReports/wasteDetailBmw.gsp</dt>
+<dd>search for satish</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>IndustryRegMasterController.groovy</dt>
+<dd>search satish</dd>
+</dl>
+</li>
+<li>update all queries (BIoMedicalWaste)</li>
+<li><dl class="first docutils">
+<dt>WasteManagementProcessingDetailsController.groovy</dt>
+<dd>search for satish</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>WasteManagementPendingDetailsController.groovy</dt>
+<dd>search for - bhanu code start; date: 20-04-2017</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>grails-app/views/userMaster/menuAdminHorizontal.gsp</dt>
+<dd>search for - bhanu code start; date: 20-04-2017</dd>
+</dl>
+</li>
+<li>Fixed note history unavailable for previously deleted application</li>
+<li>Fixed Application name</li>
+</ol>
+</div>
 </div>
 
 
+           </div>
+           <div class="articleComments">
+            
            </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
+        <a href="Database Changes.html" class="btn btn-neutral float-right" title="Database Changes" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-        <a href="Annual Report.html" class="btn btn-neutral" title="Annual Report" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+        <a href="Annual Report.html" class="btn btn-neutral" title="Annual Report" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

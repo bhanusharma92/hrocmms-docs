@@ -1,0 +1,2438 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Temporary work &mdash; hrocmms-docs  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="hrocmms-docs  documentation" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> hrocmms-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="MIS Annual Report Changes.html">MIS Annual Report Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MIS Annual Report Procedure.html">MIS Annual Report Procedure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Common treatment facility added in industry registration.html">Common treatment facility added in industry registration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Annual Report.html">Annual Report</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Testing HWM Module.html">Testing HWM Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Database Changes.html">Database Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stickyNote.html">Sticky Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tempCode.html">Temp Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tempCode.html#to-4-06-2016">20/09/2016 to 4/06/2016</a></li>
+<li class="toctree-l1"><a class="reference internal" href="issues.html">Issues</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">hrocmms-docs</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Temporary work</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/temp2.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="temporary-work">
+<h1>Temporary work<a class="headerlink" href="#temporary-work" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="date-19-09-2017">
+<h2>Date: 19-09-2017<a class="headerlink" href="#date-19-09-2017" title="Permalink to this headline">¶</a></h2>
+<p>TEST Server
+HWM application number - 141047</p>
+<p>Local
+CTE application no.
+143649</p>
+<p>CTE certificate details</p>
+<p>Application for : Air
+use case: grant certificate generated or refuse certificate generated
+name: Certificate.pdf
+type_of_file: Certificate
+description: Certificate Generation Record</p>
+<p>use case: upload generated certificate(grant or refuse)
+name: CertiFicate1.pdf
+type_of_file: Certificate1
+description: Certificate Generation Record</p>
+<p>Local
+CTE application no(water)
+143695</p>
+<p>Application for : Water
+use case: grant certificate generated or refuse certificate generated
+name: Certificate.pdf
+type_of_file: Certificate
+description: Certificate Generation Record</p>
+<p>use case: upload generated certificate(grant or refuse)
+name: CertiFicate1.pdf
+type_of_file: Certificate1
+description: Certificate Generation Record</p>
+<p>Local
+CTE Application(both)
+143751</p>
+<p>Application for: Both</p>
+<p>Changes for scn certificate show in CTE
+File: ApplicationProcessingDetailsController, pdfScn
+else if (opt.equals(&#8220;both&#8221;) || opt.equals(&#8220;Air/Water&#8221;)) {
+File: ApplicationProcessingDetails/appProcessing
+else if(indApp.applicationFor == &#8220;both&#8221; || indApp.applicationFor == &#8220;Air/Water&#8221;){
+File: ScnPdfGeneration.java
+}else if(opt.equals(&#8220;both&#8221;) || opt.equals(&#8220;Air/Water&#8221;)){ // in pdfFunction and pdfFunctionArray</p>
+<p>Application for : Air/Water
+use case: grant certificate generated or refuse certificate generated
+name: Certificate.pdf
+type_of_file: Certificate
+description: Certificate Generation Record</p>
+<p>use case: upload generated certificate(grant or refuse)
+name: CertiFicate1.pdf
+type_of_file: Certificate1
+description: Certificate Generation Record</p>
+<p>local CTE application no. - 143796</p>
+<p>Negi Washing Plant
+COMPASS GROUP INDIA SUPPORT SERVICES PVT LTD</p>
+<p>19-09-2017:
+1. Single Window - Completed prepare and view SCN certificate for CTE.
+2. Single Window - Completed download CTE certificate from single window, But hepc must add the link on there application.
+3. Working on issue that is our data is not sent to hepc.</p>
+<p>keytool -import -alias _alias_name_ -keystore &#8220;C:Program FilesJavajre1.8.0_131libsecuritycacerts&#8221; -file &#8220;C:UsersdsharDesktophepc.cer&#8221;</p>
+<p>keytool -import -alias investharyana.in -keystore &#8220;C:Program FilesJavajre1.8.0_131libsecuritycacerts&#8221; -file &#8220;C:UsersdsharDesktophepcTwo.cer&#8221;</p>
+<p>keytool -import -alias investharyana.in -keystore &#8220;C:Program FilesJavajre1.8.0_131libsecuritycacerts&#8221; -file &#8220;C:UsersdsharDesktophepcThree.cer&#8221;</p>
+<p>keytool -delete -alias investharyana.in -keystore &#8220;C:Program FilesJavajre1.8.0_131libsecuritycacerts&#8221;</p>
+<p>onlineMonitoringHomePage</p>
+<p>test cte application no. - 141118</p>
+<hr class="docutils" />
+<p>Industry 1 - Negi Washing Plant
+{</p>
+<blockquote>
+<div>&#8220;actionTaken&#8221;: &#8220;OpenComment&#8221;,
+&#8220;commentByUserLogin&#8221;: &#8220;Negi Washing Plant&#8221;,
+&#8220;commentDate&#8221;: &#8220;2017-09-14T01:09:54.625Z&#8221;,
+&#8220;comments&#8221;: &#8220;application submitted successfully&#8221;,
+&#8220;projectid&#8221;: &#8220;00a88555-ccfa-4abc-a8ef-ee7bf7fe69f3&#8221;,
+&#8220;serviceid&#8221;: &#8220;6bd18359-09f4-4c71-85d9-e4f313ccfb8d&#8221;</div></blockquote>
+<p>}</p>
+<p>Industry 2 - Aaravi Enterprises
+{</p>
+<blockquote>
+<div>&#8220;actionTaken&#8221;: &#8220;OpenComment&#8221;,
+&#8220;commentByUserLogin&#8221;: &#8220;Aaravi Enterprises&#8221;,
+&#8220;commentDate&#8221;: &#8220;2017-09-12T11:40:41.000Z&#8221;,
+&#8220;comments&#8221;: &#8220;application submitted successfully&#8221;,
+&#8220;projectid&#8221;: &#8220;d7dd7761-c552-4bf8-8aa0-207ec2e65eaa&#8221;,
+&#8220;serviceid&#8221;: &#8220;6bd18359-09f4-4c71-85d9-e4f313ccfb8d&#8221;</div></blockquote>
+<p>}</p>
+<p>Industry 3 - COMPASS GROUP INDIA SUPPORT SERVICES PVT LTD
+{</p>
+<blockquote>
+<div>&#8220;actionTaken&#8221;: &#8220;OpenComment&#8221;,
+&#8220;commentByUserLogin&#8221;: &#8220;VARENDER SHARMA&#8221;,
+&#8220;commentDate&#8221;: &#8220;2017-09-18T15:51:27.749Z&#8221;,
+&#8220;comments&#8221;: &#8220;application submitted successfully&#8221;,
+&#8220;projectid&#8221;: &#8220;49b201aa-e077-4381-bff9-999588ee8b2c&#8221;,
+&#8220;serviceid&#8221;: &#8220;6bd18359-09f4-4c71-85d9-e4f313ccfb8d&#8221;</div></blockquote>
+<p>}</p>
+<p>Yarn / Textile processing involving any effluent/emission generating processes including bleaching, dyeing, printing and colouring</p>
+<p>Yarn / Textile processing involving any effluent/emission generating processes including bleaching, dyeing, printing and colouring</p>
+<hr class="docutils" />
+<p>local CTE application no. - 143838</p>
+<p>projectid: 0ed7ef2b-5e64-4126-a0a5-011300c26b22
+serviceid: b27b79b9-a3ec-4eb1-9f70-3e275dd13cd6</p>
+<p>TEST SERVER - CTE application no. - 141222</p>
+<p>Before reopen:
+hazardeous_waste_auth_app</p>
+<blockquote>
+<div>id-141320 application_status-approved</div></blockquote>
+<dl class="docutils">
+<dt>waste_management_pending_details</dt>
+<dd>id-141322 application_status-approved</dd>
+<dt>waste_management_processing_details</dt>
+<dd>id-141489 approval_status-Approved
+id-141490 approve-true</dd>
+<dt>hwm_all_summary_report</dt>
+<dd>id-142127 application_status-approved</dd>
+</dl>
+<p>After reopen:
+hazardeous_waste_auth_app</p>
+<blockquote>
+<div>id-141320 application_status-approved</div></blockquote>
+<dl class="docutils">
+<dt>waste_management_pending_details</dt>
+<dd>id-141322 application_status-approved</dd>
+<dt>waste_management_processing_details</dt>
+<dd>id-141489 approval_status-Approved
+id-141490 approve-true</dd>
+<dt>hwm_all_summary_report</dt>
+<dd>id-142127 application_status-approved</dd>
+</dl>
+<hr class="docutils" />
+<blockquote>
+<div><a class="reference external" href="http://localhost:8080/HSPCB/industryRegMaster/updateSingleWindowApplicationDetail?id=143867&amp;indUser=17FAT142339&amp;applicationId=108795&amp;serviceId=123&amp;projectServiceId=123">http://localhost:8080/HSPCB/industryRegMaster/updateSingleWindowApplicationDetail?id=143867&amp;indUser=17FAT142339&amp;applicationId=108795&amp;serviceId=123&amp;projectServiceId=123</a></div></blockquote>
+<p>CTO application no. 143880 [local with test projectid]</p>
+<p>22-09-2017:</p>
+<ol class="arabic simple">
+<li>Single Window- Before when application is in-progress i am send serviceFormEdited through api, and when application is completed i sending opencomment - application submitted successfully. But now when in-progress then opencomment - form filling in-progress is sent and when completed, then serviceFormEdited is sent.</li>
+<li>When user login - a new option &#8216;Apply CTO New&#8217; is added and when it is clicked - user will be directed to investharyana.in</li>
+<li>Rename the instruction as shown to user &amp; &#8216;Apply consent&#8217; to &#8216;Apply CTO Renew&#8217;.</li>
+</ol>
+</div>
+<div class="section" id="in-hwm-verification-report">
+<h2>4. In HWM Verification report<a class="headerlink" href="#in-hwm-verification-report" title="Permalink to this headline">¶</a></h2>
+<p>Bio-medical waste:
+Before:
+bio_medical_waste</p>
+<blockquote>
+<div>id-140106 application_status-approved</div></blockquote>
+<dl class="docutils">
+<dt>waste_management_pending_details</dt>
+<dd>id-140108 application_status-approved</dd>
+<dt>waste_management_processing_details</dt>
+<dd>id-140129 approval_status-Approved
+id-140130 approve-true</dd>
+<dt>bmw_all_summary_report</dt>
+<dd><p class="first">id-141889 application_status-approved</p>
+<p class="last">ALERE MEDICAL PRIVATE LIMITED - 4416777</p>
+</dd>
+</dl>
+<p><a class="reference external" href="mailto:regionalofficer&#37;&#52;&#48;10">regionalofficer<span>&#64;</span>10</a></p>
+<ol class="arabic simple">
+<li>Interview</li>
+<li>Completed the online monitoring list given by HSPCB</li>
+</ol>
+<p>local hwm application no. - 140419</p>
+<p>Dorne
+BMW
+Application no. - 143945
+Application no.- 143950
+Application no. - 143955(in-progress), 143958</p>
+<p>26-09-2017:
+1. Fixed HWM SCN certificate live issue.
+2. Added functionality to create and download BMW application receipt for those cases, whose file is not found on database.
+3. Completed removing ganga basin column in online monitoring
+4. Updated war on live</p>
+<p>HWM serviceid: 611af1fb-4df9-4a13-8129-785a769d8bcc</p>
+</div>
+<div class="section" id="id1">
+<h2>4317435<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>BMW aplication id whose completion status is blank: 140620</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/updateProjectIdForGivenUserId?id=17JHA4548402&amp;projectid=5a193653-54e7-46c4-b887-a7bbb548296">http://hrocmms.nic.in/OCMMS/industryRegMaster/updateProjectIdForGivenUserId?id=17JHA4548402&amp;projectid=5a193653-54e7-46c4-b887-a7bbb548296</a></p>
+<hr class="docutils" />
+<p>Organisation Validation (OV SSL)</p>
+<p>hwm application no. - 143994
+CertificateForScnHWM</p>
+<blockquote>
+<div>def downLoadingCertificateForScnBmw = {</div></blockquote>
+<p>def fileDownLoad = WasteManagementCertificates.findAll(&#8220;from WasteManagementCertificates afr where afr.applicationId=? and (afr.typeOfFile=&#8217;CertificateForScnBMW&#8217; or afr.typeOfFile=&#8217;CertificateForScnHWM&#8217;) order by afr.id desc&#8221;, [appId.applicationId.toLong()], [max: 1])</p>
+<ul class="simple">
+<li>3136628</li>
+</ul>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/updateProjectIdForGivenUserId?id=16AMB3136628&amp;projectid=d364f15f-542d-464e-9d1c-92aab0f802f1">http://hrocmms.nic.in/OCMMS/industryRegMaster/updateProjectIdForGivenUserId?id=16AMB3136628&amp;projectid=d364f15f-542d-464e-9d1c-92aab0f802f1</a></p>
+<hr class="docutils" />
+<p>local hwm application no. - 144015
+144037
+&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8211;
+03-10-2017</p>
+<p>HWM application no. - 143982 (Local)
+- 144052</p>
+<p>CTO application no. - 144062 (local)</p>
+<p>When HWM application is approved or rejected,
+<a class="reference external" href="http://localhost:8080/HSPCB/hazardeousWasteAuthApp/showNewFormat/144052">http://localhost:8080/HSPCB/hazardeousWasteAuthApp/showNewFormat/144052</a></p>
+<p>View Refusal Order
+service id = bcf33589-b4ab-468d-aafc-921d6754c236
+ind_user_id = 17FAT143980
+project id = 3795e7b5-e4a9-48ef-bd1c-3aa4ef677ecl</p>
+<p>application no.                  - 144128
+universal industry reg master id - 144123
+industry reg master id           - 144141
+edit industry profile</p>
+<p>04-10-2017:
+1. Single Window - Working on hwm.
+2. Single Window - Working on new changes for already registered user.
+3. Live issue - Cto application is orpahn but noit showing in application summary.</p>
+<p>a4ee73ec9b41122ca50e99be93689bb9</p>
+<dl class="docutils">
+<dt>def pdf = {</dt>
+<dd>def fileLength = certFile.length()
+file.size = fileLength / 1024  //f.getSize()
+file.extension = &#8220;pdf&#8221;//extractExtension( f )
+file.data = b;
+file.name = &#8220;CertiFicate.pdf&#8221;
+file.description = &#8220;Certificate Generation Record&#8221;
+file.createdBy = session.userMaster
+file.updatedBy = session.userMaster
+file.typeOfFile = &#8220;Certificate&#8221;
+file.indApplication = indApplicationDetailsInstance
+file.appFor = indApplicationDetailsInstance.applicationFor</dd>
+</dl>
+<p>}</p>
+<p>101482</p>
+<p>HWM application no. - 144184</p>
+<p>Issue: download button not showing when service is cleared
+url : <a class="reference external" href="https://staging.investharyana.in">https://staging.investharyana.in</a>
+login id - jonsnow, password - 1234
+Business Entity - myIndustrySeven
+service name: Registration for recycle or reprocessing under Hazardous waste</p>
+<p>06-10-2017:
+1. In HWM integration fixed the unattented case.
+2. Provided the test link and do the testing of HWM integration.
+3. Merged the HWM code in live code.
+4. Changes in online monitoring as specified by hspcb.</p>
+<p>// <a class="reference external" href="https://mvnrepository.com/artifact/org.glassfish.jersey.archetypes/jersey-quickstart-webapp">https://mvnrepository.com/artifact/org.glassfish.jersey.archetypes/jersey-quickstart-webapp</a>
+compile group: &#8216;org.glassfish.jersey.archetypes&#8217;, name: &#8216;jersey-quickstart-webapp&#8217;, version: &#8216;2.16&#8217;</p>
+<p>completionStatus = completed
+orphan</p>
+<dl class="docutils">
+<dt>if(indApp.applicationFor == &#8216;both/HWM&#8217;){</dt>
+<dd>def fileRecordInstance = ApplicationFileRecord.find(&#8220;from ApplicationFileRecord where indApplication=? and name = &#8216;DigiCommonCtoBothRefCertificate.pdf&#8217; order by id desc&#8221;,[indApp])</dd>
+</dl>
+<p>local cte application no. - 101482</p>
+<p>09-10-2017:
+1. Live issue - Fixed the close after refusal for CTE both/HWM application.
+2. Updated HWM integration on live.
+3. Live issue - Fixed view certificate not showing for CTE application.
+4. Started working on BMW integration</p>
+<p>SELECT DISTINCT city FROM station
+WHERE REGEXP &#8216;[^aeiou]$&#8217;;
+&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;
+10-10-2017:
+application no. - 3710881
+indUser - 4196780
+indUserUniversal - 981783</p>
+<p>local CTE application no. - 144214
+Local CTE application no. - 144263</p>
+<p>Live issue in bmw
+server is busy:
+4443008(C17AMB4407002),
+4422546(C17AMB4422538),
+4297769(C17PAN4285079),
+4208101(C17AMB4208086),
+4401943(C17PAN4400168),
+4589343(C17PAN4586187)</p>
+<p>forwarding rights not showing:
+4250520(MALHOTRA NURSING HOME)
+4214501</p>
+<p>Application not closing after approve -
+4049790</p>
+<p>144286</p>
+<p>live application id - 245571</p>
+<p>143937</p>
+<p>10b0d718-5405-472c-a4ea-330488458470</p>
+<p>11-10-2017:
+1. Solved all of the issues in BMW as specified on mail dated 10-10-2017.
+2. Working on BMW integration
+3. Updated live war to check single window issue</p>
+<p>245571</p>
+<p>245850</p>
+<p>17REW4595426
+CYGNUS MULTISPECIALITY HOSPTIAL - 2a5e340b-48e6-4c94-9825-d83c7f9050e6</p>
+<p>1
+<a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/viewSingleWindowIndUser?id=17PAN4596050">http://hrocmms.nic.in/OCMMS/industryRegMaster/viewSingleWindowIndUser?id=17PAN4596050</a>
+<a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/updateProjectIdForGivenUserId?id=17PAN4596050&amp;projectid=18855881-023e-4e8d-8198-9e57e714cdba">http://hrocmms.nic.in/OCMMS/industryRegMaster/updateProjectIdForGivenUserId?id=17PAN4596050&amp;projectid=18855881-023e-4e8d-8198-9e57e714cdba</a></p>
+<p>2
+<a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/viewSingleWindowIndUser?id=17SON4596124">http://hrocmms.nic.in/OCMMS/industryRegMaster/viewSingleWindowIndUser?id=17SON4596124</a>
+<a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/updateProjectIdForGivenUserId?id=17SON4596124&amp;projectid=44d23727-8ae1-4877-8c76-43f621cbffd9">http://hrocmms.nic.in/OCMMS/industryRegMaster/updateProjectIdForGivenUserId?id=17SON4596124&amp;projectid=44d23727-8ae1-4877-8c76-43f621cbffd9</a></p>
+<p>3
+<a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/viewSingleWindowIndUser?id=17FAT4596204">http://hrocmms.nic.in/OCMMS/industryRegMaster/viewSingleWindowIndUser?id=17FAT4596204</a>
+<a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/updateProjectIdForGivenUserId?id=17FAT4596204&amp;projectid=87e4c968-b67f-4f13-a395-e36d63f0d5eb">http://hrocmms.nic.in/OCMMS/industryRegMaster/updateProjectIdForGivenUserId?id=17FAT4596204&amp;projectid=87e4c968-b67f-4f13-a395-e36d63f0d5eb</a></p>
+<p>4
+<a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/viewSingleWindowIndUser?id=17PIT4596242">http://hrocmms.nic.in/OCMMS/industryRegMaster/viewSingleWindowIndUser?id=17PIT4596242</a>
+<a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/updateProjectIdForGivenUserId?id=17PIT4596242&amp;projectid=fee812aa-84a4-45ff-a5c6-9aada190a557">http://hrocmms.nic.in/OCMMS/industryRegMaster/updateProjectIdForGivenUserId?id=17PIT4596242&amp;projectid=fee812aa-84a4-45ff-a5c6-9aada190a557</a></p>
+<p>5
+<a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/viewSingleWindowIndUser?id=17PIT4596259">http://hrocmms.nic.in/OCMMS/industryRegMaster/viewSingleWindowIndUser?id=17PIT4596259</a>
+<a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/updateProjectIdForGivenUserId?id=17PIT4596259&amp;projectid=02dff131-c41a-4908-b70b-ac351a8fa1b0">http://hrocmms.nic.in/OCMMS/industryRegMaster/updateProjectIdForGivenUserId?id=17PIT4596259&amp;projectid=02dff131-c41a-4908-b70b-ac351a8fa1b0</a></p>
+<p>6
+<a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/viewSingleWindowIndUser?id=17PIT4596278">http://hrocmms.nic.in/OCMMS/industryRegMaster/viewSingleWindowIndUser?id=17PIT4596278</a>
+<a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/updateProjectIdForGivenUserId?id=17PIT4596278&amp;projectid=68057d50-3c1c-4b44-aefb-b982b1d65052">http://hrocmms.nic.in/OCMMS/industryRegMaster/updateProjectIdForGivenUserId?id=17PIT4596278&amp;projectid=68057d50-3c1c-4b44-aefb-b982b1d65052</a></p>
+<p>7
+<a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/viewSingleWindowIndUser?id=17SON4598755">http://hrocmms.nic.in/OCMMS/industryRegMaster/viewSingleWindowIndUser?id=17SON4598755</a>
+<a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/updateProjectIdForGivenUserId?id=17SON4598755&amp;projectid=0feaa4c3-6935-40ec-b9ce-d9665c9063b6">http://hrocmms.nic.in/OCMMS/industryRegMaster/updateProjectIdForGivenUserId?id=17SON4598755&amp;projectid=0feaa4c3-6935-40ec-b9ce-d9665c9063b6</a></p>
+<p>8
+<a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/viewSingleWindowIndUser?id=17YAM4598752">http://hrocmms.nic.in/OCMMS/industryRegMaster/viewSingleWindowIndUser?id=17YAM4598752</a>
+<a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/updateProjectIdForGivenUserId?id=17YAM4598752&amp;projectid=30e73a3f-e59f-43e5-a612-b3273d2159d2">http://hrocmms.nic.in/OCMMS/industryRegMaster/updateProjectIdForGivenUserId?id=17YAM4598752&amp;projectid=30e73a3f-e59f-43e5-a612-b3273d2159d2</a></p>
+<p>9
+<a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/viewSingleWindowIndUser?id=17PAN4598927">http://hrocmms.nic.in/OCMMS/industryRegMaster/viewSingleWindowIndUser?id=17PAN4598927</a>
+<a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/updateProjectIdForGivenUserId?id=17PAN4598927&amp;projectid=18855881-023e-4e8d-8198-9e57e714cdba">http://hrocmms.nic.in/OCMMS/industryRegMaster/updateProjectIdForGivenUserId?id=17PAN4598927&amp;projectid=18855881-023e-4e8d-8198-9e57e714cdba</a></p>
+<p>10
+<a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/viewSingleWindowIndUser?id=17MAH4599563">http://hrocmms.nic.in/OCMMS/industryRegMaster/viewSingleWindowIndUser?id=17MAH4599563</a>
+<a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/updateProjectIdForGivenUserId?id=17MAH4599563&amp;projectid=3fe5c984-6a96-499d-9334-5a68a86923a4">http://hrocmms.nic.in/OCMMS/industryRegMaster/updateProjectIdForGivenUserId?id=17MAH4599563&amp;projectid=3fe5c984-6a96-499d-9334-5a68a86923a4</a></p>
+<p>11
+<a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/viewSingleWindowIndUser?id=17FDBB4601579">http://hrocmms.nic.in/OCMMS/industryRegMaster/viewSingleWindowIndUser?id=17FDBB4601579</a>
+<a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/updateProjectIdForGivenUserId?id=17FDBB4601579&amp;projectid=7c088e93-4c8c-4ff9-b761-8d68afee0a21">http://hrocmms.nic.in/OCMMS/industryRegMaster/updateProjectIdForGivenUserId?id=17FDBB4601579&amp;projectid=7c088e93-4c8c-4ff9-b761-8d68afee0a21</a></p>
+<p>12
+<a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/viewSingleWindowIndUser?id=17GUSO4602252">http://hrocmms.nic.in/OCMMS/industryRegMaster/viewSingleWindowIndUser?id=17GUSO4602252</a>
+<a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/updateProjectIdForGivenUserId?id=17GUSO4602252&amp;projectid=82a7e102-a4b4-4e63-810f-dbc2a4859010">http://hrocmms.nic.in/OCMMS/industryRegMaster/updateProjectIdForGivenUserId?id=17GUSO4602252&amp;projectid=82a7e102-a4b4-4e63-810f-dbc2a4859010</a></p>
+<p>13
+<a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/viewSingleWindowIndUser?id=17GUNO4602386">http://hrocmms.nic.in/OCMMS/industryRegMaster/viewSingleWindowIndUser?id=17GUNO4602386</a>
+<a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/updateProjectIdForGivenUserId?id=17GUNO4602386&amp;projectid=6470d67c-c939-47fb-ab2b-445f07f28bc1">http://hrocmms.nic.in/OCMMS/industryRegMaster/updateProjectIdForGivenUserId?id=17GUNO4602386&amp;projectid=6470d67c-c939-47fb-ab2b-445f07f28bc1</a></p>
+<p>Given by hepc - 18855881-023e-4e8d-8198-9e57e714cdba
+43e594d0-9c8f-4f74-8475-1a89d938ac1b</p>
+<p>Vecrica Formulation
+17PAN4596050 - 9812551499 -</p>
+<p>17PAN4598927 - 9053637862 - 4598932</p>
+<p>12-10-2013:
+1. Working on BMW integration.
+2. Updated the live war and resolved the issue the user are redirected to industryHome page instead of apply consent if they have previously deleted application.</p>
+<p>13-10-2017:
+1. Working on BMW.
+2. Live issue - some hazardous waste source are showing in admin side, but not in industry side so implemeted a functionality to properly assign the schedule to sources so that they will become visible in hwm form.
+3. Two interviews.</p>
+<p>industry name: myHcfTestFive
+mobile no. : 5555544449
+bmw application no. - 144370</p>
+<p>bmw application no. - 144397</p>
+<dl class="docutils">
+<dt>SELECT (CASE WHEN  A = B and B = C and A = C</dt>
+<dd><blockquote class="first">
+<div>THEN &#8216;Equilateral&#8217;,</div></blockquote>
+<dl class="docutils">
+<dt>CASE WHEN A = B and B = C and A + B &gt;= C and A + C &gt;= B and B + C &gt;= A</dt>
+<dd>THEN &#8216;Isosceles&#8217;,</dd>
+<dt>CASE WHEN A + B &gt;= C and A + C &gt;= B and B + C &gt;= A</dt>
+<dd>THEN &#8216;Scalene&#8217;,</dd>
+<dt>ELSE</dt>
+<dd>&#8216;Not A Triangle&#8217;</dd>
+</dl>
+<p class="last">END)</p>
+</dd>
+</dl>
+<p>FROM TRIANGLES;</p>
+<p>SELECT * FROM &#8220;public&#8221;.&#8221;industry_type_master&#8221; where industry_type ilike &#8216;%Dyes%&#8217;;</p>
+<p>ALTER TABLE industry_type_master ADD COLUMN dashboard bigint;</p>
+<p>ALTER TABLE industry_type_master ALTER COLUMN dashboard SET DEFAULT 0;
+update industry_type_master set dashboard=0;</p>
+<p>27776</p>
+<p>120532</p>
+<p>16-10-2017:
+1. Working on Bmw integration.
+2. Merged ocmms-dashboard 17 category code</p>
+<p><a class="reference external" href="http://localhost:8080/HSPCB/industryRegMaster/downloadCertificateApi/?projectid=3795e7b5-e4a9-48ef-bd1c-3aa4ef677ecy&amp;serviceid=3e5652fc-4aeb-4ddf-8af0-72e6f94ccb1e">http://localhost:8080/HSPCB/industryRegMaster/downloadCertificateApi/?projectid=3795e7b5-e4a9-48ef-bd1c-3aa4ef677ecy&amp;serviceid=3e5652fc-4aeb-4ddf-8af0-72e6f94ccb1e</a></p>
+<p>BMW application no. - 144397</p>
+<p>word - SIngleWIndowApplicationDetail</p>
+<p>file - confirmationSubmit ==&gt; done
+file - industryRegMasterController ==&gt; done
+file - indApplicationDetailController ==&gt; done
+file - HazardeousWasteAuthApp ==&gt; done
+file - BioMedicalWasteController ==&gt; done
+file - BioMedicalWasteController ==&gt; done
+file - WasteManagementProcessingController ==&gt; done
+file - APplicationProcessingDetailsController ==&gt; done</p>
+<p>def isServiceFormEdited = params.isServiceFormEdited
+def isServiceClearedOrRejected = params.isServiceClearedOrRejected</p>
+<dl class="docutils">
+<dt>if(isServiceFormEdited.equals(&#8220;true&#8221;)){</dt>
+<dd>singleWindowApplicationDetail.isServiceFormEdited = true</dd>
+<dt>}else{</dt>
+<dd>singleWindowApplicationDetail.isServiceFormEdited = false</dd>
+</dl>
+<p>}
+if(isServiceClearedOrRejected.equals(&#8220;true&#8221;)){</p>
+<blockquote>
+<div>singleWindowApplicationDetail.isServiceClearedOrRejected = true</div></blockquote>
+<dl class="docutils">
+<dt>}else{</dt>
+<dd>singleWindowApplicationDetail.isServiceClearedOrRejected = false</dd>
+</dl>
+<p>}</p>
+<p>aug - 8
+sept - 9
+oct - 10</p>
+<p>winterfell inspection no. - 142620 - application no. - 142490
+highgarden inspection no. - 142623 - application no. - 142466
+dorne inspection no. - 142626 - application no. - 142450</p>
+<p>name=&#8221;uname&#8221;   &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8211; done
+name=&#8221;investorname&#8221;
+name=&#8221;address&#8221;
+name=&#8221;useremail&#8221;
+name=&#8221;country&#8221;
+name=&#8221;state&#8221;
+name=&#8221;city&#8221;
+name=&#8221;niccode&#8221;
+name=&#8221;pannumber&#8221;
+name=&#8221;gstnumber&#8221;
+name=&#8221;aadhar_number&#8221;
+name=&#8221;proposedbuilt_up_area&#8221;
+name=&#8221;mobile&#8221;
+name=&#8221;totalproposedprojectarea&#8221;
+name=&#8221;totalpurposedemployment&#8221;
+name=&#8221;total_project_cost&#8221;
+name=&#8221;project_site_district&#8221;
+name=&#8221;landzoneuse_type&#8221;
+name=&#8221;businessentity&#8221;
+name=&#8221;projecttype&#8221;
+name=&#8221;projectid&#8221;
+name=&#8221;serviceid&#8221;
+name=&#8221;projectserviceid&#8221;</p>
+<p>4545129 - certificate error bmw</p>
+<p>consent application no. -
+4620646
+4614081 - CTE
+4620043 - CTE
+4619463 - CTE
+4618342 - CTO
+4617996 - CTE
+4617740 - CTE
+4613692 - CTO
+4617178 - CTO - 2017-10-21</p>
+<p>23-10-2017:
+1. Testing  CTO/CTE MIS for single window applications and provided lastest list of same.
+2. Completed auto-fetch paramenters and display in our registration
+3. updated on live
+4. Fixed serviceFormEdit sending issue</p>
+<p>local CTO application no. - 144526
+local CTE application no. - 144581, 144620
+local HWM application no. - 144638(forget it), 144644(approved), 144683 (refused)
+local BMW application no. - 144718(forget it), 144730(approved), 144753
+test cases considered - CTO approved, CTE refused</p>
+<p>4613318
+projectid: 8742949a-d9a3-495f-944d-1d14393eb06b
+serviceid: b27b79b9-a3ec-4eb1-9f70-3e275dd13cd6
+{</p>
+<blockquote>
+<div>&#8220;actionTaken&#8221;: &#8220;OpenComment&#8221;,
+&#8220;commentByUserLogin&#8221;: &#8220;Bhanu Sharma&#8221;,
+&#8220;commentDate&#8221;: &#8220;2017-09-19T09:43:42.335Z&#8221;,
+&#8220;comments&#8221;: &#8220;Test 1&#8221;,
+&#8220;projectid&#8221;: &#8220;10739371-9de0-4480-9cb2-b523470e8674&#8221;,
+&#8220;serviceid&#8221;: &#8220;6bd18359-09f4-4c71-85d9-e4f313ccfb8d&#8221;</div></blockquote>
+<p>}</p>
+<dl class="docutils">
+<dt>{</dt>
+<dd>&#8220;actionTaken&#8221;: &#8220;OpenComment&#8221;,
+&#8220;commentByUserLogin&#8221;: &#8220;Negi Washing Plant&#8221;,
+&#8220;commentDate&#8221;: &#8220;2017-09-14T01:09:54.625Z&#8221;,
+&#8220;comments&#8221;: &#8220;application submitted successfully&#8221;,
+&#8220;projectid&#8221;: &#8220;00a88555-ccfa-4abc-a8ef-ee7bf7fe69f3&#8221;,
+&#8220;serviceid&#8221;: &#8220;6bd18359-09f4-4c71-85d9-e4f313ccfb8d&#8221;</dd>
+</dl>
+<p>}</p>
+<dl class="docutils">
+<dt>{</dt>
+<dd>&#8220;actionTaken&#8221;: &#8220;OpenComment&#8221;,
+&#8220;commentByUserLogin&#8221;: &#8220;VARENDER SHARMA&#8221;,
+&#8220;commentDate&#8221;: &#8220;2017-09-18T15:51:27.749Z&#8221;,
+&#8220;comments&#8221;: &#8220;application submitted successfully&#8221;,
+&#8220;projectid&#8221;: &#8220;49b201aa-e077-4381-bff9-999588ee8b2c&#8221;,
+&#8220;serviceid&#8221;: &#8220;6bd18359-09f4-4c71-85d9-e4f313ccfb8d&#8221;</dd>
+</dl>
+<p>}</p>
+<p>testing123
+<a class="reference external" href="mailto:testing&#37;&#52;&#48;123">testing<span>&#64;</span>123</a></p>
+<p>projectid - 38f7e8ec-f7ee-4b79-a513-b72ea3dda1af
+serviceid - 6bd18359-09f4-4c71-85d9-e4f313ccfb8d</p>
+<p><a class="reference external" href="mailto:hrocmms&#46;nic&#46;in/api/webapi/hrocmms/login?projectid=38f7e8ec-f7ee-4b79-a513-b72ea3dda1af&amp;serviceid=6bd18359-09f4-4c71-85d9-e4f313ccfb8d&amp;investorname=sanju&amp;address=myAddress&amp;useremail=sanju&#37;&#52;&#48;gmail&#46;com&amp;mobile=9876543210&amp;projectserviceid=1234&amp;businessentity=sanju_stone_crusher&amp;city=delhi&amp;state=delhi">hrocmms<span>&#46;</span>nic<span>&#46;</span>in/api/webapi/hrocmms/login?projectid=38f7e8ec-f7ee-4b79-a513-b72ea3dda1af&amp;serviceid=6bd18359-09f4-4c71-85d9-e4f313ccfb8d&amp;investorname=sanju&amp;address=myAddress&amp;useremail=sanju<span>&#64;</span>gmail<span>&#46;</span>com&amp;mobile=9876543210&amp;projectserviceid=1234&amp;businessentity=sanju_stone_crusher&amp;city=delhi&amp;state=delhi</a></p>
+<p>String projectserviceid = params.projectserviceid
+String businessentity = (((String)(params.businessentity)).replace(&#8221;!&#8221;, &#8221; &#8221;)).replace(&#8220;*&#8221;,&#8221;&amp;&#8221;)
+String city = (((String)(params.city)).replace(&#8221;!&#8221;, &#8221; &#8221;)).replace(&#8220;*&#8221;,&#8221;&amp;&#8221;)
+String state = (((String)(params.state)).replace(&#8221;!&#8221;, &#8221; &#8221;)).replace(&#8220;*&#8221;,&#8221;&amp;&#8221;)</p>
+<p>Implemented different modules like annual report, hwm</p>
+<p>25-10-2017:
+1. Fixed single window blank page issue
+2. Merged BMW code in live code and updated the live war.
+3. Completed hide traders of BMW in registration page.</p>
+<p>Application id = 144730</p>
+<p>KIDS CLINIC INDIA PVT LTD</p>
+<p><a class="reference external" href="http://localhost:8080/HSPCB/industryRegMaster/viewApplicationsWhoseFormEditedStatusNotSent">http://localhost:8080/HSPCB/industryRegMaster/viewApplicationsWhoseFormEditedStatusNotSent</a>
+<a class="reference external" href="http://localhost:8080/HSPCB/industryRegMaster/viewApplicationsWhoseClearedOrRejectedNotSent">http://localhost:8080/HSPCB/industryRegMaster/viewApplicationsWhoseClearedOrRejectedNotSent</a></p>
+<p>Testing the send status &#8211;&gt;
+projectid: 7443ecd8-a630-4940-8994-ae2b1f80f7ab
+indUser: 17PAN144524
+industryRegMaster: 144524
+CTO application id - 144526
+jkpcb016
+anil#1111</p>
+<p>144526 cto
+144753 bmw
+apachectl start</p>
+<p>RO GZB RO - remove one RO
+noter
+ND-C1
+PA-C1
+AEE-C1
+57980</p>
+<p>198666
+VSP000</p>
+<p>144840</p>
+<p>line no. - 3597
+line no. - 3871</p>
+<p>line no. - 3561 // files
+line no. - 3617
+1. indProductDetailsInstanceList: indProductDetailsInstanceList
+def indProductDetailsInstanceList = new ArrayList()</p>
+<p>2. consentFeeMasterInstance: consentFeeMasterInstance
+def consentFeeMasterInstance = ConsentFeeMaster.findByApplication(indApplicationDetails)</p>
+<p>3. feeBankDetailsInstanceList: feeBankDetailsInstanceList
+def feeBankDetailsInstanceList = new ArrayList()</p>
+<p>4. indWaterConsumptionDetailsInstanceList: indWaterConsumptionDetailsInstanceList
+def indWaterConsumptionDetailsInstanceList = new ArrayList()</p>
+<p>5. indWaterDischargeDetailsInstanceList: indWaterDischargeDetailsInstanceList
+def indWaterDischargeDetailsInstanceList = new ArrayList()</p>
+<p>6. indEffluentStandardDetailsInstanceList: indEffluentStandardDetailsInstanceList
+def indEffluentStandardDetailsInstanceList = new ArrayList()</p>
+<p>7. indAirStackEmmisionDetailsInstanceList: indAirStackEmmisionDetailsInstanceList
+def indAirStackEmmisionDetailsInstanceList = new ArrayList()</p>
+<p>8. indEmmisionCntrlDetailsInstanceList: indEmmisionCntrlDetailsInstanceList
+def indEmmisionCntrlDetailsInstanceList = new ArrayList()</p>
+<p>9. indAirFuelDetailsInstanceList: indAirFuelDetailsInstanceList
+def indAirFuelDetailsInstanceList = new ArrayList()</p>
+<p>10. indAirFugitiveDetailsInstanceList: indAirFugitiveDetailsInstanceList
+def indAirFugitiveDetailsInstanceList = new ArrayList()</p>
+<p>11. indEmmisionCntrlDetailsInstanceList2: indEmmisionCntrlDetailsInstanceList2
+def indEmmisionCntrlDetailsInstanceList2 = new ArrayList()</p>
+<p>application no. - 144992</p>
+<p>144981
+145120</p>
+<p>145199</p>
+<p>145259</p>
+<p><a class="reference external" href="http://localhost:8080/HSPCB/industryRegMaster/downloadCertificateApiEc/144981">http://localhost:8080/HSPCB/industryRegMaster/downloadCertificateApiEc/144981</a> - CTO
+<a class="reference external" href="http://localhost:8080/HSPCB/industryRegMaster/downloadCertificateApiEc/144286">http://localhost:8080/HSPCB/industryRegMaster/downloadCertificateApiEc/144286</a> - CTE</p>
+<p>local application no. - 145325</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/api/webapi/hrocmms/downloadCertificate?projectid=c5070200-98be-4fdd-97e7-5523b13292e4&amp;serviceid=6bd18359-09f4-4c71-85d9-e4f313ccfb8d">http://hrocmms.nic.in/api/webapi/hrocmms/downloadCertificate?projectid=c5070200-98be-4fdd-97e7-5523b13292e4&amp;serviceid=6bd18359-09f4-4c71-85d9-e4f313ccfb8d</a></p>
+<p>&lt;url&gt;/OCMMS/industryRegMaster/viewApplicationsWhoseClearedOrRejectedNotSent
+IndustryInspectionReport
+ApplicationFileRecord()
+typeOfFile = &#8220;checklist&#8221;
+noteHistiryFile.typeOfFile = &#8220;regularInspectionReportOtherDocs&#8221;</p>
+<dl class="docutils">
+<dt>{</dt>
+<dd>&#8220;actionTaken&#8221;: &#8220;ServiceFormEdited&#8221;,
+&#8220;commentByUserLogin&#8221;: &#8220;nitasha&#8221;,
+&#8220;commentDate&#8221;: &#8220;2017-10-06T09:52:00.000Z&#8221;,
+&#8220;comments&#8221;: &#8220;ServiceFormEdited&#8221;,
+&#8220;id&#8221;: &#8220;&#8221;,
+&#8220;projectid&#8221;: &#8220;c5070200-98be-4fdd-97e7-5523b13292e4&#8221;,
+&#8220;serviceid&#8221;: &#8220;6bd18359-09f4-4c71-85d9-e4f313ccfb8d&#8221;</dd>
+</dl>
+<p>}</p>
+<p>17SON4586688
+4586690
+2017-10-04T15:14:26.150
+06/11/2017 16:19
+2017-11-06T16:19:00.000Z</p>
+<p>if ((params.group == &#8216;xyz&#8217;) &amp;&amp; (params.category == &#8216;None&#8217;) &amp;&amp; (params.district == &#8216;ALL&#8217;)) {</p>
+<p>} else if ((params.group != &#8216;xyz&#8217;) &amp;&amp; (params.category == &#8216;None&#8217;) &amp;&amp; (params.district == &#8216;ALL&#8217;)) {</p>
+<p>} else if ((params.group != &#8216;xyz&#8217;) &amp;&amp; (params.category == &#8216;None&#8217;) &amp;&amp; (params.district != &#8216;ALL&#8217;)) {</p>
+<p>} else if ((params.group != &#8216;xyz&#8217;) &amp;&amp; (params.category != &#8216;None&#8217;) &amp;&amp; (params.district == &#8216;ALL&#8217;)) {</p>
+<p>}  else if ((params.group != &#8216;xyz&#8217;) &amp;&amp; (params.category != &#8216;None&#8217;) &amp;&amp; (params.district != &#8216;ALL&#8217;)) {</p>
+<p>}  else if ((params.group == &#8216;xyz&#8217;) &amp;&amp; (params.category != &#8216;None&#8217;) &amp;&amp; (params.district == &#8216;ALL&#8217;)) {</p>
+<p>}</p>
+<p>application no. - 145448</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/api/webapi/hrocmms/downloadCertificate?projectid=b4d9fa1c-6987-4b00-997f-53e9ef2f1d61&amp;serviceid=6bd18359-09f4-4c71-85d9-e4f313ccfb8d">http://hrocmms.nic.in/api/webapi/hrocmms/downloadCertificate?projectid=b4d9fa1c-6987-4b00-997f-53e9ef2f1d61&amp;serviceid=6bd18359-09f4-4c71-85d9-e4f313ccfb8d</a></p>
+<p>b4d9fa1c-6987-4b00-997f-53e9ef2f1d61</p>
+<p>10-11-2017
+BMW application no . - 145623</p>
+<p>[[1, Dddddddddddd, Dddddddddddd],
+[2, Dddddddddddd, Dddddddddddd],
+[3, Ccccccccccccc]]</p>
+<p>SaveConditionsBMW</p>
+<p>D:GrailsProjectshrocmmsgrails-appconfDataSource.groovy
+43522
+4293166
+D:GrailsProjectshrocmmslibiText-2.1.7.jar!comlowagietextpdfPdfPCell.class</p>
+<p>13-11-2017:
+1. Check master branch</p>
+<blockquote>
+<div>test bmw certificate - done
+hwm approval rights - done
+staging.investharyana - done
+remove green catgory - done</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>Completed</li>
+</ol>
+<p>145654</p>
+<p>HWM application no. - 145674</p>
+<p>service form edited status not sent
+1. 4690378
+2. 4690480
+3. 4690568
+4. 4690695
+5. 4690733
+6. 4639961
+7. 4691024
+8. 4639993
+9. 4692940
+10. 4689652
+11. 4690234</p>
+<p>4690234
+4690444 - done</p>
+<p>TEST server
+10739371-9de0-4480-9cb2-b523470e8674</p>
+<p>13-11-2017:
+1. Merged bmw certificate and hwm approval rights in live code
+2. Completed functionality to close the clarifictation in HWM from admin for those application who are approved.</p>
+<p>16-11-2017:
+1. Washout redirect to home page</p>
+<blockquote>
+<div>InspectionNoteHistory.inspectionDescriptionNote
+InspectionNoteHistory is not null but its column &#8216;inspectionDescriptionNote&#8217; is null
+at org.hibernate.engine.Nullability.checkNullability(Nullability.java:95)
+at org.hibernate.event.def.DefaultDeleteEventListener.deleteEntity(DefaultDeleteEventListener.java:272)
+at org.hibernate.event.def.DefaultDeleteEventListener.onDelete(DefaultDeleteEventListener.java:163)
+at org.hibernate.event.def.DefaultDeleteEventListener.onDelete(DefaultDeleteEventListener.java:74)
+at org.hibernate.impl.SessionImpl.fireDelete(SessionImpl.java:793)
+at org.hibernate.impl.SessionImpl.delete(SessionImpl.java:771)
+at sun.reflect.GeneratedMethodAccessor28018.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:497)
+at org.springframework.orm.hibernate3.HibernateTemplate$CloseSuppressingInvocationHandler.invoke(HibernateTemplate.java:1293)</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>HSPCB053 scientist b panchkula come in draw but its canDoInspection is false</li>
+<li>Add common facility in inspection</li>
+<li>store caf in our db</li>
+<li>autoRenew integrate with hepc</li>
+</ol>
+<p>group hissar, gurgoan
+eehepc
+145828</p>
+<p>isCommonTreatmentFacility - NO / YES</p>
+<p>16-11-2017:
+1. Resolved the approval rights issue.
+2. Working on add common treatment facilities in inspection draw.</p>
+<p>Indospace Industrial Park Badli Private Limited
+17JHA4610934
+14/10/2017
+JHAJJAR
+RED
+Consent /BMW /Annual Report /Cess /HWM /Inspection /E-waste</p>
+<ol class="arabic simple">
+<li>bmw approval rights</li>
+<li>application</li>
+</ol>
+<p>HSPCB020
+<a class="reference external" href="mailto:regionalofficer&#37;&#52;&#48;10">regionalofficer<span>&#64;</span>10</a></p>
+<p>ROCKLAND HOSPITAL</p>
+<p>3254425 - RED
+1367103 - RED
+4304267 - RED</p>
+<p>DENSO HARYANA PVT. LTD
+4194125 - RED
+3857433 - RED
+3598219 - RED
+3770125 - RED
+3908289 - RED
+141503 - RED
+461285 - RED
+4518393 - RED</p>
+<p>ALERE MEDICAL PRIVATE LIMITED
+3470373 -
+1876300 - ORANGE</p>
+<p>HSPCB015
+<a class="reference external" href="mailto:naveen&#37;&#52;&#48;2017">naveen<span>&#64;</span>2017</a></p>
+<p>BMW</p>
+<p>Sorry cannot approve</p>
+<p>rakesh
+9873666126</p>
+<p>Application not closed
+4036867
+Message
+Sorry can not Approve Clarification is Raised on this application</p>
+<p>Server busy</p>
+</div>
+<div class="section" id="satyakiran-healthcare-private-limited">
+<h2>Satyakiran Healthcare Private Limited<a class="headerlink" href="#satyakiran-healthcare-private-limited" title="Permalink to this headline">¶</a></h2>
+<p>project id of 14ROH1458345  SHIVA PETROLEUM
+5a193653-54e7-46c4-b887-a7bbb5482965
+&#8212;-</p>
+<p>145899</p>
+<p>testZeroOne
+145920</p>
+<p>application no. whose note history date problem
+4269229</p>
+<p>trader twenty one CTE application id - 145945
+industryTypeMaster id = 120526 (For orange)</p>
+<p><a class="reference external" href="mailto:jitu&#37;&#52;&#48;123">jitu<span>&#64;</span>123</a></p>
+<p>&lt;option value=&#8221;4384456&#8221;&gt;Vegetable oil manufacturing including solvent extraction and refinery/ hydrogenated oils having waste water generation mare than 100 KLD&lt;/option&gt;
+&lt;option value=&#8221;3130921&#8221;&gt;DG Set of capacity of 5 MVA and above&lt;/option&gt;
+&lt;option value=&#8221;4338749&#8221;&gt;Flour Mills generating trade effuent&lt;/option&gt;
+&lt;option value=&#8221;3131158&#8221;&gt;Ayurvedic and homeopathic medicine&lt;/option&gt;
+&lt;option value=&#8221;3130952&#8221;&gt;Milk processes and dairy  products(integrated project) large and medium scale units&lt;/option&gt;
+&lt;option value=&#8221;4338761&#8221;&gt;Printing Presses without involving water polluting Process&lt;/option&gt;
+&lt;option value=&#8221;4338773&#8221;&gt;Health care Establishments i.e hospitals/ clinics without indoor facilities and having only OPD consultancy&lt;/option&gt;
+&lt;option value=&#8221;4338799&#8221;&gt;Distilled water units using boiler or furnace as source of heat&lt;/option&gt;
+&lt;option value=&#8221;3130969&#8221;&gt;Airports and Commercial Air  Strips projects Having discharge of 100 KLD or More&lt;/option&gt;
+&lt;option value=&#8221;4338817&#8221;&gt;Construction and Demolition (C and D) waste Processing and recycling units&lt;/option&gt;
+&lt;option value=&#8221;3130998&#8221;&gt;Hotels having overall waste  water generation &#64; 100 KLD and  more Hotels having 3 Star and above and having 100 Rooms or above&lt;/option&gt;
+&lt;option value=&#8221;4338832&#8221;&gt;Garment/Apparel manufacturing units having only garment washing, with or without boiler except bleaching, dyeing, printing, Coloring  &lt;/option&gt;
+&lt;option value=&#8221;3130926&#8221;&gt;Lead acid battery  manufacturing(excluding  assembling and charging of lead  acid battery in micro scale)&lt;/option&gt;
+&lt;option value=&#8221;3130955&#8221;&gt;Phosphorous and its compounds&lt;/option&gt;
+&lt;option value=&#8221;3131023&#8221;&gt;Oil and gas extraction including  CBM (offshore &amp;amp; on  extraction through drilling wells)  -shore&lt;/option&gt;
+&lt;option value=&#8221;3131074&#8221;&gt;Bakery and confectionery units with  production capacity &amp;gt; 1 TPD. ( With  ovens / furnaces)&lt;/option&gt;
+&lt;option value=&#8221;3131079&#8221;&gt;Coated electrode manufacturing&lt;/option&gt;
+&lt;option value=&#8221;3131124&#8221;&gt;Jute processing without dyeing&lt;/option&gt;
+&lt;option value=&#8221;3131126&#8221;&gt;Manufacturing of silica gel&lt;/option&gt;
+&lt;option value=&#8221;3131146&#8221;&gt;Cotton spinning and weaving (  medium and large scale)&lt;/option&gt;
+&lt;option value=&#8221;3131044&#8221;&gt;Iron &amp;amp; Steel (involving  processing from ore/ integrated  steel plants) and or Sponge Iron  units&lt;/option&gt;
+&lt;option value=&#8221;3131051&#8221;&gt;Zinc Smelter&lt;/option&gt;
+&lt;option value=&#8221;3130979&#8221;&gt;Cement&lt;/option&gt;
+&lt;option value=&#8221;3131062&#8221;&gt;Pulp &amp;amp; Paper ( Large-Agro +  wood) , Small Pulp &amp;amp;  Paper ( agro based-wheat  straw/rice husk)&lt;/option&gt;
+&lt;option value=&#8221;3131059&#8221;&gt;Pharmaceuticals Basic Drugs Manufacturing Units&lt;/option&gt;
+&lt;option value=&#8221;3131207&#8221;&gt;Fish processing and packing (excluding  chilling of fishes)&lt;/option&gt;
+&lt;option value=&#8221;3131209&#8221;&gt;Forging of ferrous and non- ferrous  metals ( using oil and gas fired  furnaces)&lt;/option&gt;
+&lt;option value=&#8221;3131222&#8221;&gt;Hot mix plants&lt;/option&gt;
+&lt;option value=&#8221;3131227&#8221;&gt;Ice cream&lt;/option&gt;
+&lt;option value=&#8221;3131229&#8221;&gt;Industries engaged in recycling /  reprocessing/ recovery/reuse of  Hazardous Waste under schedule iv of  HW( M, H&amp;amp; TBM) rules, 2008 - Items  namely -  Paint and ink Sludge/residues&lt;/option&gt;
+&lt;option value=&#8221;3131232&#8221;&gt;Industry or processes involving  foundry operations&lt;/option&gt;
+&lt;option value=&#8221;3131252&#8221;&gt;Manufacturing of Starch/Sago&lt;/option&gt;
+&lt;option value=&#8221;3131254&#8221;&gt;Mechanized laundry using oil fired  boiler&lt;/option&gt;
+&lt;option value=&#8221;3131256&#8221;&gt;Modular wooden furniture from  particle board, MDF&amp;lt; swan timber etc,  Ceiling tiles/ partition board from saw  dust, wood chips etc., and other  agricultural waste using synthetic  adhesive resin, wooden box making (  With boiler)&lt;/option&gt;
+&lt;option value=&#8221;3131272&#8221;&gt;Potable alcohol ( IMF  L) by blending,  bottling of alcohol products&lt;/option&gt;
+&lt;option value=&#8221;3131289&#8221;&gt;Steel and steel products using  various furnaces like blast furnace  /open hearth furnace/induction  furnace/arc furnace/submerged  arc furnace /basic oxygen furnace  /hot rolling reheated furnace&lt;/option&gt;
+&lt;option value=&#8221;3131291&#8221;&gt;Stone crushers&lt;/option&gt;
+&lt;option value=&#8221;3131294&#8221;&gt;Surgical and medical products  including prophylactics and latex&lt;/option&gt;
+&lt;option value=&#8221;3132800&#8221;&gt;Vegetable oil manufacturing  including solvent extraction and  refinery /hydrogenated oils&lt;/option&gt;
+&lt;option value=&#8221;3132820&#8221;&gt;Synthetic resins&lt;/option&gt;
+&lt;option value=&#8221;3132843&#8221;&gt;Producer gas plant using conventional  up drift coal gasification ( linked to  rolling mills glass and ceramic industry  refectories for dedicated fuel supply)&lt;/option&gt;
+&lt;option value=&#8221;3132860&#8221;&gt;Candy&lt;/option&gt;
+&lt;option value=&#8221;3132886&#8221;&gt;Decoration of ceramic cups  and plates by electric furnace&lt;/option&gt;
+&lt;option value=&#8221;3132902&#8221;&gt;Glass , ceramic, earthen  potteries, tile and tile  manufacturing using  electrical kiln or not  involving fossil fuel kiln&lt;/option&gt;
+&lt;option value=&#8221;3132905&#8221;&gt;Glue from starch (physical  mixing) with gas /  electrically operated oven  /boiler.&lt;/option&gt;
+&lt;option value=&#8221;3132909&#8221;&gt;Gold and silver smithy  (purification with acid  smelting operation and  sulphuric acid polishing  operation) (using less or  equal to 1 litre of sulphuric  acid/ nitric acid per month)&lt;/option&gt;
+&lt;option value=&#8221;3132942&#8221;&gt;Leather foot wear and leather  products (excluding tanning  and hide processing except  cottage scale)&lt;/option&gt;
+&lt;option value=&#8221;3132944&#8221;&gt;Lubricating oil, greases or  petroleum based products  (only blending at normal  temperature)&lt;/option&gt;
+&lt;option value=&#8221;3132957&#8221;&gt;Polythene and plastic  processed products  manufacturing (virgin  plastic)&lt;/option&gt;
+&lt;option value=&#8221;3132961&#8221;&gt;Poultry,  Hatchery and  Piggery&lt;/option&gt;
+&lt;option value=&#8221;3132964&#8221;&gt;Power looms (without dye  and bleaching)&lt;/option&gt;
+&lt;option value=&#8221;3132967&#8221;&gt;Puffed rice (muri) (using gas  or electrical heating system)&lt;/option&gt;
+&lt;option value=&#8221;3132985&#8221;&gt;Reprocessing of waste cotton&lt;/option&gt;
+&lt;option value=&#8221;3132987&#8221;&gt;Rice mill (Rice hullers only)&lt;/option&gt;
+&lt;option value=&#8221;3132993&#8221;&gt;Rolling mill ( gas fired) and  cold rolling mill&lt;/option&gt;
+&lt;option value=&#8221;3202157&#8221;&gt;Jobbing and Machining&lt;/option&gt;
+&lt;option value=&#8221;3202160&#8221;&gt;Reel manufacturing&lt;/option&gt;
+&lt;option value=&#8221;3202164&#8221;&gt;Assembling of acid lead batteries (up to 10 batteries per  day excluding lead plate casting)&lt;/option&gt;
+&lt;option value=&#8221;3202168&#8221;&gt;Automobile fuel outlets (only dispensing)&lt;/option&gt;
+&lt;option value=&#8221;3202173&#8221;&gt;Diesel generator sets (15 KVA to 1 MVA)&lt;/option&gt;
+&lt;option value=&#8221;3131055&#8221;&gt;Oil Refinery (mineral Oil or  Petro Refineries)&lt;/option&gt;
+&lt;option value=&#8221;3131162&#8221;&gt;Building and construction project having more than 20,000 sq. m built up area having quantity of waste water generation 10 KLD to 100 KLD&lt;/option&gt;
+&lt;option value=&#8221;4338848&#8221;&gt;Garment/Apparel units involving only stiching process, without discharge of effluent and Air emissions from process&lt;/option&gt;
+&lt;option value=&#8221;3202185&#8221;&gt;Excavation of sand from the river bed (excluding  manual excavation)&lt;/option&gt;
+&lt;option value=&#8221;3202189&#8221;&gt;Infrastructure Development Project&lt;/option&gt;
+&lt;option value=&#8221;3202191&#8221;&gt;Power press&lt;/option&gt;
+&lt;option value=&#8221;3202208&#8221;&gt;Common treatment and disposal facilities(CETP, TSDF, E- waste recycling, CBMWTF, effluent conveyance project,  incinerator, solvent/acid recovery plant, MSW sanitary land  fill site)&lt;/option&gt;
+&lt;option value=&#8221;3202211&#8221;&gt;Processing of Emulsions of Oil &amp;amp; Water&lt;/option&gt;
+&lt;option value=&#8221;3202213&#8221;&gt;Heavy engineering including ship building (with investment  on Plant &amp;amp; Machineries more than Rs 10 crores)&lt;/option&gt;
+&lt;option value=&#8221;3202216&#8221;&gt;Hydrocyanic acid and its derivatives&lt;/option&gt;
+&lt;option value=&#8221;3203032&#8221;&gt;Industrial estates/ parks / complexes/ areas/ export processing  zones/ SEZs/ Biotech parks/ leather complex&lt;/option&gt;
+&lt;option value=&#8221;3203034&#8221;&gt;Industrial inorganic gases namely- a) Chemical gas- Acetylene, hydrogen, chlorine, fluorine,  ammonia, sulphur dioxide, ethylene, hydrogen-sulphide,  phosphine b) Hydrocarbon gases- Methane , ethane, propane&lt;/option&gt;
+&lt;option value=&#8221;3203036&#8221;&gt;Reprocessing of used oils &amp;amp; waste oils&lt;/option&gt;
+&lt;option value=&#8221;3203924&#8221;&gt;Formulation of pesticides&lt;/option&gt;
+&lt;option value=&#8221;3298049&#8221;&gt;Recycling/Pyrolysis plant of waste pneumatic tyre/ tyre scraps&lt;/option&gt;
+&lt;option value=&#8221;3299597&#8221;&gt;Induction Furnace clubbed with AOD furnace &lt;/option&gt;
+&lt;option value=&#8221;3299606&#8221;&gt;Synthetic detergents and soaps having waste water generation more than 100 KLD (excluding formulation) &lt;/option&gt;
+&lt;option value=&#8221;3299614&#8221;&gt;Automobile servicing, repairing and painting having waste water generation more than 100 KLD (excluding only fuel dispensing)&lt;/option&gt;
+&lt;option value=&#8221;3299617&#8221;&gt;Automobile servicing, repairing and painting having waste water generation more than 100 KLD (excluding only fuel dispensing)&lt;/option&gt;
+&lt;option value=&#8221;3299622&#8221;&gt;Building and construction project more than 20,000 sq.m built up area having waste water generation more than 100 KLD&lt;/option&gt;
+&lt;option value=&#8221;3299628&#8221;&gt;Ceramics and refractories having coal consumption more than 12 MT per day&lt;/option&gt;
+&lt;option value=&#8221;3299646&#8221;&gt;Fermentation industry including manufacture of yeast, bear, distillation of alcohol (Extra  Neutral Alcohol) having discharge &amp;gt; 100 KLD&lt;/option&gt;
+&lt;option value=&#8221;3299654&#8221;&gt;Lead metal extraction involving different furnaces through melting, refining, re-processing, casting and alloy-making &lt;/option&gt;
+&lt;option value=&#8221;3131165&#8221;&gt;Ceramics and Refractories projects having coal consumption upto 12 MT per day  &lt;/option&gt;
+&lt;option value=&#8221;3299667&#8221;&gt;Industry or processes involving foundry operation having capacity of 5 MT/hr. and more &lt;/option&gt;
+&lt;option value=&#8221;3299675&#8221;&gt;Manufacturing of lead glass&lt;/option&gt;
+&lt;option value=&#8221;3299698&#8221;&gt;Non-alcoholic beverages (soft drink) &amp;amp; bottling of alcohol/ non alcoholic products having waste water generation more than 100 KLD&lt;/option&gt;
+&lt;option value=&#8221;3299729&#8221;&gt;Parboiled rice mills having waste water generation &amp;gt;100 KLD or fuel consumption &amp;gt;12 MTD or both &lt;/option&gt;
+&lt;option value=&#8221;3299737&#8221;&gt;Sewage treatment plant having capacity 100 KLD or more&lt;/option&gt;
+&lt;option value=&#8221;3299781&#8221;&gt;Recycling of used lead acid batteries &lt;/option&gt;
+&lt;option value=&#8221;3299806&#8221;&gt;Industries engaged in recycling/ reprocessing/ recovery/ reuse of hazardous waste under schedule IV of HW (M,H&amp;amp;TBM) rules, 2008-item namely -paint and ink sludge/ residues&lt;/option&gt;
+&lt;option value=&#8221;3299848&#8221;&gt;Industries engaged in recycling/ reprocessing/recovery/reuse of Hazardous Waste under schedule IV of HW(M,H&amp;amp; TBM) rules,2008-Items namely - used oil- as per specifications prescribed from time to time.&lt;/option&gt;
+&lt;option value=&#8221;3299857&#8221;&gt;Industries engaged in recycling/reprocessing/recovery/reuse of Hazardous Waste under schedule IV of HW(M,H&amp;amp;TBM) rules, 2008- Item namely- Waste oil-as per specification prescribed from time to time&lt;/option&gt;
+&lt;option value=&#8221;3299864&#8221;&gt;Health Care Establishments (as defined in BMW rules) having waste water generation less than 100 KLD without incinerator&lt;/option&gt;
+&lt;option value=&#8221;3299866&#8221;&gt;Airport and commercial air strips having discharge less than 100 KLD.&lt;/option&gt;
+&lt;option value=&#8221;3299869&#8221;&gt;Railway locomotive workshop/Integrated road transport workshop/Authorized service centers(having waste-water generation &amp;lt; 100 KLd)&lt;/option&gt;
+&lt;option value=&#8221;3299877&#8221;&gt;Manufacturing of pasted veneers using coal/wood scrap boiler or thermic fluid heater and by sun drying.&lt;/option&gt;
+&lt;option value=&#8221;3299881&#8221;&gt;Cardboards and Millboards&lt;/option&gt;
+&lt;option value=&#8221;3299886&#8221;&gt;Strawboards&lt;/option&gt;
+&lt;option value=&#8221;3299892&#8221;&gt;Formulation of Pesticides/ Insecticides.&lt;/option&gt;
+&lt;option value=&#8221;3299899&#8221;&gt;Recycling/Pyrolysis plants of waste pneumatic tyres/ tyre scarp&lt;/option&gt;
+&lt;option value=&#8221;3299903&#8221;&gt;Surgical cotton industries &lt;/option&gt;
+&lt;option value=&#8221;3299909&#8221;&gt;Inorganic chemical compounds such as chlorides/sulphates/ suphites/nitriates/oxides/ flourides/stearates of metals/cations&lt;/option&gt;
+&lt;option value=&#8221;3299915&#8221;&gt;Sodium and other silicates manufacturing&lt;/option&gt;
+&lt;option value=&#8221;3299918&#8221;&gt;Cotton coated fabrics including printing and lamination(Rexene)&lt;/option&gt;
+&lt;option value=&#8221;3299921&#8221;&gt;Friction dust&lt;/option&gt;
+&lt;option value=&#8221;3299925&#8221;&gt;Break lining/Disc break pad &lt;/option&gt;
+&lt;option value=&#8221;3299930&#8221;&gt;Chlorinated paraffin wax / plasticizers &lt;/option&gt;
+&lt;option value=&#8221;3299934&#8221;&gt;Sewage treatment plant having capacity 10 KLD or more but less than 100 KLD &lt;/option&gt;
+&lt;option value=&#8221;3299940&#8221;&gt;Infrastructure development projects having overall liquid waste generation 100 KLD or more.&lt;/option&gt;
+&lt;option value=&#8221;3131225&#8221;&gt;Hotels (&amp;lt; 3 star) or hotels having &amp;gt; 20  rooms and less than 100 rooms having quantity of waste water discharge less than 100 KLD&lt;/option&gt;
+&lt;option value=&#8221;3131042&#8221;&gt;Fertilizer (basic) (excluding  formulation)&lt;/option&gt;
+&lt;option value=&#8221;3130911&#8221;&gt;Isolated storage of hazardous  chemicals (as per schedule of  manufacturing, storage of  hazardous chemicals rules ,1989  as amended)&lt;/option&gt;
+&lt;option value=&#8221;3130913&#8221;&gt;Automobile Manufacturing  (integrated facilities)&lt;/option&gt;
+&lt;option value=&#8221;3130918&#8221;&gt;Manufacturing of lubricating oils  ,grease and petroleum based  products&lt;/option&gt;
+&lt;option value=&#8221;3130929&#8221;&gt;Phosphate rock processing plant&lt;/option&gt;
+&lt;option value=&#8221;3130931&#8221;&gt;Power generation plant [except Wind and Solar renewable  power plants of all capacities and  Mini Hydel power plant of  capacity &amp;lt;25MW]&lt;/option&gt;
+&lt;option value=&#8221;3130933&#8221;&gt;Industries engaged in recycling /  reprocessing/ recovery/reuse of  Hazardous Waste under  schedule iv of HW( M, H&amp;amp; TBM)  rules, 2008  Spent catalyst containing nickel,  cadmium, Zinc, copper, arsenic,  vanadium and cobalt,  - Items namely&lt;/option&gt;
+&lt;option value=&#8221;3130935&#8221;&gt;Processes involving chlorinated  hydrocarbons&lt;/option&gt;
+&lt;option value=&#8221;3130987&#8221;&gt;Chlorates, per  peroxides  -chlorates &amp;amp; peroxides&lt;/option&gt;
+&lt;option value=&#8221;3130990&#8221;&gt;Chlorine, fluorine, bromine,  iodine and their compounds&lt;/option&gt;
+&lt;option value=&#8221;3131001&#8221;&gt;Manufacturing of glue and  gelatin&lt;/option&gt;
+&lt;option value=&#8221;3131025&#8221;&gt;Industry or process involving  metal surface treatment or  process such as pickling/  electroplating/paint stripping/  heat treatment using cyanide  bath/ phosphating or finishing  and anodizing / enamellings/  galvanizing&lt;/option&gt;
+&lt;option value=&#8221;3131030&#8221;&gt;Ports and harbour, jetties and  dredging operations&lt;/option&gt;
+&lt;option value=&#8221;3131036&#8221;&gt;Slaughter house (as per  notification S.O.270(E)dated  26.03.2001)and meat processing  industries, bone mill, processing  of animal horn, hoofs and other  body parts&lt;/option&gt;
+&lt;option value=&#8221;3131076&#8221;&gt;Chanachur and ladoo from puffed and  beaten rice( muri and shira) using  husk fired oven&lt;/option&gt;
+&lt;option value=&#8221;3131132&#8221;&gt;Manufacturing of tooth powder,  toothpaste, talcum powder and other  cosmetic items&lt;/option&gt;
+&lt;option value=&#8221;3131150&#8221;&gt;Almirah, Grill Manufacturing (Dry  Mechanical Process )&lt;/option&gt;
+&lt;option value=&#8221;3131179&#8221;&gt;Coal washeries&lt;/option&gt;
+&lt;option value=&#8221;3131212&#8221;&gt;Formulation/pelletization of camphor  tablets, naphthalene balls from  camphor/ naphthalene powders.&lt;/option&gt;
+&lt;option value=&#8221;3131236&#8221;&gt;Lime manufacturing (using lime  kiln)&lt;/option&gt;
+&lt;option value=&#8221;3131241&#8221;&gt;Manufacturing of glass&lt;/option&gt;
+&lt;option value=&#8221;3131258&#8221;&gt;New highway construction project&lt;/option&gt;
+&lt;option value=&#8221;3131262&#8221;&gt;Paint blending and mixing (Ball mill)&lt;/option&gt;
+&lt;option value=&#8221;3131276&#8221;&gt;Printing ink manufacturing&lt;/option&gt;
+&lt;option value=&#8221;3131297&#8221;&gt;Tephlon based products  &lt;/option&gt;
+&lt;option value=&#8221;3132803&#8221;&gt;Wire drawing and wire netting&lt;/option&gt;
+&lt;option value=&#8221;3132827&#8221;&gt;Coffee seed processing&lt;/option&gt;
+&lt;option value=&#8221;3132846&#8221;&gt;Aluminium utensils from  aluminium circles by  pressing only (dry  mechanical operation)&lt;/option&gt;
+&lt;option value=&#8221;3132848&#8221;&gt;Ayurvedic and homeopathic  medicines (without boiler)&lt;/option&gt;
+&lt;option value=&#8221;3132866&#8221;&gt;Carpentry &amp;amp; wooden  furniture manufacturing  (excluding saw mill) with the  help of electrical (motorized)  machines such as electrical  wood planner, steel saw  cutting circular blade, etc&lt;/option&gt;
+&lt;option value=&#8221;3132868&#8221;&gt;Cement products (without  using asbestos / boiler /  steam curing) like pipe  ,pillar, jafri, well ring,  block/tiles etc.(should be  done in closed covered shed  to control fugitive emissions)&lt;/option&gt;
+&lt;option value=&#8221;3132871&#8221;&gt;Ceramic colour  manufacturing by mixing &amp;amp;  blending only (not using  boiler and wastewater  recycling process)&lt;/option&gt;
+&lt;option value=&#8221;3132891&#8221;&gt;Digital printing on PVC  clothes&lt;/option&gt;
+&lt;option value=&#8221;3132894&#8221;&gt;Facility of handling, storage  and transportation of food  grains in bulk&lt;/option&gt;
+&lt;option value=&#8221;3132914&#8221;&gt;Heat treatment with any of  the new technology like  ultrasound probe , induction  hardening , ionization beam,  gas carburizing etc.&lt;/option&gt;
+&lt;option value=&#8221;3132946&#8221;&gt;Manufacturing of pasted  veneers using gas fired boiler  or thermic fluid heater and  by sun drying&lt;/option&gt;
+&lt;option value=&#8221;3132948&#8221;&gt;Oil mill Ghani and extraction  ( no hydrogenation /  refining)&lt;/option&gt;
+&lt;option value=&#8221;3132954&#8221;&gt;Phenyl/toilet cleaner  formulation and bottling&lt;/option&gt;
+&lt;option value=&#8221;3132973&#8221;&gt;Pulverization of bamboo and  scrap wood&lt;/option&gt;
+&lt;option value=&#8221;3132981&#8221;&gt;Ready mix cement concrete&lt;/option&gt;
+&lt;option value=&#8221;3133025&#8221;&gt;Soap manufacturing (hand  made without steam boiling  / boiler)&lt;/option&gt;
+&lt;option value=&#8221;3133032&#8221;&gt;Spice grinding (  &amp;gt;20 hp  motor)&lt;/option&gt;
+&lt;option value=&#8221;3133034&#8221;&gt;Steel furniture without spray  painting&lt;/option&gt;
+&lt;option value=&#8221;3133037&#8221;&gt;Steeping and processing of  grains&lt;/option&gt;
+&lt;option value=&#8221;3133045&#8221;&gt;Chilling plant and ice  making without using  ammonia&lt;/option&gt;
+&lt;option value=&#8221;3133047&#8221;&gt;CO2 recovery&lt;/option&gt;
+&lt;option value=&#8221;3131012&#8221;&gt;Railway locomotive work  shop/Integrated road transport  workshop/Authorized service  centers Projects having Discharge of 100 KLD or more&lt;/option&gt;
+&lt;option value=&#8221;3131260&#8221;&gt;Non -alcoholic beverages(soft  drink) projects &amp;amp; bottling of alcohol/non  alcoholic products having Quantity of waste water generation up to 100 KLD &lt;/option&gt;
+&lt;option value=&#8221;3133068&#8221;&gt;Cutting, sizing and polishing of  marble stone&lt;/option&gt;
+&lt;option value=&#8221;3131047&#8221;&gt;Pulp &amp;amp; Paper ( waste paper based  units with bleaching process to  manufacture writing &amp;amp; printing  paper)&lt;/option&gt;
+&lt;option value=&#8221;3130957&#8221;&gt;Pulp &amp;amp; Paper ( waste paper based  without bleaching process to  manufacture Kraft paper)&lt;/option&gt;
+&lt;option value=&#8221;3133193&#8221;&gt;Surgical and medical products assembling  only (not involving effluent / emission  generating processes)&lt;/option&gt;
+&lt;option value=&#8221;3133071&#8221;&gt;Emery powder ( fine dust of  sand) manufacturing&lt;/option&gt;
+&lt;option value=&#8221;3133079&#8221;&gt;Oil and gas transportation  pipeline&lt;/option&gt;
+&lt;option value=&#8221;3133082&#8221;&gt;Seasoning of wood in steam  heated chamber&lt;/option&gt;
+&lt;option value=&#8221;3133084&#8221;&gt;Synthetic detergent  formulation&lt;/option&gt;
+&lt;option value=&#8221;3133088&#8221;&gt;Tea processing ( with boiler)&lt;/option&gt;
+&lt;option value=&#8221;3133092&#8221;&gt;Assembly of air coolers /conditioners  ,repairing and servicing&lt;/option&gt;
+&lt;option value=&#8221;3133101&#8221;&gt;Bailing (hydraulic press)of waste papers&lt;/option&gt;
+&lt;option value=&#8221;3133109&#8221;&gt;Biscuits trays etc from rolled PVC sheet (using  automatic vacuum forming machines)&lt;/option&gt;
+&lt;option value=&#8221;3133111&#8221;&gt;Blending and packing of tea&lt;/option&gt;
+&lt;option value=&#8221;3133113&#8221;&gt;Block making of printing without foundry  (excluding wooden block making)&lt;/option&gt;
+&lt;option value=&#8221;3133115&#8221;&gt;Chalk making from plaster of Paris ( only  casting without boilers etc. ( sun drying /  electrical oven)&lt;/option&gt;
+&lt;option value=&#8221;3133125&#8221;&gt;Electric lamp ( bulb) and CFL manufacturing  by assembling only&lt;/option&gt;
+&lt;option value=&#8221;3133128&#8221;&gt;Electrical and electronic item assembling (  completely dry process)&lt;/option&gt;
+&lt;option value=&#8221;3133135&#8221;&gt;Fly ash bricks/ block manufacturing&lt;/option&gt;
+&lt;option value=&#8221;3130916&#8221;&gt;Industries engaged in recycling /  reprocessing/ recovery/reuse of  Hazardous Waste under  schedule iv of HW( M, H&amp;amp; TBM)  rules, 2008 - Items namely -  Spent cleared metal catalyst  containing copper,,  Spent cleared metal catalyst  containing zinc,,&lt;/option&gt;
+&lt;option value=&#8221;3130941&#8221;&gt;Fibre glass production and  processing (excluding moulding)&lt;/option&gt;
+&lt;option value=&#8221;3130943&#8221;&gt;Fire crackers manufacturing and  bulk storage facilities&lt;/option&gt;
+&lt;option value=&#8221;3130963&#8221;&gt;Manufacturing of paints  varnishes, pigments and  intermediate (excluding  blending/mixing)&lt;/option&gt;
+&lt;option value=&#8221;3130965&#8221;&gt;Organic Chemicals  manufacturing&lt;/option&gt;
+&lt;option value=&#8221;3130971&#8221;&gt;Asbestos and asbestos based  industries&lt;/option&gt;
+&lt;option value=&#8221;3130938&#8221;&gt;Sugar ( excluding Khandsari)&lt;/option&gt;
+&lt;option value=&#8221;3131003&#8221;&gt;Mining and ore beneficiation&lt;/option&gt;
+&lt;option value=&#8221;3131016&#8221;&gt;Yarn / Textile processing  involving any effluent/emission  generating processes including  bleaching, dyeing, printing and  colouring&lt;/option&gt;
+&lt;option value=&#8221;3131104&#8221;&gt;Compact disc computer floppy  and cassette manufacturing / Reel  manufacturing&lt;/option&gt;
+&lt;option value=&#8221;3131135&#8221;&gt;Printing or etching of glass sheet using  hydrofluoric acid&lt;/option&gt;
+&lt;option value=&#8221;3131153&#8221;&gt;Aluminium &amp;amp; copper extraction from  scrap using oil fired furnace (dry  process only)&lt;/option&gt;
+&lt;option value=&#8221;3131182&#8221;&gt;Dairy and dairy products ( small scale)&lt;/option&gt;
+&lt;option value=&#8221;3131184&#8221;&gt;DG set of capacity &amp;gt;1MVA but &amp;lt; 5MVA&lt;/option&gt;
+&lt;option value=&#8221;3131187&#8221;&gt;Dry coal processing, mineral  processing, industries involving  ore sintering, pelletisating,  grinding &amp;amp; pulverization&lt;/option&gt;
+&lt;option value=&#8221;3131215&#8221;&gt;Glass ceramics, earthen potteries and  tile manufacturing using oil and gas  fired kilns, coating on glasses using  cerium fluorides and magnesium  fluoride etc.&lt;/option&gt;
+&lt;option value=&#8221;3131217&#8221;&gt;Gravure printing, digital printing on  flex, vinyl&lt;/option&gt;
+&lt;option value=&#8221;3131238&#8221;&gt;Liquid floor cleaner, black phenyl,  liquid soap, glycerol mono-stearate  manufacturing&lt;/option&gt;
+&lt;option value=&#8221;3131267&#8221;&gt;Paints and varnishes (mixing and  blending)&lt;/option&gt;
+&lt;option value=&#8221;3131279&#8221;&gt;Printing press&lt;/option&gt;
+&lt;option value=&#8221;3131299&#8221;&gt;Thermocol manufacturing ( with  boiler)&lt;/option&gt;
+&lt;option value=&#8221;3132816&#8221;&gt;Dry cell battery ( excluding manufacturing  of electrodes) and assembling &amp;amp; charging  of acid lead battery on micro scale&lt;/option&gt;
+&lt;option value=&#8221;3132850&#8221;&gt;Bakery /confectionery  /sweets products (with  production capacity &amp;lt;1tpd  (with gas or electrical oven)&lt;/option&gt;
+&lt;option value=&#8221;3132874&#8221;&gt;Chilling plant, cold storage  and ice making&lt;/option&gt;
+&lt;option value=&#8221;3132877&#8221;&gt;Coke briquetting ( sun  drying)&lt;/option&gt;
+&lt;option value=&#8221;3132880&#8221;&gt;Cotton spinning and  weaving (small scale)&lt;/option&gt;
+&lt;option value=&#8221;3132899&#8221;&gt;Flour mills (dry process)&lt;/option&gt;
+&lt;option value=&#8221;3132917&#8221;&gt;Insulation and other coated  papers (excluding paper or  pipe manufacturing)&lt;/option&gt;
+&lt;option value=&#8221;3132951&#8221;&gt;Packing materials  manufacturing from non  asbestos fibre, vegetable fibre  yarn&lt;/option&gt;
+&lt;option value=&#8221;3132995&#8221;&gt;Rubber goods industry (with  gas operated baby boiler)&lt;/option&gt;
+&lt;option value=&#8221;3132999&#8221;&gt;Saw mills&lt;/option&gt;
+&lt;option value=&#8221;3133029&#8221;&gt;Spice grinding (upto  -20 HP  motor)&lt;/option&gt;
+&lt;option value=&#8221;3133040&#8221;&gt;Tyres and tube retreating  (without boilers)&lt;/option&gt;
+&lt;option value=&#8221;3133051&#8221;&gt;Distilled water ( without  boiler) with electricity as  source of heat&lt;/option&gt;
+&lt;option value=&#8221;3133059&#8221;&gt;Mineralized water&lt;/option&gt;
+&lt;option value=&#8221;3133066&#8221;&gt;Tamarind powder  manufacturing&lt;/option&gt;
+&lt;option value=&#8221;3133073&#8221;&gt;Flyash export, transport &amp;amp;  disposal facilities&lt;/option&gt;
+&lt;option value=&#8221;3133075&#8221;&gt;Mineral stack yard / Railway  sidings&lt;/option&gt;
+&lt;option value=&#8221;3133094&#8221;&gt;Assembly of bicycles ,baby carriages and  other small non motorizing vehicles&lt;/option&gt;
+&lt;option value=&#8221;3133104&#8221;&gt;Bio fertilizer and bio-pesticides without using  inorganic chemicals&lt;/option&gt;
+&lt;option value=&#8221;3133118&#8221;&gt;Compressed oxygen gas from crude liquid  oxygen ( without use of any solvents and by  maintaining pressure &amp;amp; temperature only for  separation of other gases)&lt;/option&gt;
+&lt;option value=&#8221;3133120&#8221;&gt;Cotton and woolen hosiers making ( Dry  process only without any dying / washing  operation)&lt;/option&gt;
+&lt;option value=&#8221;3131028&#8221;&gt;Tanneries&lt;/option&gt;
+&lt;option value=&#8221;3131064&#8221;&gt;Distillery ( molasses / grain /  yeast based)&lt;/option&gt;
+&lt;option value=&#8221;3131269&#8221;&gt;Ply wood manufacturing( including  Veneer and laminate) using the fuel such as wood or coal or any other authorized fuel with or without resin plant.&lt;/option&gt;
+&lt;option value=&#8221;3130996&#8221;&gt;Health -care Establishment / Projects having discharge of 100 KLD or More with or Without Incinerator&lt;/option&gt;
+&lt;option value=&#8221;3131194&#8221;&gt;Fermentation industry including  manufacture of yeast, beer,  distillation of alcohol having quantity of waste water discharge of 100 KLD or less &lt;/option&gt;
+&lt;option value=&#8221;3132830&#8221;&gt;Parboiled Rice Mills having quantity of waste water generation up to 100 KLD or fuel consumption up to 12 MTD or both&lt;/option&gt;
+&lt;option value=&#8221;3133132&#8221;&gt;Flavo  ured betel nuts production/ grinding (  completely dry mechanical operations)&lt;/option&gt;
+&lt;option value=&#8221;3133138&#8221;&gt;Fountain pen manufacturing by assembling  only&lt;/option&gt;
+&lt;option value=&#8221;3133140&#8221;&gt;Glass ampules and vials making from glass  tubes&lt;/option&gt;
+&lt;option value=&#8221;3133145&#8221;&gt;Glass putty and sealant ( by mixing with  machine only)&lt;/option&gt;
+&lt;option value=&#8221;3133147&#8221;&gt;Ground nut decorticating&lt;/option&gt;
+&lt;option value=&#8221;3133149&#8221;&gt;Handloom/ carpet weaving ( without dying  and bleaching operation)&lt;/option&gt;
+&lt;option value=&#8221;3133154&#8221;&gt;Leather cutting and stitching (more than 10  machine and using motor)&lt;/option&gt;
+&lt;option value=&#8221;3133158&#8221;&gt;Manufacturing of coir items from coconut  husks&lt;/option&gt;
+&lt;option value=&#8221;3133160&#8221;&gt;Manufacturing of metal caps containers etc&lt;/option&gt;
+&lt;option value=&#8221;3133163&#8221;&gt;Manufacturing of shoe brush and wire brush&lt;/option&gt;
+&lt;option value=&#8221;3133165&#8221;&gt;Medical oxygen&lt;/option&gt;
+&lt;option value=&#8221;3133171&#8221;&gt;Organic and inorganic nutrients ( by physical  mixing)&lt;/option&gt;
+&lt;option value=&#8221;3133174&#8221;&gt;Organic manure (manual mixing)&lt;/option&gt;
+&lt;option value=&#8221;3133176&#8221;&gt;Packing of powdered milk&lt;/option&gt;
+&lt;option value=&#8221;3133180&#8221;&gt;Paper pins and u clips&lt;/option&gt;
+&lt;option value=&#8221;3133182&#8221;&gt;Repairing of electric motors and generators (  dry mechanical process)&lt;/option&gt;
+&lt;option value=&#8221;3133185&#8221;&gt;Rope (plastic and cotton)&lt;/option&gt;
+&lt;option value=&#8221;3133187&#8221;&gt;Scientific and mathematical instrument  manufacturing&lt;/option&gt;
+&lt;option value=&#8221;3133189&#8221;&gt;Solar module non conventional energy  apparatus manufacturing unit&lt;/option&gt;
+&lt;option value=&#8221;3133191&#8221;&gt;Solar power generation through solar  photovoltaic cell, wind power and mini hydel  power (less than 25 MW)&lt;/option&gt;
+&lt;option value=&#8221;3185049&#8221;&gt;Screening Plant&lt;/option&gt;
+&lt;option value=&#8221;3130923&#8221;&gt;Industrial carbon including  electrodes and graphite blocks,  activated carbon, carbon black&lt;/option&gt;
+&lt;option value=&#8221;3130959&#8221;&gt;Coke making , liquefaction, coal  tar distillation or fuel gas making&lt;/option&gt;
+&lt;option value=&#8221;3130961&#8221;&gt;Manufacturing of explosives,  detonators, fuses including  management and handling  activities&lt;/option&gt;
+&lt;option value=&#8221;3130975&#8221;&gt;Basic chemicals and electro  chemicals and its derivatives  including manufacturing of acid&lt;/option&gt;
+&lt;option value=&#8221;3131005&#8221;&gt;Nuclear power plant&lt;/option&gt;
+&lt;option value=&#8221;3131010&#8221;&gt;Photographic film and its  chemicals&lt;/option&gt;
+&lt;option value=&#8221;3131021&#8221;&gt;Ship Breaking Industries&lt;/option&gt;
+&lt;option value=&#8221;3131032&#8221;&gt;Synthetic fibers including rayon  ,tyre cord, polyester filament  yarn&lt;/option&gt;
+&lt;option value=&#8221;3131072&#8221;&gt;Dismantling of rolling stocks ( wagons/  coaches)&lt;/option&gt;
+&lt;option value=&#8221;3131107&#8221;&gt;Flakes from rejected PET bottle&lt;/option&gt;
+&lt;option value=&#8221;3131110&#8221;&gt;Food and food processing including  fruits and vegetable processing&lt;/option&gt;
+&lt;option value=&#8221;3131137&#8221;&gt;Silk screen printing, sari printing by  wooden blocks&lt;/option&gt;
+&lt;option value=&#8221;3131140&#8221;&gt;Synthetic detergents and  soaps(excluding formulation)&lt;/option&gt;
+&lt;option value=&#8221;3131143&#8221;&gt;Thermometer manufacturing&lt;/option&gt;
+&lt;option value=&#8221;3131197&#8221;&gt;Ferrous and Non  - ferrous metal  extraction involving different  furnaces through melting, refining,  -processing, casting and alloy  re  making  -&lt;/option&gt;
+&lt;option value=&#8221;3131203&#8221;&gt;Fertilizer (granulation / formulation /  blending only)&lt;/option&gt;
+&lt;option value=&#8221;3131219&#8221;&gt;Heat treatment using oil fired furnace  ( without cyaniding)&lt;/option&gt;
+&lt;option value=&#8221;3131243&#8221;&gt;Manufacturing of iodized salt from  crude/ raw salt&lt;/option&gt;
+&lt;option value=&#8221;3131246&#8221;&gt;Manufacturing of mirror from sheet  glass&lt;/option&gt;
+&lt;option value=&#8221;3131250&#8221;&gt;Manufacturing of mosquito repellent  coil&lt;/option&gt;
+&lt;option value=&#8221;3131281&#8221;&gt;Reprocessing of waste plastic  including PVC&lt;/option&gt;
+&lt;option value=&#8221;3131284&#8221;&gt;Rolling mill (oil or coal fired) and cold  rolling mill&lt;/option&gt;
+&lt;option value=&#8221;3131286&#8221;&gt;Spray painting, paint baking, paint  shipping&lt;/option&gt;
+&lt;option value=&#8221;3131301&#8221;&gt;Tobacco products including  cigarettes and tobacco/opium  processes&lt;/option&gt;
+&lt;option value=&#8221;3131303&#8221;&gt;Transformer repairing/ manufacturing  ( dry process only)&lt;/option&gt;
+&lt;option value=&#8221;3131305&#8221;&gt;Tyres and tubes vulcanization/ hot  retreating&lt;/option&gt;
+&lt;option value=&#8221;3132818&#8221;&gt;Pharmaceutical formulation and for R  &amp;amp; D purpose ( For sustained release/  extended release of drugs only and  not for commercial purpose)&lt;/option&gt;
+&lt;option value=&#8221;3132823&#8221;&gt;Synthetic rubber excluding  molding&lt;/option&gt;
+&lt;option value=&#8221;3132825&#8221;&gt;Cashew nut processing&lt;/option&gt;
+&lt;option value=&#8221;3132835&#8221;&gt;Foam manufacturing&lt;/option&gt;
+&lt;option value=&#8221;3132839&#8221;&gt;Industries engaged in recycling /  reprocessing/ recovery/reuse of  Hazardous Waste under schedule iv of  HW( M, H&amp;amp; TBM) rules, 2008 - Items  namely -  Used Oil – As per specifications  prescribed from time to time.&lt;/option&gt;
+&lt;option value=&#8221;3132841&#8221;&gt;Industries engaged in recycling /  reprocessing/ recovery/reuse of  Hazardous Waste under schedule iv of  HW( M, H&amp;amp; TBM) rules, 2008 - Items  namely -  Waste Oil &#8212;As per specifications  prescribed from time to time.&lt;/option&gt;
+&lt;option value=&#8221;3132852&#8221;&gt;Bi-axially oriented PP film  along with metalizing  operations&lt;/option&gt;
+&lt;option value=&#8221;3132854&#8221;&gt;Biomass briquettes (sun  drying) without using toxic  hazardous wastes&lt;/option&gt;
+&lt;option value=&#8221;3132856&#8221;&gt;Blending of melamine resins  &amp;amp; different powder,  additives by physical mixing&lt;/option&gt;
+&lt;option value=&#8221;3299944&#8221;&gt;Dismantling of E-waste &lt;/option&gt;
+&lt;option value=&#8221;3300130&#8221;&gt;LPG bottling plants &lt;/option&gt;
+&lt;option value=&#8221;3307819&#8221;&gt;Industries engaged in recycling/reprocessing/recovery/reuse of hazardous waste under schedule IV of HW(M,H&amp;amp;TBM) rules,2008 items namely-Lead acid battery plates and other lead scrap/ashes/residues not covered under batteries Rules 2001.&lt;/option&gt;
+&lt;option value=&#8221;3131034&#8221;&gt;Thermal Power Plants&lt;/option&gt;
+&lt;option value=&#8221;3131040&#8221;&gt;Copper Smelter&lt;/option&gt;
+&lt;option value=&#8221;3131038&#8221;&gt;Aluminium Smelter&lt;/option&gt;
+&lt;option value=&#8221;3133053&#8221;&gt;Hotels (up to 20 rooms and  without boilers)&lt;/option&gt;
+&lt;option value=&#8221;3133057&#8221;&gt;Manufacturing of optical  lenses (using electrical  furnace)&lt;/option&gt;
+&lt;option value=&#8221;3133122&#8221;&gt;Diesel pump repairing and servicing (  complete mechanical dry process)&lt;/option&gt;
+&lt;option value=&#8221;3133130&#8221;&gt;Engineering and fabrication units (dry process  without any heat treatment / metal surface  finishing operations / painting)&lt;/option&gt;
+&lt;option value=&#8221;3131160&#8221;&gt;Brickfields ( excluding fly ash brick  manufacturing using lime process)&lt;/option&gt;
+&lt;option value=&#8221;3131205&#8221;&gt;Fish feed, poultry feed and cattle feed&lt;/option&gt;
+&lt;option value=&#8221;3132858&#8221;&gt;Brass and bell metal utensils  manufacturing from  circles(dry mechanical  operation without re-rolling  facility)&lt;/option&gt;
+&lt;option value=&#8221;3132862&#8221;&gt;Cardboard or corrugated box  and paper products  (excluding paper or pulp  manufacturing and without  using boilers)&lt;/option&gt;
+&lt;option value=&#8221;3132883&#8221;&gt;Dal Mills&lt;/option&gt;
+&lt;option value=&#8221;3131155&#8221;&gt;Automobile servicing, repairing and  painting Projects having quantity of waste water generation up to 100 KLD&lt;/option&gt;
+&lt;option value=&#8221;3131019&#8221;&gt;Chlor Alkali&lt;/option&gt;
+&lt;option value=&#8221;3300136&#8221;&gt;Sewage treatment plants having capacity less than 10 KLD &lt;/option&gt;
+&lt;option value=&#8221;3300142&#8221;&gt;Infrastructure development projects having overall liquid waste generation less than 100 KLD &lt;/option&gt;
+&lt;option value=&#8221;3300154&#8221;&gt;Automobiles manufacturing outsourcing all of the polluting activities. &lt;/option&gt;
+&lt;option value=&#8221;3300159&#8221;&gt;Refurbishing of used electrical and electronic equipments&lt;/option&gt;
+&lt;option value=&#8221;3300171&#8221;&gt;Glass 51ydel51es and vilas making from glass tubes&lt;/option&gt;
+&lt;option value=&#8221;3300195&#8221;&gt;Diesel generators sets having total capacity 1 MVA or less and equipped with acoustic enclosures along adequate stack height   &lt;/option&gt;
+&lt;option value=&#8221;3300204&#8221;&gt;Almirah, Grill Manufacturing without painting operation(Dry Mechanical process)  &lt;/option&gt;
+&lt;option value=&#8221;3300236&#8221;&gt;Industries engaged in recycling /reprocessing/ recovery/reuse of Hazardous Waste under schedule IV HW(M,H&amp;amp;TBM) rules, 2008 -Items namely -paint and ink sludge / residues &lt;/option&gt;
+&lt;option value=&#8221;3300243&#8221;&gt;Spice girding (20 HP motor)&lt;/option&gt;
+&lt;option value=&#8221;3446537&#8221;&gt;Units engaged in  the activities of handling and management of Hazardous Waste as defined in Hazardous and other Wastes (M &amp;amp; TM) Rules, 2016, other than those covered under any of the category of industrial sectors, such as use, treatment, processing, recovery, pre-processing, co-processing, utilization etc. of the hazardous and other wastes &lt;/option&gt;
+&lt;option value=&#8221;3703282&#8221;&gt;Leather foot wear and leather products (excluding tanning and hide processing  except cottage scale)&lt;/option&gt;
+&lt;option value=&#8221;3130993&#8221;&gt;Dyes and Dye  - Intermediates&lt;/option&gt;
+&lt;option value=&#8221;3131008&#8221;&gt;Pesticides (technical) (excluding  formulation)&lt;/option&gt;
+&lt;option value=&#8221;3131057&#8221;&gt;Petrochemicals Manufacturing (  including processing of  Emulsions of oil and water )&lt;/option&gt;
+&lt;/select&gt;
+&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;-</p>
+<p>3132830</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/changeTypeOfIndustryBasedOnApplication/?id=4599935&amp;industryTypeId=3132830">http://hrocmms.nic.in/OCMMS/industryRegMaster/changeTypeOfIndustryBasedOnApplication/?id=4599935&amp;industryTypeId=3132830</a></p>
+<p>Steps to close the clarification on BMW applications
+1. Login with Admin
+2. Hit this url
+<a class="reference external" href="http://hrocmms.nic.in/OCMMS/bioMedicalWaste/removeClarificationFromBmwApplicationSearch">http://hrocmms.nic.in/OCMMS/bioMedicalWaste/removeClarificationFromBmwApplicationSearch</a>
+3. Enter application id and click search
+4. Click remove clarification button</p>
+<p>21-11-2017:
+1. Completed the functionality to close clarification on BMW from admin
+2. Working on storing cafpin which is received from investharyana(80%)
+3. Resolved the live issue of industry who is registered as trader</p>
+<ol class="arabic simple">
+<li>CTO auto renewal MIS required - d</li>
+<li>Problem in Approval rights</li>
+<li>Changes in HWM Generation details</li>
+<li>Add into online monitoring list</li>
+<li>Technical error-M/s Indospace Industrial Park Badli Pvt. Ltd - application not found</li>
+<li>Route application to rights region - route one group to another</li>
+<li>Add Common facility to inspection</li>
+<li>integrate auto-renew with hepc</li>
+<li>Check why the status is not sent to hepc &amp; check why my report to send is not working</li>
+<li>cafpin store in our db</li>
+<li>Fixed single window issue in doLoginAPi action in replace method of string</li>
+</ol>
+<p>shiningwayindia93
+neelam1234</p>
+</div>
+<div class="section" id="setclearedrejectedstatusfalse">
+<h2>setClearedRejectedStatusFalse<a class="headerlink" href="#setclearedrejectedstatusfalse" title="Permalink to this headline">¶</a></h2>
+<p>3334838 - unattented CTO - 16-08-2016
+4269229 - note history application time</p>
+<p>22-11-2017:
+1. Completed cafpin store in our db
+2. Fixed on live issue HEPC
+3. Working on autoRenew MIS(70%)
+&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;</p>
+<p>&lt;form action=&#8221;<a class="reference external" href="http://hrocmms.nic.in/api/webapi/hrocmms/login/">http://hrocmms.nic.in/api/webapi/hrocmms/login/</a>&#8221; id=&#8221;myform&#8221; method=&#8221;GET&#8221; class=&#8221;ng-pristine ng-valid&#8221;&gt;
+&lt;input name=&#8221;uname&#8221; id=&#8221;uname&#8221; value=&#8221;Jindal&#8221; type=&#8221;hidden&#8221;&gt;
+&lt;input name=&#8221;investorname&#8221; id=&#8221;investorname&#8221; value=&#8221;Neelam&#8221; type=&#8221;hidden&#8221;&gt;
+&lt;input name=&#8221;address&#8221; id=&#8221;address&#8221; value=&#8221;#958, house no. 958, panchkula&#8221; type=&#8221;hidden&#8221;&gt;
+&lt;input name=&#8221;useremail&#8221; id=&#8221;useremail&#8221; value=&#8221;<a class="reference external" href="mailto:shiningwayindia93&#37;&#52;&#48;gmail&#46;com">shiningwayindia93<span>&#64;</span>gmail<span>&#46;</span>com</a>&#8221; type=&#8221;hidden&#8221;&gt;
+&lt;input name=&#8221;country&#8221; id=&#8221;country&#8221; value=&#8221;India&#8221; type=&#8221;hidden&#8221;&gt;
+&lt;input name=&#8221;state&#8221; id=&#8221;state&#8221; value=&#8221;Haryana&#8221; type=&#8221;hidden&#8221;&gt;
+&lt;input name=&#8221;city&#8221; id=&#8221;city&#8221; value=&#8221;Panchkula&#8221; type=&#8221;hidden&#8221;&gt;
+&lt;input name=&#8221;niccode&#8221; id=&#8221;niccode&#8221; value=&#8221;&#8221; type=&#8221;hidden&#8221;&gt;
+&lt;input name=&#8221;pannumber&#8221; id=&#8221;pannumber&#8221; value=&#8221;&#8221; type=&#8221;hidden&#8221;&gt;
+&lt;input name=&#8221;gstnumber&#8221; id=&#8221;gstnumber&#8221; value=&#8221;&#8221; type=&#8221;hidden&#8221;&gt;
+&lt;input name=&#8221;aadhar_number&#8221; id=&#8221;aadhar_number&#8221; value=&#8221;&#8221; type=&#8221;hidden&#8221;&gt;
+&lt;input name=&#8221;proposedbuilt_up_area&#8221; id=&#8221;proposedbuilt_up_area&#8221; value=&#8221;&#8221; type=&#8221;hidden&#8221;&gt;
+&lt;input name=&#8221;mobile&#8221; id=&#8221;mobile&#8221; value=&#8221;9501660091&#8221; type=&#8221;hidden&#8221;&gt;
+&lt;input name=&#8221;totalproposedprojectarea&#8221; id=&#8221;totalproposedprojectarea&#8221; value=&#8221;2&#8221; type=&#8221;hidden&#8221;&gt;
+&lt;input name=&#8221;totalpurposedemployment&#8221; id=&#8221;totalpurposedemployment&#8221; value=&#8221;10&#8221; type=&#8221;hidden&#8221;&gt;
+&lt;input name=&#8221;total_project_cost&#8221; id=&#8221;total_project_cost&#8221; value=&#8221;1.1975&#8221; type=&#8221;hidden&#8221;&gt;
+&lt;input name=&#8221;project_site_district&#8221; id=&#8221;project_site_district&#8221; value=&#8221;Panchkula&#8221; type=&#8221;hidden&#8221;&gt;
+&lt;input name=&#8221;landzoneuse_type&#8221; id=&#8221;landzoneuse_type&#8221; value=&#8221;Utilities&#8221; type=&#8221;hidden&#8221;&gt;
+&lt;input name=&#8221;businessentity&#8221; id=&#8221;businessentity&#8221; value=&#8221;Shining Way India Stone Crusher&#8221; type=&#8221;hidden&#8221;&gt;
+&lt;input name=&#8221;projecttype&#8221; id=&#8221;projecttype&#8221; value=&#8221;New Project (New Site)&#8221; type=&#8221;hidden&#8221;&gt;
+&lt;input name=&#8221;projectid&#8221; id=&#8221;projectid&#8221; value=&#8221;88f4e665-e8cf-406f-817e-ae1bd5a70afc&#8221; type=&#8221;hidden&#8221;&gt;
+&lt;input name=&#8221;serviceid&#8221; id=&#8221;serviceid&#8221; value=&#8221;b27b79b9-a3ec-4eb1-9f70-3e275dd13cd6&#8221; type=&#8221;hidden&#8221;&gt;
+&lt;input name=&#8221;projectserviceid&#8221; id=&#8221;projectserviceid&#8221; value=&#8221;91bc7cdf-75e7-486f-81f8-3cea6d1f0c89&#8221; type=&#8221;hidden&#8221;&gt;
+&lt;input name=&#8221;cafpin&#8221; id=&#8221;cafpin&#8221; value=&#8221;1217946601&#8221; type=&#8221;hidden&#8221;&gt; &lt;input id=&#8221;fillform&#8221; value=&#8221;Fill Service Form&#8221; type=&#8221;submit&#8221;&gt;&lt;/form&gt;</p>
+<p>23-11-2017:
+1. Resolved live issue home page redirect
+2. Interview
+3. Working on HWM changes(30%)</p>
+<p>24-11-2017:
+1. Resolved live issue to fix forget password issue.
+2. Working on cto auto-renew changes(30%)</p>
+<p>27-11-2017:
+&#8220;For upload certificate&#8221;</p>
+<ol class="arabic simple">
+<li>Point 7 - current date</li>
+<li>Fetch last inspection report through draw - if not found</li>
+<li>C.A. Certificate regarding capital investment cost w.r.t. land building, plant and machinery of the proposed project.</li>
+<li>Full name of certificates</li>
+<li>officer side - any changes except the documents</li>
+</ol>
+<p>def caCertificateFile = request.getFile(&#8216;caCertificate&#8217;)
+def analysisReportForAirFile = request.getFile(&#8216;analysisReportAir&#8217;)
+def analysisReportForWaterFile = request.getFile(&#8216;analysisReportWater&#8217;)
+def analysisReportForNoiseFile = request.getFile(&#8216;analysisReportNoise&#8217;)
+def undertakingFile = request.getFile(&#8216;undertaking&#8217;)</p>
+<p>27-11-2017:
+1. Working on autoRenew changes as specified by HSPCB(50%)</p>
+<p>28-11-2017
+autoRenew application no. -
+application no. - 145296</p>
+<p>&#8211; auto-generated definition
+create table application_auto_renew
+(</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>id bigint not null</dt>
+<dd><dl class="first last docutils">
+<dt>constraint application_auto_renew_pkey</dt>
+<dd>primary key,</dd>
+</dl>
+</dd>
+</dl>
+<p>version bigint not null,
+application_id bigint not null</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>constraint application_auto_renew_application_id_key</dt>
+<dd>unique</dd>
+<dt>constraint fk3301ea4c15ed9f5b</dt>
+<dd>references ind_application_details,</dd>
+</dl>
+</div></blockquote>
+<p>c01 varchar(255) not null,
+c02 varchar(255) not null,
+c03 varchar(255) not null,
+c04 varchar(255) not null,
+c05 varchar(255) not null,
+c06 varchar(255) not null,
+c07 varchar(255) not null,
+c08 varchar(255) not null,
+c09 varchar(255) not null,
+c10 varchar(255) not null,
+c11 varchar(255) not null,
+c12 varchar(255) not null,
+c13 varchar(255) not null,
+c14 varchar(255) not null,
+c15 varchar(255) not null,
+date_created timestamp not null,
+last_updated timestamp not null</p>
+</div></blockquote>
+<div class="section" id="id2">
+<h3>)<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<p>CTO autoRenew application no. - 146061 - 146061
+Live issue:
+17-11-2017 - payment
+20-07-2017 - note history
+4368281 -</p>
+<p>vinay
+system&#64;1</p>
+<p>06/11/2017 13:53:49
+06/11/2017 15:06:16
+06/11/2017 15:06:16
+06/11/2017 15:06:17</p>
+<ol class="arabic simple" start="2">
+<li>Completed changes in approval rights of BMW</li>
+</ol>
+<p>3. Updated live war
+1. Working on autoRenew changes(70%)</p>
+<p>import java.util.Scanner;
+import java.util.ArrayList;
+class TestClass {</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>static int findMaxLengthOf1(StringBuffer s){</dt>
+<dd><p class="first">int length = 0;
+int maxLength = 0;
+int sizeOfString = s.length();
+for(int i = 0; i &lt; sizeOfString; i++){</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>if(s.charAt(i) == &#8216;1&#8217;){</dt>
+<dd>length++;</dd>
+<dt>}else{</dt>
+<dd><dl class="first docutils">
+<dt>if(length &gt; maxLength){</dt>
+<dd>maxLength = length;</dd>
+</dl>
+<p class="last">}
+length = 0;</p>
+</dd>
+</dl>
+<p>}</p>
+</div></blockquote>
+<p class="last">}
+return maxLength;</p>
+</dd>
+</dl>
+<p>}
+public static void main(String args[] ) throws Exception {</p>
+<blockquote>
+<div><p>Scanner sc = new Scanner(System.in);
+int n = sc.nextInt();
+int k = sc.nextInt();
+ArrayList&lt;String&gt; output = new ArrayList&lt;String&gt;();
+StringBuffer s = new StringBuffer(sc.next());
+String query[] = new String[k];
+for(int i = 0; i &lt; k; i++){</p>
+<blockquote>
+<div>query[i] = sc.next();</div></blockquote>
+<p>}
+for(int i = 0; i &lt; k; i++){</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>if(query[i].length() == 1){</dt>
+<dd>System.out.println(findMaxLengthOf1(s));</dd>
+<dt>}else{</dt>
+<dd>int index = Integer.parseInt(query[i].substring(2));
+s.setCharAt(index,&#8216;1&#8217;);</dd>
+</dl>
+<p>}</p>
+</div></blockquote>
+<p>}</p>
+</div></blockquote>
+<p>}</p>
+</div></blockquote>
+<p>}</p>
+<p>10 4
+7 1 4 3 1 6 4 2 5 1
+3 4
+1 2
+2 7
+6 7</p>
+<p>0
+1
+1
+2</p>
+<p>BMW application no. - 143395
+HWM application no. - 142226</p>
+<p>04-12-2017:
+1. Completed Auto Renew at industry side when clarification is raised on application.
+2. Completed  In BMW and HWM to remove check to close application after approval/refusal even if clarification is reply is not made.
+3. Working on auto renew at officer side(50%).</p>
+<p>05-12-2017:
+application date issue:
+4368281</p>
+<p>1477568790 - e2cb0995-a2ad-414c-88df-e8561b490f0b(project id) - b27b79b9-a3ec-4eb1-9f70-3e275dd13cd6(service id) -
+application no. - 4623668 - application date - 27/10/2017 10:02 AM</p>
+<p>6031433006 - 0e358720-6080-41d5-83dc-5496b80bb396(project id) - b27b79b9-a3ec-4eb1-9f70-3e275dd13cd6(serviceid)
+application no. - 4623332 - application date - 27/10/2017 15:57 PM</p>
+<p>8505459064 - fe3a5e71-a45c-4276-818b-4e7c329dcc8e(project id) - b27b79b9-a3ec-4eb1-9f70-3e275dd13cd6(serviceid)
+application no. - 3981342 - application date - 13/11/2017 16:18 PM</p>
+<p>5211199456 - ad1aca5d-1c37-4821-93b2-2f4b825034e9(project id) - b27b79b9-a3ec-4eb1-9f70-3e275dd13cd6(service id)
+application no. - 4634367 - application date - 27/10/2017 12:01 PM</p>
+<ol class="arabic simple">
+<li><a class="reference external" href="http://hrocmms.nic.in/api/webapi/hrocmms/downloadCertificate/?projectid=e2cb0995-a2ad-414c-88df-e8561b490f0b&amp;serviceid=b27b79b9-a3ec-4eb1-9f70-3e275dd13cd6">http://hrocmms.nic.in/api/webapi/hrocmms/downloadCertificate/?projectid=e2cb0995-a2ad-414c-88df-e8561b490f0b&amp;serviceid=b27b79b9-a3ec-4eb1-9f70-3e275dd13cd6</a></li>
+<li><a class="reference external" href="http://hrocmms.nic.in/api/webapi/hrocmms/downloadCertificate/?projectid=0e358720-6080-41d5-83dc-5496b80bb396&amp;serviceid=b27b79b9-a3ec-4eb1-9f70-3e275dd13cd6">http://hrocmms.nic.in/api/webapi/hrocmms/downloadCertificate/?projectid=0e358720-6080-41d5-83dc-5496b80bb396&amp;serviceid=b27b79b9-a3ec-4eb1-9f70-3e275dd13cd6</a></li>
+<li><a class="reference external" href="http://hrocmms.nic.in/api/webapi/hrocmms/downloadCertificate/?projectid=fe3a5e71-a45c-4276-818b-4e7c329dcc8e&amp;serviceid=b27b79b9-a3ec-4eb1-9f70-3e275dd13cd6">http://hrocmms.nic.in/api/webapi/hrocmms/downloadCertificate/?projectid=fe3a5e71-a45c-4276-818b-4e7c329dcc8e&amp;serviceid=b27b79b9-a3ec-4eb1-9f70-3e275dd13cd6</a></li>
+</ol>
+</div>
+</div>
+<div class="section" id="http-hrocmms-nic-in-api-webapi-hrocmms-downloadcertificate-projectid-ad1aca5d-1c37-4821-93b2-2f4b825034e9-serviceid-b27b79b9-a3ec-4eb1-9f70-3e275dd13cd6">
+<h2>4. <a class="reference external" href="http://hrocmms.nic.in/api/webapi/hrocmms/downloadCertificate/?projectid=ad1aca5d-1c37-4821-93b2-2f4b825034e9&amp;serviceid=b27b79b9-a3ec-4eb1-9f70-3e275dd13cd6">http://hrocmms.nic.in/api/webapi/hrocmms/downloadCertificate/?projectid=ad1aca5d-1c37-4821-93b2-2f4b825034e9&amp;serviceid=b27b79b9-a3ec-4eb1-9f70-3e275dd13cd6</a><a class="headerlink" href="#http-hrocmms-nic-in-api-webapi-hrocmms-downloadcertificate-projectid-ad1aca5d-1c37-4821-93b2-2f4b825034e9-serviceid-b27b79b9-a3ec-4eb1-9f70-3e275dd13cd6" title="Permalink to this headline">¶</a></h2>
+<p>application no. - 4619463</p>
+<p>serviceid - 3795e7b5-e4a9-48ef-bd1c-3aa4ef677ece</p>
+<p>localhost:8080/HSPCB/industryRegMaster/downloadCertificateApi/?projectid=3795e7b5-e4a9-48ef-bd1c-3aa4ef677ece&amp;serviceid=b27b79b9-a3ec-4eb1-9f70-3e275dd13cd6</p>
+<p>Certificate1
+Certificate1</p>
+<p>05-12-2017:
+1. Resolved live issue in note history dat
+2. Resolved &#8216;service form edited&#8217; status sent to HEPC
+3. Working on autoRenew changes at officer side(70%)</p>
+<p>Note history show 05-12-2017 received date but message to chairman show 100 days is crossed.
+1. Application no. - 4269725 - ANCALIMA LIFESCIENCES LTD.
+Date :   05/12/2017 16:18:19
+2. Application no. - 4268148 - BAJAJ INDUSTRIES
+Date :   05/12/2017 12:03:04</p>
+<p>Issue : BMW authorization certificate
+Issue: Rights not showing to RO</p>
+<p>Details = Ruhil Promoters Pvt. Ltd.
+caf pin = 7243399478
+application no. = 4700235</p>
+<p>CertificateForAirDegi
+CertificateForWaterDegi
+CertificateForHwmDegi
+RefusalCertificateForBoth
+CertificateForAir
+CertificateForHwm
+DigiCommonCtoCertificate
+Certificate
+Certificate1
+CertificateForExtension - added
+CertificateForExtenDegi - added
+CertificateForHwmDegi</p>
+<p>06-12-2017:
+1. Fixed Download Certificate through api for CTE Exten on HEPC.
+2. Working on online monitoring (50%)</p>
+<p>pramid 2014
+time machine
+flatliners
+das experiment</p>
+<ol class="arabic simple">
+<li>bmw issues - certificate</li>
+<li>inspection add common facility</li>
+<li>inpection diff module</li>
+<li>temp draw washout</li>
+<li>hwm scheduler 3 add</li>
+<li>bmw approval rights problem</li>
+<li>digital sign</li>
+<li>dashboard add, cte</li>
+<li>bmw format</li>
+<li>cto renewal integration</li>
+<li>hide bmw and hwm</li>
+<li>sms chairman</li>
+<li>mis error</li>
+<li>rfd report</li>
+<li>change group of application</li>
+<li>inspection module</li>
+</ol>
+<p>appid11
+142187</p>
+<p>4726582</p>
+</div>
+<div class="section" id="id3">
+<h2>4761730<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>08-12-2017:
+userid: 17JHA4548402
+Balaji foundry issue: - 4548432 &lt;&#8211; application no.
+5a193653-54e7-46c4-b887-a7bbb5482965
+5a193653-54e7-46c4-b887-a7bbb548296</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/updateProjectIdForGivenUserId?id=17JHA4548402&amp;projectid=5a193653-54e7-46c4-b887-a7bbb5482965">http://hrocmms.nic.in/OCMMS/industryRegMaster/updateProjectIdForGivenUserId?id=17JHA4548402&amp;projectid=5a193653-54e7-46c4-b887-a7bbb5482965</a></p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4548432">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4548432</a>
+<a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setClearedRejectedStatusFalse/?applicationId=4548432">http://hrocmms.nic.in/OCMMS/industryRegMaster/setClearedRejectedStatusFalse/?applicationId=4548432</a></p>
+<p>nitesh&#64;1</p>
+<p>bioCert1
+66
+1245
+1343</p>
+<p>bioCert2
+1353</p>
+<p>15PIT2071560
+<a class="reference external" href="mailto:rkrayon&#37;&#52;&#48;123">rkrayon<span>&#64;</span>123</a></p>
+<p>noofbeds
+noOfBedsCbmwtf</p>
+<p>name=&#8221;hcfType&#8221;</p>
+<p>ironFist - 133889
+local bmw application no. - 146334</p>
+<p>PdfReader reader = new PdfReader(...);
+AcroFields acroFields = reader.getAcroFields();
+List&lt;String&gt; signatureNames = acroFields.getSignatureNames();</p>
+<p>local hwm application no. - 146386</p>
+<p>bmw
+4351484
+Goodyear India Limited</p>
+<p>4237578
+HSPCB041
+<a class="reference external" href="mailto:pollution&#37;&#52;&#48;777">pollution<span>&#64;</span>777</a></p>
+<p>12-12-2017:
+1. Fixed live issue in BMW application
+2. Completed digital Sign work
+3. Merge and tested HWM Scedule work
+4. Merge and tested autoRenew MIS</p>
+<p>Find the maximum number of edges you can remove from the tree to get a forest such that each connected component of the forest contains an even number of nodes.</p>
+<p>10 9
+2 1
+3 1
+4 3
+5 2
+6 1
+7 2
+8 6
+9 8
+10 8</p>
+<ol class="arabic simple" start="2">
+<li>cte renewal integrate</li>
+<li>prepare and send excel of service form edited</li>
+<li>create a table that keep track of all the open comment status</li>
+<li>create a scheduler to automate the process</li>
+<li>Why status is not sent</li>
+</ol>
+<p>1.
+indUser - 17FDBB3984280
+date created - 2017-12-09 16:45:24.744
+application id - 4198251
+projectid - 6f3e9a9f-dad7-4a86-9a3a-c675dba32842
+serviceid - 6bd18359-09f4-4c71-85d9-e4f313ccfb8d
+application for - CTO</p>
+<p>application received date - 25/05/2017 12:03:03</p>
+<p>2.
+indUser - 15PAN1878218
+date created - 2017-11-17 13:56:23.835
+application id - 4416953
+projectid - b1f335c4-aec4-46b8-aecf-9bbc1ecde778
+serviceid - 6bd18359-09f4-4c71-85d9-e4f313ccfb8d
+application for - CTO</p>
+<p>application received date - 04/08/2017 18:10:33</p>
+<p>3.
+indUser - 17FDBD3843226
+date created - 2017-12-04 12:15:37.033
+application id - 3843250
+projectid - 9ba175b1-dd58-4a8d-85b7-233d0be5779c
+serviceid - b27b79b9-a3ec-4eb1-9f70-3e275dd13cd6
+application for - CTE</p>
+<p>application received date - 08/02/2017 14:56:19</p>
+<p>4.
+indUser - 17GUSO4377453
+date created - 2017-12-01 18:00:24.515
+application id - 4474593
+projectid - e383fbd7-994f-4075-a69f-428cf7cf1321
+serviceid - 6bd18359-09f4-4c71-85d9-e4f313ccfb8d
+application for - CTO</p>
+<p>IT IS GRANTED</p>
+<p>application received date - 28/08/2017 12:46:20</p>
+<p>5.
+indUser - 13KAR143855
+date created - 2017-11-23 16:58:50.322
+application id - 4303990
+projectid - 8f99515e-dbdf-4908-aee5-2ab5e9a66e45
+serviceid - 6bd18359-09f4-4c71-85d9-e4f313ccfb8d
+application for - CTO</p>
+<p>application received date - 30/06/2017 13:37:48</p>
+<p>6.
+indUser - 14SON1119346
+date created - 2017-11-24 12:50:19.444
+application id - 4158017
+projectid - 5f911dd3-1465-4ea6-94b3-f98dc06c5e39
+serviceid - 6bd18359-09f4-4c71-85d9-e4f313ccfb8d
+application for - CTO</p>
+<p>application received date - 05/05/2017 17:10:57</p>
+<p>7.
+indUser - 14ROH1069051
+date created - 2017-12-06 19:40:09.336
+application id - 3895812
+projectid - 09e8118c-c57f-4eb5-99f3-1050fdadfec6
+serviceid - 6bd18359-09f4-4c71-85d9-e4f313ccfb8d
+application for - CTO</p>
+<p>application received date - 27/02/2017 16:47:24</p>
+<p>13-12-2017:
+1. Prepared the query to give provide list of projectid whose service form edited must be sent
+2. Working on hepc report to resolve why application status is not sent
+3. Updated live war with hwm schedule, auto renew mis, and digital sign work</p>
+<p>String roleId
+String roleName
+String officerName
+String groupId
+String groupName
+Date pendingSince
+String pendingWith</p>
+<hr class="docutils" />
+<p>local application no. - 146061</p>
+<p>14-12-2017:
+1. Completed auto renew officer side.
+2. Resolved Live issue to edit industry profile having reserved profile.
+3. Merged and tested route application to different group.</p>
+<p>cto air
+4577153</p>
+<p>#6bada5&#8221;&gt;CTE&lt;
+#758eb7&#8221;&gt;CTO Auto Ren
+HARI PATH LAB
+&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8211;
+18-12-2017</p>
+<p>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;CTE&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8211;</p>
+<ol class="arabic">
+<li><p class="first">projecid - 77264d4e-b974-4da6-8cda-d04335962b6d
+cafpin - 3299074451
+application id - 4588548</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4588548">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4588548</a></p>
+</li>
+<li><p class="first">projectid - 645f0730-a97b-4ebf-85df-aa1aed399cba
+cafpin - 5506775984
+application id - 4588923</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4588923">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4588923</a></p>
+</li>
+<li><p class="first">projectid - ef98fc2c-4ea2-4788-9b67-afb7abb127f0
+cafpin - 3532333732
+application id - 4596175</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4596175">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4596175</a></p>
+</li>
+<li><p class="first">projectid - 02dff131-c41a-4908-b70b-ac351a8fa1b0
+cafpin - 9376814901
+application id - 4596261</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4596261">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4596261</a></p>
+</li>
+<li><p class="first">projectid - 78d733ef-8957-4cb6-a9b8-1a7ec12af967
+cafpin - 2279697463
+application id - 4599935</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4599935">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4599935</a></p>
+</li>
+<li><p class="first">projectid - 82a7e102-a4b4-4e63-810f-dbc2a4859010
+cafpin - 1475239340
+application id - 4602254</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4602254">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4602254</a></p>
+</li>
+<li><p class="first">projectid - 56cf902a-310c-4bb6-bcd3-29ac49cfc113
+cafpin - 6107817073
+application id - 4604485</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4604485">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4604485</a></p>
+</li>
+<li><p class="first">projectid - 43fc0f16-6909-4703-923c-6ba97accfe77
+cafpin - 4772024628
+application id - 4605553</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4605553">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4605553</a></p>
+</li>
+<li><p class="first">projectid - 2f56f536-5e08-41e7-a21f-bf1274848883
+cafpin - 5753205322
+application id - 4610073</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4610073">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4610073</a></p>
+</li>
+<li><p class="first">projectid - d0764f52-12de-4776-9d80-f5a6603d9f4c
+cafpin - 5071600594
+application id - 4611005</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4611005">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4611005</a></p>
+</li>
+<li><p class="first">projectid - 75825187-ca4a-4481-9874-20dfc95216ae
+cafpin - 2477957572
+application id - 4611747</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4611747">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4611747</a></p>
+</li>
+<li><p class="first">projectid - cb456a3b-1ed3-46e9-b343-6544f92c03a3
+cafpin - 1265365289
+application id - 4623307</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4623307">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4623307</a></p>
+</li>
+<li><p class="first">projectid - 99e0d3d3-4cca-4d47-878a-b3222c66c55a
+cafpin - 1315144199
+application id - 4761922</p>
+<p>It is pending at industry side
+<a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4761922">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4761922</a></p>
+</li>
+<li><p class="first">projectid - fea64697-b12f-4759-94e5-b3f708c5d8d3
+cafpin - 7981869897
+application id - 4589498</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4589498">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4589498</a></p>
+</li>
+<li><p class="first">projectid - 4b97e0c3-6525-4885-8ddf-b1338e3ee6d5
+cafpin - 513437983
+application id - 4616840</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4616840">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4616840</a></p>
+</li>
+<li><p class="first">projectid - e56aedff-dc26-4c72-9ab7-11b4bbbb1455
+cafpin - 3407081570
+application id - 4617740</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4617740">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4617740</a></p>
+</li>
+<li><p class="first">projectid - 82e2cbb1-787c-4eef-ab3b-ec6c74894c6d
+cafpin - 2202883331
+application id - 4617996</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4617996">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4617996</a></p>
+</li>
+<li><p class="first">projectid - 4f10d878-285e-4fab-9d31-62d013688134
+cafpin - 2829079361
+application id - 4616727</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4616727">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4616727</a></p>
+</li>
+<li><p class="first">projectid - 08104d27-aa9f-4348-ad36-0496693435db
+cafpin - 8450588029
+application id - 4614081</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4614081">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4614081</a></p>
+</li>
+<li><p class="first">projectid - a9b979be-db77-4542-b879-59a10b39bd5e
+cafpin - 9930648856
+application id - 4634257</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4634257">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4634257</a></p>
+</li>
+<li><p class="first">projectid - 6fdb3200-f843-4142-92ce-f7e8a5475290
+cafpin - 4340594886
+application id - 4639525</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4639525">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4639525</a></p>
+</li>
+<li><p class="first">projectid - 9069ba3d-4fa7-416a-a4dd-b8ac9c36a0e9
+cafpin - 6289502038
+application id - 4616838</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4616838">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4616838</a></p>
+</li>
+<li><p class="first">projectid - e7ef0b9c-a911-4ab1-8a73-769e7c1ebe9d
+cafpin - 1082587860
+application id - 4640081</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4640081">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4640081</a></p>
+</li>
+<li><p class="first">projectid - 2f376345-af68-472e-b75b-91b344dfb7aa
+cafpin - 9798599014
+application id - 4643596</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4643596">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4643596</a></p>
+</li>
+<li><p class="first">projectid - adb8c4a6-61a5-41c7-97a0-b86ea5c5e297
+cafpin - 6100843511
+application id - 4651831</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4651831">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4651831</a></p>
+</li>
+<li><p class="first">projectid - 4690bb7d-5cec-44b0-9f7f-22276e957455
+cafpin - 3779267766
+application id - 4654298</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4654298">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4654298</a></p>
+</li>
+<li><p class="first">projectid - f31e2342-7eb5-4241-bc55-def670010efa
+cafpin - 5300064567
+application id - 4620043</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4620043">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4620043</a></p>
+</li>
+<li><p class="first">projectid - 10668a3a-dc2a-4304-82a7-9a9eff0d22c7
+cafpin - 1604972247
+application id - 4609089</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4609089">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4609089</a></p>
+</li>
+<li><p class="first">projectid - 286e085d-0b60-4bb4-96d1-aef649c1b59a
+cafpin - 7969079326
+application id - 4662855</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4662855">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4662855</a></p>
+</li>
+<li><p class="first">projectid - 68d70828-0b19-41bf-bd84-bce70c6d1100
+cafpin - 4216549583
+application id - 4641376</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4641376">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4641376</a></p>
+</li>
+<li><p class="first">projectid - 6470d67c-c939-47fb-ab2b-445f07f28bc1
+cafpin - 9286618672
+application id - 4602392</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4602392">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4602392</a></p>
+</li>
+<li><p class="first">projectid - 943db30a-4eec-4e8f-aa37-afff4cd2fc48
+cafpin - 2737654420
+application id - 4623220</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4623220">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4623220</a></p>
+</li>
+<li><p class="first">projectid - 55890f9b-0f65-4c7d-81f6-7db35e8a27b5
+cafpin - 8291552514
+application id - 4612470</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4612470">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4612470</a></p>
+</li>
+<li><p class="first">projectid - d61f1e02-a631-4000-81b4-12e5e635e7d9
+cafpin - 3334620937
+application id - 4641495</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4641495">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4641495</a></p>
+</li>
+<li><p class="first">projectid - 25fbb32c-be45-4411-9385-a9069d2b4c90
+cafpin - 4671465346
+application id - 4651538</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4651538">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4651538</a></p>
+</li>
+<li><p class="first">projectid - b97e3bd5-5291-4d27-8bd5-99f1624d457a
+cafpin - 7566067017
+application id - 4603150</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4603150">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4603150</a></p>
+</li>
+<li><p class="first">projectid - 185f7752-42a1-42af-b65e-b4e670df40f0
+cafpin - 6434247915
+application id - 4590154</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4590154">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4590154</a></p>
+</li>
+<li><p class="first">projectid - d909e3b7-c85f-409b-ad7c-78b657858e81
+cafpin - 5813327205
+application id - 4588760</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4588760">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4588760</a></p>
+</li>
+<li><p class="first">projectid - 392d9ea6-8ed8-4bbd-ab2a-9dc0b422de69
+cafpin - 1049169969
+application id - 4570886</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4570886">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4570886</a></p>
+</li>
+<li><p class="first">projectid - 2d9efa62-61e8-4cec-8bae-681192c43c83
+cafpin - 4283634860
+application id - 4571525</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4571525">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4571525</a></p>
+</li>
+<li><p class="first">projectid - 23718762-3bfa-415f-b783-ae73e6bdd122
+cafpin - 557569615
+application id - 4573060</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4573060">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4573060</a></p>
+</li>
+<li><p class="first">projectid - c87b7814-7020-4a50-a0f2-83659bc6a3f4
+cafpin - 1342483987
+application id - 4574049</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4574049">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4574049</a></p>
+</li>
+<li><p class="first">projectid - ab7d7752-1c5b-444f-a996-7db7624544e2
+cafpin - 5644253615
+application id - 4574696</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4574696">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4574696</a></p>
+</li>
+<li><p class="first">projectid - d77fe47f-ea0f-4ea6-8a33-0c4a74e83d61
+cafpin - 4842899172
+application id - 4656296</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4656296">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4656296</a></p>
+</li>
+<li><p class="first">projectid - bf0fb552-35b3-44a1-b7ce-3fea44c8792e
+cafpin - 7351955372
+application id - 4574964</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4574964">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4574964</a></p>
+</li>
+<li><p class="first">projectid - 01e91771-d63a-459f-8576-c91c7b70a23b
+cafpin - 2095663808
+application id - 4576633</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4576633">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4576633</a></p>
+</li>
+<li><p class="first">projectid - 1e7287b2-3c5c-4a4b-bcdc-0f3557cfc2b6
+cafpin - 2438534393
+application id - 4720335</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4720335">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4720335</a></p>
+</li>
+<li><p class="first">projectid - b8ebb4e1-b450-4388-9690-5231eef74aea
+cafpin - 1286321865
+application id - 4713593</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4713593">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4713593</a></p>
+</li>
+<li><p class="first">projectid - 010b1b5b-b6dd-47dc-b3b9-f162158586c0
+cafpin - 6566744289
+application id - 4579448</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4579448">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4579448</a></p>
+</li>
+<li><p class="first">projectid - 541544d3-3378-4305-a09f-cff5156bb0dc
+cafpin - 2167096951
+application id - 4579599</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4579599">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4579599</a></p>
+</li>
+<li><p class="first">projectid - e83bffe2-c692-4185-8c7a-e3cbdaf3ef84
+cafpin - 370612792
+application id - 4581274</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4581274">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4581274</a></p>
+</li>
+<li><p class="first">projectid - 89a04720-a343-456a-85ab-6860014f4e6b
+cafpin - 3150223517
+application id - 4582392</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4582392">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4582392</a></p>
+</li>
+<li><p class="first">projectid - ed9b476d-cf95-46bb-85eb-1e99152e2684
+cafpin - 1832930943
+application id - 4582568</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4582568">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4582568</a></p>
+</li>
+<li><p class="first">projectid - 6a2b53bb-b3c1-4301-af4a-fa84c1994427
+cafpin - 6368215506
+application id - 4583858</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4583858">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4583858</a></p>
+</li>
+<li><p class="first">projectid - 7e4f4ed0-a86c-44cd-8919-65d4f4fb55fd
+cafpin - 4968308662
+application id - 4586290</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4586290">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4586290</a></p>
+</li>
+<li><p class="first">projectid - 10d219d5-a8c8-4dd0-adab-79429fa8e8b3
+cafpin - 0428418114
+application id - 4586133</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4586133">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4586133</a></p>
+</li>
+<li><p class="first">projectid - b654947f-817e-4530-aa35-f2d0e79107d5
+cafpin - 9802031544
+application id - 4587079</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4587079">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4587079</a></p>
+</li>
+<li><p class="first">projectid - c9cb12fa-bb17-4f68-8ed0-ba1d7dbdb17f
+cafpin - 8782758635
+application id - 4587895</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4587895">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4587895</a></p>
+</li>
+<li><p class="first">projectid - a2cae41d-473d-4b40-9761-adecd791ab92
+cafpin - 8328606858
+application id - 4586959</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4586959">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4586959</a></p>
+</li>
+<li><p class="first">projectid - 4dd8ab6a-5423-44f3-9981-79222e45f053
+cafpin - 3234260196
+application id - 4588248</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4588248">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4588248</a></p>
+</li>
+<li><p class="first">projectid - bfe3cf11-8d02-41a5-b740-f867655c2dd9
+cafpin - 5611422804
+application id - 4746543</p>
+<p>Application is pending
+<a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4746543">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4746543</a></p>
+</li>
+<li><p class="first">projectid - f1c9a11c-5021-4d50-84e6-99ce62f977be
+cafpin - 8084449836
+application id - 4733418</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4733418">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4733418</a></p>
+</li>
+<li><p class="first">projectid - 5124932c-0433-403c-b664-f1dca04ee129
+cafpin - 7936681406
+application id - 4779934</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4779934">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4779934</a></p>
+</li>
+<li><p class="first">projectid - 7f6d1171-57fc-468f-b085-9142aa6190fe
+cafpin - 4031154769
+application id - 4791418</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4791418">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4791418</a></p>
+</li>
+<li><p class="first">projectid - 5f911dd3-1465-4ea6-94b3-f98dc06c5e39
+cafpin - 7557566575
+application id - 4726938</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4726938">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4726938</a></p>
+</li>
+</ol>
+<p>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8211; CTO &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;</p>
+<ol class="arabic">
+<li><p class="first">projectid - 093d9db4-a5eb-4e40-9fe5-8e5035dc8a77
+cafpin - 1809905325
+application id - 4639582</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4639582">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4639582</a></p>
+</li>
+<li><p class="first">projectid - 82b8de25-143e-45eb-9676-aaaa9dc6df84
+cafpin - 6843027494
+application id - 4587178</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4587178">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4587178</a></p>
+</li>
+<li><p class="first">projectid - 1fcfbd86-31ce-4511-aeb6-61264bbc8a9d
+cafpin - 9912114977
+application id - 4639870</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4639870">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4639870</a></p>
+</li>
+<li><p class="first">projectid - 59ee0f35-df50-4269-a561-ecc5388f4aa8
+cafpin - 9688999799
+application id - 4645241</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4645241">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4645241</a></p>
+</li>
+<li><p class="first">projectid - c81fc1d6-124d-435c-8146-46c5e00f95c1
+cafpin - 4787492066
+application id - 4640885</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4640885">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4640885</a></p>
+</li>
+<li><p class="first">projectid - fbd7b896-2b89-46af-8a10-c94b357ec7f8
+cafpin - 7422105733
+application id - 4640964</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4640964">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4640964</a></p>
+</li>
+<li><p class="first">projectid - a70a956b-2c34-4d5d-9c52-c3a2bc0f69c7
+cafpin - 6000677696
+application id - 4775068</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4775068">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4775068</a></p>
+</li>
+<li><p class="first">projectid - 974333dc-81d1-43e8-a161-a539136111b0
+cafpin - 7183175675
+application id - 4640014</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4640014">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4640014</a></p>
+</li>
+<li><p class="first">projectid - 44d23727-8ae1-4877-8c76-43f621cbffd9
+cafpin - 5671553910
+application id - 4618342</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4618342">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4618342</a></p>
+</li>
+<li><p class="first">projectid - c24827bc-b8e8-4b9c-ad4a-61567f21ba04
+cafpin - 5018639241
+application id - 4620646</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4620646">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4620646</a></p>
+</li>
+<li><p class="first">projectid - 2b74ba35-a8fa-4744-a352-cf2ecd559476
+cafpin - 5598652650
+application id - 4639434</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4639434">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4639434</a></p>
+</li>
+<li><p class="first">projectid - b80d756f-668d-4c83-84b5-70bb14a58161
+cafpin - 1737818201
+application id - 4576521</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4576521">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4576521</a></p>
+</li>
+<li><p class="first">projectid - 9b127df1-29e4-4c6d-aa16-072181275ed7
+cafpin - 1688432545
+application id - 4562194</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4562194">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4562194</a></p>
+</li>
+<li><p class="first">projectid - 17804cf5-43c2-49aa-829b-67cc4a88d201
+cafpin - 8013356387
+application id - 4562327</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4562327">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4562327</a></p>
+</li>
+<li><p class="first">projectid - 0673a219-d686-4b8c-9dee-766808353cc2
+cafpin - 9219698055
+application id - 4561901</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4561901">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4561901</a></p>
+</li>
+<li><p class="first">projectid - 003b990f-c753-4267-ac92-712182f8f545
+cafpin - 1077920061
+application id - 4576546</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4576546">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4576546</a></p>
+</li>
+<li><p class="first">projectid - ba2fef35-7162-4899-8d7d-cf595958599d
+cafpin - 1334125049
+application id - 4577468</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4577468">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4577468</a></p>
+</li>
+<li><p class="first">projectid - b4d9fa1c-6987-4b00-997f-53e9ef2f1d61
+cafpin - 7270271407
+application id - 4577528</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4577528">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4577528</a></p>
+</li>
+<li><p class="first">projectid - 4329c75a-2f5f-4da5-9bf3-ac9be95b63aa
+cafpin - 1468957557
+application id - 4571889</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4571889">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4571889</a></p>
+</li>
+<li><p class="first">projectid - 71e0e4b2-ff49-494b-99d0-1302296f6a31
+cafpin - 7528658953
+application id - 4583893</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4583893">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4583893</a></p>
+</li>
+<li><p class="first">projectid - d364f15f-542d-464e-9d1c-92aab0f802f1
+cafpin - 3353417800
+application id - 4582591</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4582591">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4582591</a></p>
+</li>
+<li><p class="first">projectid - f18eaedd-0034-4da4-906f-cc95418ec5a7
+cafpin - 4992731015
+application id - 4584271</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4584271">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4584271</a></p>
+</li>
+<li><p class="first">projectid - 5407be91-ee70-4a02-9551-fc948098d955
+cafpin - 7912134210
+application id - 4586966</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4586966">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4586966</a></p>
+</li>
+<li><p class="first">projectid - 65ccc7bd-8920-4350-a348-38c648d4ec34
+cafpin - 1399913350
+application id - 4587746</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4587746">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4587746</a></p>
+</li>
+<li><p class="first">projectid - 16658d2c-5156-45ec-a6d9-74093245e873
+cafpin - 8513299594
+application id - 4589971</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4589971">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4589971</a></p>
+</li>
+<li><p class="first">projectid - bc70698d-bda6-494f-9ecc-3d046f793194
+cafpin - 2727287467
+application id - 4594814</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4594814">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4594814</a></p>
+</li>
+<li><p class="first">projectid - 9fe51eef-352a-4d94-892f-5280c78bb65b
+cafpin - 4192423531
+application id - 4602384</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4602384">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4602384</a></p>
+</li>
+<li><p class="first">projectid - 2c1480c5-41aa-45f4-937e-47d333ba69a7
+cafpin - 6394240364
+application id - 4603174</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4603174">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4603174</a></p>
+</li>
+<li><p class="first">projectid - 8d166830-b371-418f-80a2-9024112baae8
+cafpin - 8849223868
+application id - 4603275</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4603275">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4603275</a></p>
+</li>
+<li><p class="first">projectid - 9fe51eef-352a-4d94-892f-5280c78bb65b
+cafpin - 4192423531
+application id - 4602384</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4602384">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4602384</a></p>
+</li>
+<li><p class="first">projectid - 147c8def-c918-4f7c-82f1-63a6a169e9f8
+cafpin - 5429454645
+application id - 4610824</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4610824">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4610824</a></p>
+</li>
+<li><p class="first">projectid - 796a8196-585f-40e2-86ac-f3270178a851
+cafpin - 5628545673
+application id - 4617178</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4617178">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4617178</a></p>
+</li>
+<li><p class="first">projectid - 7b3bda97-fc34-4f8e-8ae4-c50a62274e5d
+cafpin - 3278024470
+application id - 4613692</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4613692">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4613692</a></p>
+</li>
+<li><p class="first">projectid - 67487316-14fb-4724-a41b-f6e7076d6019
+cafpin - 9340790552
+application id - 4640922</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4640922">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4640922</a></p>
+</li>
+<li><p class="first">projectid - dd460a96-1649-41b1-987e-39ab158cf6ea
+cafpin - 9677174926
+application id - 4788959</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4788959">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4788959</a></p>
+</li>
+<li><p class="first">projectid - 36fbfaad-25a7-4462-8fba-209f8ee89da1
+cafpin - 7873591729
+application id - 4794470</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4794470">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4794470</a></p>
+</li>
+<li><p class="first">projectid - 26481a33-f291-499c-b43d-f230ce3d0dfc
+cafpin - 899948087
+application id - 4795154</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4795154">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4795154</a></p>
+</li>
+<li><p class="first">projectid - 3aaf92ae-fac7-4a3b-8b4b-fbc663cb9007
+cafpin - 3882464593
+application id - 4796664</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4796664">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4796664</a></p>
+</li>
+</ol>
+<p>&#8212;&#8212;&#8212;&#8212;&#8212;- HWM &#8212;&#8212;&#8212;&#8212;&#8212;&#8211;</p>
+<ol class="arabic">
+<li><p class="first">It is actually for CTO
+projectid - f18eaedd-0034-4da4-906f-cc95418ec5a7
+cafpin - 4992731015
+application id - 4584271</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4584271">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4584271</a></p>
+</li>
+<li><p class="first">projectid - f6a10d7d-39dc-4a42-afb6-d9d506f085dc
+cafpin - 2805811798
+application id - 4640024</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4640024">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4640024</a></p>
+</li>
+<li><p class="first">projectid - 093d9db4-a5eb-4e40-9fe5-8e5035dc8a77
+cafpin -
+application id - 4639582</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4639582">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4639582</a></p>
+</li>
+<li><p class="first">projectid - 374812eb-ef4a-4c2f-9cee-f0c5980f7712
+cafpin - 7326121904
+application id - 4655925</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4655925">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4655925</a></p>
+</li>
+<li><p class="first">projectid - 9ba175b1-dd58-4a8d-85b7-233d0be5779c
+cafpin - 3402966773
+application id - 3843250
+serviceid - b27b79b9-a3ec-4eb1-9f70-3e275dd13cd6
+application for - CTE</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=3843250">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=3843250</a></p>
+</li>
+<li><p class="first">projectid - bf1c08d4-3003-4ce8-852e-db382819cbf3
+cafpin - 3635596283
+application id - 4582689</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4582689">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4582689</a></p>
+</li>
+<li><p class="first">projectid - e2989124-fb56-4af8-bdf2-060727a5ed66
+cafpin - 3025045149
+application id - 4670296</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4670296">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4670296</a></p>
+</li>
+<li><p class="first">projectid - 2b74ba35-a8fa-4744-a352-cf2ecd559476
+cafpin - 5598652650
+application id - 4639434</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=</a></p>
+</li>
+<li><p class="first">projectid - cfd9793c-626f-4e60-bfbe-9a92e160eca0
+cafpin - 856229928
+application id - 4763956</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4763956">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4763956</a></p>
+</li>
+<li><p class="first">projectid - 3aaf92ae-fac7-4a3b-8b4b-fbc663cb9007
+cafpin - 3882464593
+application id - 4796664</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4796664">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4796664</a></p>
+</li>
+</ol>
+<p>&#8212;&#8212;&#8212;&#8212;- BMW &#8212;&#8212;&#8212;-</p>
+<ol class="arabic">
+<li><p class="first">projectid - 7b3bda97-fc34-4f8e-8ae4-c50a62274e5d
+cafpin - 3278024470
+application id - 4613692</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4613692">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=4613692</a></p>
+</li>
+<li><p class="first">projectid -
+cafpin -
+application id -</p>
+<p><a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=">http://hrocmms.nic.in/OCMMS/industryRegMaster/setFormEditedStatusFalse/?applicationId=</a></p>
+</li>
+</ol>
+<ol class="arabic simple" start="2">
+<li>4416953</li>
+<li>3843250</li>
+<li>4474593</li>
+<li>4303990</li>
+<li>4158017</li>
+<li>3895812</li>
+<li>4794470</li>
+</ol>
+<p>18-12-2017:
+1. Completed view form for auto renew MIS
+2. Completed hide Manually route application to other group link for officers.
+3. Merged HWM prev cto/cte and dashboard code and provided test link.
+4. Working on send status to HEPC(50%)</p>
+<p>hazardeousWasteAuthApp/searchApp
+hwm application no. - 145874</p>
+<p>19-12-2017:
+1. Live issue HEPC CTO application in-progress not able to edit consent to date
+2. Started working on CTO auto renew integration
+3. Merged 17 category code in live code</p>
+<p>induser - industry reg master - 582706
+application no. - 4821902</p>
+<p>16GUNO3182550
+password - <a class="reference external" href="mailto:graco&#37;&#52;&#48;123">graco<span>&#64;</span>123</a>
+industry reg master universal - 3182550</p>
+<p>146640</p>
+<p>20-12-2017
+1. Checked and resolved BMW HCF is selected but not able to save in-progress.
+2. Working on auto-renew integration(60%)
+3. Fixed 17 category code and updated on live.</p>
+<p>4786516</p>
+<p>21-12-2017:
+1. Updated the agenda of meeting and work status.
+2. Changes in popFeeOtherDetails - added performance security fee
+3. Working on issue that autoRenew application is not visible at industry side</p>
+<p>3182585
+3596643 &#8211; &gt; CTO pre</p>
+<p>4863728</p>
+<p>26-12-2017:
+1. Checking and try to resolve payment issue.
+2. Merged and tested caf pin search in consent, bmw and hwm
+3. Merged and tested manually route application to other group for bmw and hwm</p>
+<p>to do:
+1. complete the bmw bedded in officer side. (done)
+2. update live war to test.
+3. complete the autoRenew testing and provide test link.
+4. fix the service form not edited that is created by me.
+5. update added column in biomedical waste test and live server.</p>
+<p>projectid = 7cdd6bc3-3fad-40b9-a159-39a3fa535efb
+cafpin = 8897336814</p>
+<p>previous one = 7897c082-6423-42e8-bfcb-f2f2d429a339
+previous caf pin = 1910152357
+13GUSO461285
+<a class="reference external" href="http://hrocmms.nic.in/OCMMS/industryRegMaster/updateProjectIdForGivenUserId?id=13GUSO461285">http://hrocmms.nic.in/OCMMS/industryRegMaster/updateProjectIdForGivenUserId?id=13GUSO461285</a></p>
+<p>4883757</p>
+<p>146316</p>
+<p>4584396</p>
+<p>01-01-2017:
+1. Complete the 17 category code.
+2. send the status of the applications.
+3. write the scheduler.</p>
+<p>app no. - 4802624
+app no. - 4803535</p>
+<p>CTE application status not sent
+4802624</p>
+<p>CTO
+4726739</p>
+<p>CTO
+4650747</p>
+<p>indUse
+14PAL978298</p>
+<p>14PAN149870</p>
+<p>18PAN691132
+36967</p>
+<p>CTE renewal -
+caf pin - 1798607057
+application no. - 4793614
+projectid - 30da66e8-9235-42c9-8610-df4e87b9eb93
+service id - b27b79b9-a3ec-4eb1-9f70-3e275dd13cd6</p>
+<p>4619380</p>
+<p>masterMergeNewUserLogin</p>
+<p>service form edited
+1. 4198251 25/05/2017 12:03:03 4785236 - d
+2. 4416953 04/08/2017 18:10:33 4710605 - d
+3. 3843250 08/02/2017 14:56:19 4762161 - d
+4. 4474593 28/08/2017 12:46:20 4755676 - d
+5. 4303990 30/06/2017 13:37:48 4727958 - d
+6. 4158017 05/05/2017 17:10:57 4730066 - d
+7. 3895812 27/02/2017 16:47:24 4773252 - d
+8. 4872464 29/12/2017 12:24:39 4923134 &#8211; do not delete &#8211;
+9. 4912193 30/12/2017 15:53:23 4935733 - d</p>
+<p>sercive cleared or rejected
+1. 4416953
+2. 3843250
+3. 4474593
+4. 4303990
+5. 4158017</p>
+<p>Mandatory, editable which one, autofetch
+application receipt -
+date from to date to
+trader of hwm
+1. Name - fe
+2. address of trader ,  and  (Text Box)
+3. designation
+4. mobile no.
+5. Fax number
+6. e-mail
+7. TIN/VAT Number/ Import/ Export code (Text Box) -m
+8. Description and quantity of other waste to be imported. (Text Box) (text area) - m
+9. Details of storage, If any (Text Box) (text area)
+5. Names and address of authorized actual user (Text Box) (text area)</p>
+<p>09-01-2018:</p>
+<ol class="arabic simple">
+<li></li>
+</ol>
+<p>duplicate application - 3923863
+3923863 r
+3453207 r
+4600876 a</p>
+<p>BMW application
+4642375</p>
+<p>application id  singleWindowApplication
+3895812         4943429</p>
+<p>2249.75</p>
+<p>local CTO application no. - 148403</p>
+<p>industry profile edit no. of beds
+H17REW4685231
+<a class="reference external" href="mailto:hspcb&#37;&#52;&#48;123">hspcb<span>&#64;</span>123</a></p>
+<p>godzilla 2 2014
+transformers 2017</p>
+<p>Taking logs:</p>
+<p>1. inspection report &#8212;&gt; resolved
+HSPCB014
+kamaljit#66</p>
+<p>4890656</p>
+<p>2. consent approval of &#8211;&gt; pending
+HSPCB023
+<a class="reference external" href="mailto:ahlawat&#37;&#52;&#48;321">ahlawat<span>&#64;</span>321</a></p>
+<p>4821217
+4772900</p>
+<p>3. server is busy on industry login
+14GUSO635477
+<a class="reference external" href="mailto:dev&#37;&#52;&#48;5477">dev<span>&#64;</span>5477</a>
+4886603</p>
+<p>indUser = 4886793
+indUserUniversal = 635477</p>
+<p>4. application for change autoRenew
+4881850
+HSPCB077
+system&#64;1</p>
+<p>This authorisation shall be in force till the Hospital is operational
+auto renew application = 148679</p>
+<p>Thiocolchic oside,Montelukast Sodium,Febuxostat,Mycophenol ate Mofetil,Mycophenol ate Sodium,Pentazocin e,Gemcitabin e,Irinotecan,Sunitinb,Uramustine,Strontium Renelate,Capcetabin e,</p>
+<p>,,,,,0,,,,,,0,,,,,,0,,,,,,0,,,,,,0,</p>
+<p>0,0,0,,,,0,0,0,,,,0,0,0,,,,0,0,0,,,,0,0,0,,,,</p>
+<p>Suntril Pharmaceuticals Private Limited,Plot No. 219, Industrial Area HSIIDC, Alipur, Barwala</p>
+<p>Process Residues and wastes,Spent catalyst / spent carbon,Off specification products,Chemical sludge from waste water  treatment,Discarded containers / barrels / liners  contaminated with hazardous  wastes/chemicals,Used/spent oil,</p>
+<p><a class="reference external" href="http://localhost:8080/HSPCB/industryRegMaster/changeIndustryRegMasterUniversal/?applicationId=148679&amp;industryRegMaster=599914">http://localhost:8080/HSPCB/industryRegMaster/changeIndustryRegMasterUniversal/?applicationId=148679&amp;industryRegMaster=599914</a></p>
+<p>localhost:8080/HSPCB/industryRegMaster/showIndustryRegMasterDetails/?industryRegMaster=982512</p>
+<p>454-488</p>
+</div>
+<div class="section" id="cec62f7341516f46054c60bd483ee2982b78de75">
+<h2>cec62f7341516f46054c60bd483ee2982b78de75<a class="headerlink" href="#cec62f7341516f46054c60bd483ee2982b78de75" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Bhanu Sharma.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

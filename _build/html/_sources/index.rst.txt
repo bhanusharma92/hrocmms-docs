@@ -14,7 +14,14 @@ Welcome to hrocmms-docs's!
    MIS Annual Report Procedure
    Common treatment facility added in industry registration
    Annual Report
-   Testing HWM Module 
+   Testing HWM Module
+   Database Changes
+   stickyNote
+   tempCode
+   issues
+   January 2018
+   Febuary 2018
+   March 2018
 
 
 Indices and tables

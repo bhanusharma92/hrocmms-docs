@@ -25,6 +25,8 @@ changes:
 	
 	grails-app/views/bmwRenew/deleteApplicationByAdmin.gsp
 
+4. new file added - BmwRenewDeletedApplication.groovy
+
 Images:
 
 1. Click on BMW Annual Report
@@ -42,3 +44,10 @@ Images:
 4. Message is shown when application is deleted
 
 .. image:: images/Annual_Report/Adding_delete_application/004.JPG
+
+Adding logo to BMW Annual Report Application Receipt
+----------------------------------------------------
+
+changes: 
+
+1. 

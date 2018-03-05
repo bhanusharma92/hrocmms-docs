@@ -1,0 +1,759 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Temp Code &mdash; hrocmms-docs  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="hrocmms-docs  documentation" href="index.html"/>
+        <link rel="next" title="Issues" href="issues.html"/>
+        <link rel="prev" title="Sticky Notes" href="stickyNote.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> hrocmms-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="MIS Annual Report Changes.html">MIS Annual Report Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MIS Annual Report Procedure.html">MIS Annual Report Procedure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Common treatment facility added in industry registration.html">Common treatment facility added in industry registration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Annual Report.html">Annual Report</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Testing HWM Module.html">Testing HWM Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Database Changes.html">Database Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stickyNote.html">Sticky Notes</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Temp Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#to-4-06-2016">20/09/2016 to 4/06/2016</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">]</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">140246</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="issues.html">Issues</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">hrocmms-docs</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Temp Code</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/tempCode.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="temp-code">
+<h1>Temp Code<a class="headerlink" href="#temp-code" title="Permalink to this headline">¶</a></h1>
+<dl class="docutils">
+<dt>&lt;input type=&#8221;date&#8221;</dt>
+<dd><blockquote class="first">
+<div><p>name=&#8221;licenceDateOfExpiry&#8221;
+class=&#8221;input-xs form-control&#8221;
+min=&#8216;1980-01-01&#8217; max=&#8216;2080-01-01&#8217;&gt;
+18c82b0da1b34d88460cc7e6b0f9a889cb950a05 - regular inspection
+3fc646dee4543afb4d28e6fa57fc42025a192d44 - master</p>
+<p>15PAN103181,</p>
+<p>HSPCB020, HSPCB007</p>
+<dl class="docutils">
+<dt>def recordCertificateList = RecordCertificateHWM.executeQuery(&#8220;select rc.id from RecordCertificateHWM rc, WasteManagementPendingDetails asr where cast(rc.application.id as string) = asr.applicationId and &#8220;+</dt>
+<dd><dl class="first last docutils">
+<dt>&#8220;rc.expiryDate &gt;= &#8216;&#8221; + df.format(today120) + &#8220;&#8217; and rc.expiryDate &lt; &#8216;&#8221; + df.format(today) + &#8220;&#8217; and asr.role.group.groupName = &#8216;&#8221; + params.groupId +</dt>
+<dd>&#8220;&#8217; and asr.applicationStatus = &#8216;approved&#8217; &#8221; +
+&#8220;order by rc.id&#8221;)</dd>
+</dl>
+</dd>
+</dl>
+</div></blockquote>
+<p>date(to_date(nt.valeur,&#8217;DD-MM-YYYY HH:MI:SS&#8217;))</p>
+<p class="last">59197cf36de27eb4d9873fb7db2a2a80f96cb6b0 - merged code
+9515c5753f7cbccfde103154b60cd18051d3e0b7 - regularInspection code</p>
+</dd>
+<dt>changes -</dt>
+<dd><p class="first">updateApplicationCountAllModule</p>
+<p class="last">added -
+noteHistoryForDashboard</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="to-4-06-2016">
+<h1>20/09/2016 to 4/06/2016<a class="headerlink" href="#to-4-06-2016" title="Permalink to this headline">¶</a></h1>
+<p>27-06-2017:
+bmw application no. : 140992 , 141048</p>
+<p>ApplicationFileRecord - typeOfFile</p>
+<dl class="docutils">
+<dt>applicationType: CTE</dt>
+<dd>typeOfFile: Certificate, Certificate1</dd>
+<dt>applicationType: CTO or HWM</dt>
+<dd><dl class="first last docutils">
+<dt>applicationFor: air</dt>
+<dd><dl class="first last docutils">
+<dt>applicationStatus: approved</dt>
+<dd>typeOfFile: CtoCertificate, DigiCommonCtoCertificate, CertificateForAir, CertificateForAirDegi</dd>
+<dt>else:</dt>
+<dd>typeOfFile: CertificateForAir, CertificateForAirDegi</dd>
+</dl>
+</dd>
+<dt>applicationFor: water</dt>
+<dd><p class="first">applicationStatus: approved
+else:
+typeOfFile: CtoCertificate, DigiCommonCtoCertificate, CertificateForWater, CertificateForWaterDegi</p>
+<blockquote class="last">
+<div>typeOfFile: CertificateForWater, CertificateForWaterDegi</div></blockquote>
+</dd>
+<dt>applicationFor: both</dt>
+<dd><blockquote class="first">
+<div><dl class="docutils">
+<dt>applicationStatus: approved</dt>
+<dd>typeOfFile:  CtoCertificate, DigiCommonCtoCertificate</dd>
+<dt>applicationStatus: rejected</dt>
+<dd>typeOfFile: RefusalCertificateForBoth, DigiCommonCtoBothRefCertificate</dd>
+<dt>else:</dt>
+<dd>instance1 = CertificateForAir, CertificateForAirDegi
+instance2 = CertificateForWater, CertificateForWaterDegi</dd>
+</dl>
+</div></blockquote>
+<dl class="docutils">
+<dt>applicationFor: both/HWM</dt>
+<dd><dl class="first last docutils">
+<dt>applicationStatus: approved</dt>
+<dd>typeOfFile:  CtoCertificate, DigiCommonCtoCertificate</dd>
+<dt>applicationStatus: rejected</dt>
+<dd>typeOfFile:  CtoCertificate, DigiCommonCtoCertificate</dd>
+</dl>
+</dd>
+</dl>
+<p>applicationFor: air/HWM
+applicationFor: water/HWM
+applicationFor: HWM</p>
+<p>bmw application no. : 141148</p>
+<p>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;increase size&#8212;&#8212;&#8212;&#8212;&#8211;
+table: RecordCertificateBMW
+column: copyTo</p>
+<p>table: wasteManagementProcessing
+column: clarificationNote(mandatory)</p>
+<blockquote class="last">
+<div>approve_note
+file_note
+inspection_close_note
+inspection_note
+reject_note</div></blockquote>
+</dd>
+</dl>
+</dd>
+</dl>
+<p>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;-drop table&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8211;
+table: hwminspection_report</p>
+<p>&#8212;&#8212;&#8212;&#8212;&#8212;-reopen application number&#8212;&#8212;&#8212;
+1. 3686291
+2. 3606397
+3. 3977036
+4. 3507068
+5. 3705308</p>
+<p>&#8212;&#8212;&#8212;&#8211; industry not showing &#8212;&#8212;&#8212;&#8212;&#8212;&#8211;
+id: 13REW36597
+application no. -  2770534</p>
+<p>&#8212;&#8212;&#8212;&#8212;&#8212;&#8211; develpment work &#8212;&#8212;&#8212;&#8212;&#8212;-
+wolworine application no. - 141238</p>
+<p>bmw application no. - 141295
+hwm application no. - 141320
+table: wasteManagementCertificates
+applicationFor - HWM
+createdBy - HSPCB020
+description - Certificate Generation Record
+extension - pdf
+name - DigitalCertificateForBMW.pdf
+typeOfFIle - DigitalCertificateForBMW
+updatedBy - HSPCB020</p>
+<p>table: recordCertificateBmw
+authorizationFOr - BMW
+issueDate -
+expiryDate -
+subject - DigitalCertificateForBMW
+createdBy - HSPCB020
+reference no. - get input from form
+updated by - HSPCB020</p>
+<p>BMW application no. - 141499</p>
+<p>&#8212;&#8212;&#8212;&#8212;&#8212; work done on test db &#8212;&#8212;&#8212;&#8211;
+table: cessReturn
+col:
+selfAssessmentOrder : f
+appDel
+clarification
+clarificationClose</p>
+<p>table: cessProcessing
+col: selfAssessmentOrder : f</p>
+<p>&#8212;&#8212;&#8212;&#8212;&#8211; mango industry &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;
+consent application no. : 141525</p>
+<p>&#8212;&#8212;&#8212;&#8212;&#8211; annual report &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8211;
+application no. : 141718</p>
+<p>&#8212; HWM &#8212;-
+application no. - 142024
+close verification on 25-07-2017 at 9:54</p>
+<ol class="arabic simple" start="3">
+<li>bed</li>
+<li>yellow</li>
+<li>red</li>
+<li>white</li>
+<li>blue</li>
+<li>gsd</li>
+<li>color</li>
+</ol>
+<ol class="arabic simple">
+<li>web ser - 15</li>
+<li>single - 30 days</li>
+<li>Report</li>
+</ol>
+<p>&#8212;&#8212; annual report &#8212;&#8211;
+no. 142112</p>
+<p>Date: 02-08-2017
+cto live issue-
+application no. - 4302619
+In application search it is showing unattented. But it is not visible in Application summary.
+4302619
+<a class="reference external" href="mailto:bhanusharma&#46;a3&#37;&#52;&#48;gmail&#46;com">bhanusharma<span>&#46;</span>a3<span>&#64;</span>gmail<span>&#46;</span>com</a>
+142226</p>
+<p>Renew, Auto renew, Add prev consent, Single window,
+hide registration from public</p>
+<p>occEmail: <a class="reference external" href="mailto:bhanu&#37;&#52;&#48;gmail&#46;com">bhanu<span>&#64;</span>gmail<span>&#46;</span>com</a>
+<a class="reference external" href="http://localhost:9999/api/webapi/hrocmms/login?name=myHospital&amp;mobile_no=4561230789&amp;email_address=bhanu&#64;gmail.com">http://localhost:9999/api/webapi/hrocmms/login?name=myHospital&amp;mobile_no=4561230789&amp;email_address=bhanu&#64;gmail.com</a></p>
+<p><a class="reference external" href="http://localhost:9999/api/webapi/hrocmms/login?name=myHospital&amp;mobile_no=4561230789&amp;email_address=bhanu&#64;gmail.com&amp;address=xyz">http://localhost:9999/api/webapi/hrocmms/login?name=myHospital&amp;mobile_no=4561230789&amp;email_address=bhanu&#64;gmail.com&amp;address=xyz</a></p>
+<p><a class="reference external" href="http://localhost:9999/api/webapi/hrocmms/login?name=myAnotherHospital&amp;mobile_no=4561000789&amp;email_address=bhanu&#64;gmail.com&amp;address=abc&amp;caf_unique_no=1111">http://localhost:9999/api/webapi/hrocmms/login?name=myAnotherHospital&amp;mobile_no=4561000789&amp;email_address=bhanu&#64;gmail.com&amp;address=abc&amp;caf_unique_no=1111</a></p>
+<p><a class="reference external" href="http://localhost:9999/api/webapi/hrocmms/login?uname=myAnotherHospital&amp;mobile=4561000789&amp;useremail=bhanu&#64;gmail.com&amp;address=abc&amp;projectid=1111">http://localhost:9999/api/webapi/hrocmms/login?uname=myAnotherHospital&amp;mobile=4561000789&amp;useremail=bhanu&#64;gmail.com&amp;address=abc&amp;projectid=1111</a></p>
+<p>onclicking inprogress application wer go to
+controller: indApplicationDetails action: doGetShow
+From this action we either go to doShow.gsp or doEdit.gsp(based on params.edit)</p>
+<p>On doShow.gsp there is edit button on clicking it we  again go to action: doGetShow (this time send edit params)
+Now inside goGetShow action since - params.edit = 1 therfore, render view: doEdit</p>
+<p>Inside doEdit After filling the application details we go to action: saveNew</p>
+<hr class="docutils" />
+<p>Live issue :
+application no. - 3154022
+Date of payment receipt (industry) - 28-05-2017
+Date of receipt (Board) - 21-03-2016</p>
+<hr class="docutils" />
+<p>Live issue Date: 30-08-2017
+Application no. - 4310967
+Actual - CTE
+Showing - CTO</p>
+<p><a class="reference external" href="https://staging.investharyana.in/#/">https://staging.investharyana.in/#/</a></p>
+<p>4101235</p>
+<p>142852,
+142904,
+142950,</p>
+<p>143029</p>
+<p>localhost:9999/api/webapi/hrocmms/downloadCertificate/?projectid=&lt;projectid&gt;&amp;serviceid=&lt;serviceid&gt;</p>
+<p>Application no - 143088</p>
+<p>17PAN4080650
+anil#777</p>
+<p>(version, 0
+application_id, 4168193
+buildup_area, 1.0
+cat_unit, &#8216;1&#8217;
+complaint, &#8216;NO&#8217;
+complaint_details, &#8216;&#8217;
+cooling_effluent, &#8216;1&#8217;
+court_case, &#8216;NO&#8217;
+court_case_details, &#8216;&#8217;
+cover_undereia, &#8216;1&#8217;
+d_sch_proper_or_not_proer, &#8216;Not-Selected&#8217;
+d_sch_proper_or_not_proer_etp,  &#8216;Not-Selected&#8217;
+d_sch_proper_or_not_proer_stp, &#8216;Not-Selected&#8217;
+d_sch_short_comings,  &#8216;&#8217;
+d_sch_short_comings_etp, &#8216;&#8217;
+d_sch_short_comings_stp, &#8216;&#8217;
+d_sch_submitted_or_not_submitted, &#8216;Not-Selected&#8217;
+d_sch_submitted_or_not_submitted_etp, &#8216;Not-Selected&#8217;
+d_sch_submitted_or_not_submitted_stp, &#8216;Not-Selected&#8217;
+devices, &#8216;&#8217;
+domestic_eff, &#8216;1&#8217;
+ind_address, &#8216;VILLAGE KURALI, INDRI ROAD&#8217;
+ind_name, &#8216;PRABHAT FERTILIZER AND CHEMICAL WORKS&#8217;,
+local_clearence, &#8216;1&#8217;
+manufacturing_process, &#8216;1&#8217;
+mode_of_disposal, &#8216;&#8217;
+name_of_product, &#8216;Proposed Zinc Polyphosphate,Proposed Micronutrient EDTA,Proposed Copper Sulphate,Existing MAGANESE SULPHATE,Existing ZINC SULPHATE MONOHYDRATE,Existing MICRONUTRIANT MIXTURE FERTILIZERS (GREEN),Existing ZINC SULPHATE HEPTAHYDRATE,Existing ORGANIC MANURE/ORGANIC FERTILIZERS(Green),Existing BIO FERTILIZER/BIO PESTICIDES UNDER GREEN,&#8217;
+noc_fee_req, &#8216;1&#8217;,
+performance_bond, &#8216;1&#8217;
+primary_devices,  &#8216;&#8217;
+receipt_date,  &#8216;04/09/2017&#8217;
+recomendation, &#8216;1&#8217;
+reg_under_registration, &#8216;1&#8217;
+secondary_devices, &#8216;&#8217;
+source_of_trade_effluent, &#8216;1&#8217;
+tertiary_devices, &#8216;&#8217;
+total_effulent,  &#8216;3&#8217;
+total_land_area, 1.0
+trade_eff, &#8216;1&#8217;,
+id, 4497057
+) values</p>
+<p>0 9015 483 483</p>
+<p>139864,
+HSPCB024</p>
+<p>HSPCB079
+ramshiv&#64;1</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>{</dt>
+<dd>&#8220;approved_beyond_time&#8221;: 2,
+&#8220;approved_within_time&#8221;: 24,
+&#8220;pending_beyond_time&#8221;: 486,
+&#8220;pending_with_applicant&#8221;: 0,
+&#8220;pending_within_time&#8221;: 8,
+&#8220;servicename&#8221;: &#8220;cto&#8221;,
+&#8220;total_approved&#8221;: 26,
+&#8220;total_pending&#8221;: 494,
+&#8220;total_recieved&#8221;: 580</dd>
+</dl>
+<p>},
+{</p>
+<blockquote>
+<div>&#8220;approved_beyond_time&#8221;: 1,
+&#8220;approved_within_time&#8221;: 3,
+&#8220;pending_beyond_time&#8221;: 0,
+&#8220;pending_with_applicant&#8221;: 0,
+&#8220;pending_within_time&#8221;: 1,
+&#8220;servicename&#8221;: &#8220;hwm&#8221;,
+&#8220;total_approved&#8221;: 4,
+&#8220;total_pending&#8221;: 1,
+&#8220;total_recieved&#8221;: 6</div></blockquote>
+<p>},
+{</p>
+<blockquote>
+<div>&#8220;approved_beyond_time&#8221;: 0,
+&#8220;approved_within_time&#8221;: 7,
+&#8220;pending_beyond_time&#8221;: 0,
+&#8220;pending_with_applicant&#8221;: 0,
+&#8220;pending_within_time&#8221;: 5,
+&#8220;servicename&#8221;: &#8220;bmw&#8221;,
+&#8220;total_approved&#8221;: 7,
+&#8220;total_pending&#8221;: 5,
+&#8220;total_recieved&#8221;: 12</div></blockquote>
+<p>}</p>
+</div></blockquote>
+<p>]</p>
+<hr class="docutils" />
+<dl class="docutils">
+<dt>[</dt>
+<dd><dl class="first docutils">
+<dt>{</dt>
+<dd>&#8220;approved_beyond_time&#8221;: 0,
+&#8220;approved_within_time&#8221;: 8,
+&#8220;pending_beyond_time&#8221;: 2,
+&#8220;pending_with_applicant&#8221;: 0,
+&#8220;pending_within_time&#8221;: 7,
+&#8220;servicename&#8221;: &#8220;cto&#8221;,
+&#8220;total_approved&#8221;: 8,
+&#8220;total_pending&#8221;: 9,
+&#8220;total_recieved&#8221;: 18</dd>
+</dl>
+<p>},
+{</p>
+<blockquote>
+<div>&#8220;approved_beyond_time&#8221;: 0,
+&#8220;approved_within_time&#8221;: 8,
+&#8220;pending_beyond_time&#8221;: 2,
+&#8220;pending_with_applicant&#8221;: 0,
+&#8220;pending_within_time&#8221;: 7,
+&#8220;servicename&#8221;: &#8220;cto&#8221;,
+&#8220;total_approved&#8221;: 8,
+&#8220;total_pending&#8221;: 9,
+&#8220;total_recieved&#8221;: 18</div></blockquote>
+<p>},
+{</p>
+<blockquote>
+<div>&#8220;approved_beyond_time&#8221;: 0,
+&#8220;approved_within_time&#8221;: 7,
+&#8220;pending_beyond_time&#8221;: 0,
+&#8220;pending_with_applicant&#8221;: 0,
+&#8220;pending_within_time&#8221;: 5,
+&#8220;servicename&#8221;: &#8220;bmw&#8221;,
+&#8220;total_approved&#8221;: 7,
+&#8220;total_pending&#8221;: 5,
+&#8220;total_recieved&#8221;: 12</div></blockquote>
+<p class="last">}</p>
+</dd>
+</dl>
+<div class="section" id="id1">
+<h2>]<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="mailto:punia&#37;&#52;&#48;007">punia<span>&#64;</span>007</a></p>
+<p>Dr Sheorans Ultrasound and Imaging Centre</p>
+<p>projectserviceid: e4b39a74-e78f-4b2d-bb25-b3919c3e6fa9</p>
+<p>projectid: 396fe9d0-f4f0-4bfc-b246-1b2673f51859
+service id: 6bd18359-09f4-4c71-85d9-e4f313ccfb8d
+projectid: e4b39a74-e78f-4b2d-bb25-b3919c3e6fa9
+&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;-
+projectid: a41e3c97-8666-49e4-af83-3c609a3b103f
+serviceid: 6bd18359-09f4-4c71-85d9-e4f313ccfb8d
+projectserviceid: 39fadab0-69b5-4c8d-8370-96f6d83154ec</p>
+<p>application no. - 140222 (myIndustry6)</p>
+<p>proser: 6f136058-f254-4bd2-b6c0-136a42108fa6</p>
+</div>
+<div class="section" id="id2">
+<h2>140246<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>pro: c129b2e5-2c6c-4041-9358-23a17be5a42d
+serv: 6bd18359-09f4-4c71-85d9-e4f313ccfb8d
+proser: a555b3d2-64a5-4e9d-b791-329919d46dd6</p>
+<p><a class="reference external" href="https://staging.investharyana.in/#/serviceclearanceaction/">https://staging.investharyana.in/#/serviceclearanceaction/</a>
+a0ed14e3-70cb-4c2f-9247-9bbac0e7f6f9/serviceLog/
+project id: a0ed14e3-70cb-4c2f-9247-9bbac0e7f6f9
+service id: 6bd18359-09f4-4c71-85d9-e4f313ccfb8d
+project service id: d51302a5-fabf-4dbb-9996-b5a8659596f5</p>
+<p>application no. : 143245, 143261, 143277, 143309,
+143325</p>
+<p>41c7396e-e56e-42d4-90dc-7d511e032f1d/
+6bd18359-09f4-4c71-85d9-e4f313ccfb8d</p>
+<p>SNo.0:  assigOnDate: null
+SNo.0:  assignBy: null
+SNo.0:  departmentName: HARYANA STATE POLLUTION CONTROL BOARD
+SNo.0:  formFilledBy: null
+SNo.0:  formFilledOnDate: null
+SNo.0:  formFilledStatus: false
+SNo.0:  id: d51302a5-fabf-4dbb-9996-b5a8659596f5
+SNo.0:  isAssigned: false
+SNo.0:  isDimmed: false
+SNo.0:  isPaymentMade: false
+SNo.0:  isPaymentVerified: false
+SNo.0:  isRequired: true
+SNo.0:  lastactiondate: 2017-09-11T05:30:34.657Z
+SNo.0:  latestComments: Service Marked as Required
+SNo.0:  paymentMadeOnDate: null
+SNo.0:  projectid: a0ed14e3-70cb-4c2f-9247-9bbac0e7f6f9
+SNo.0:  requireMarkedBy: jonsnow
+SNo.0:  requireMarkedOnDate: 2017-09-11T05:30:34.657Z
+SNo.0:  serviceDuration: 45
+SNo.0:  serviceFee: null
+SNo.0:  serviceName: Consent to Operate - Air-Water
+SNo.0:  serviceStage: Stage-III
+SNo.0:  serviceid: 6bd18359-09f4-4c71-85d9-e4f313ccfb8d
+SNo.0:  status: Pending</p>
+<dl class="docutils">
+<dt>{</dt>
+<dd>&#8220;id&#8221;: &#8220;d51302a5-fabf-4dbb-9996-b5a8659596f5&#8221;,
+&#8220;projectid&#8221;: &#8220;a0ed14e3-70cb-4c2f-9247-9bbac0e7f6f9&#8221;,
+&#8220;serviceid&#8221;: &#8220;6bd18359-09f4-4c71-85d9-e4f313ccfb8d&#8221;,
+&#8220;isRequired&#8221;: true,
+&#8220;requireMarkedOnDate&#8221;: &#8220;2017-09-11T05:30:34.657Z&#8221;,
+&#8220;requireMarkedBy&#8221;: &#8220;jonsnow&#8221;,
+&#8220;isAssigned&#8221;: false,
+&#8220;assigOnDate&#8221;: null,
+&#8220;assignBy&#8221;: null,
+&#8220;formFilledStatus&#8221;: false,
+&#8220;isPaymentMade&#8221;: false,
+&#8220;isPaymentVerified&#8221;: false,
+&#8220;formFilledOnDate&#8221;: null,
+&#8220;formFilledBy&#8221;: null,
+&#8220;paymentMadeOnDate&#8221;: null,
+&#8220;status&#8221;: &#8220;Pending&#8221;,
+&#8220;latestComments&#8221;: &#8220;Service Marked as Required&#8221;,
+&#8220;departmentName&#8221;: &#8220;HARYANA STATE POLLUTION CONTROL BOARD&#8221;,
+&#8220;serviceName&#8221;: &#8220;Consent to Operate - Air-Water&#8221;,
+&#8220;serviceStage&#8221;: &#8220;Stage-III&#8221;,
+&#8220;isDimmed&#8221;: false,
+&#8220;serviceDuration&#8221;: 45,
+&#8220;serviceFee&#8221;: null,
+&#8220;lastactiondate&#8221;: &#8220;2017-09-11T05:30:34.657Z&#8221;</dd>
+</dl>
+<p>}</p>
+<p>Working&#8212;&gt;
+{</p>
+<blockquote>
+<div>&#8220;assigOnDate&#8221;: null,
+&#8220;assignBy&#8221;: null,
+&#8220;departmentName&#8221;: &#8220;HARYANA STATE POLLUTION CONTROL BOARD&#8221;,
+&#8220;formFilledBy&#8221;: null,
+&#8220;formFilledOnDate&#8221;: &#8220;2017-08-30T13:05:14.365Z&#8221;,
+&#8220;formFilledStatus&#8221;: true,
+&#8220;id&#8221;: &#8220;d51302a5-fabf-4dbb-9996-b5a8659596f5&#8221;,
+&#8220;isAssigned&#8221;: false,
+&#8220;isDimmed&#8221;: false,
+&#8220;isPaymentMade&#8221;: false,
+&#8220;isPaymentVerified&#8221;: false,
+&#8220;isRequired&#8221;: true,
+&#8220;lastactiondate&#8221;: &#8220;2017-09-11T05:30:34.657Z&#8221;,
+&#8220;latestComments&#8221;: &#8220;Service Marked as Required&#8221;,
+&#8220;paymentMadeOnDate&#8221;:null,
+&#8220;projectid&#8221;: &#8220;a0ed14e3-70cb-4c2f-9247-9bbac0e7f6f9&#8221;,
+&#8220;requireMarkedBy&#8221;: &#8220;jonsnow&#8221;,
+&#8220;requireMarkedOnDate&#8221;: &#8220;2017-09-11T05:30:34.657Z&#8221;,
+&#8220;serviceDuration&#8221;: 45,
+&#8220;serviceFee&#8221;: 45,
+&#8220;serviceName&#8221;: &#8220;Consent to Operate - Air-Water&#8221;,
+&#8220;serviceStage&#8221;: &#8220;Stage-III&#8221;,
+&#8220;serviceid&#8221;: &#8220;6bd18359-09f4-4c71-85d9-e4f313ccfb8d&#8221;,
+&#8220;status&#8221;: &#8220;Pending&#8221;</div></blockquote>
+<p>}</p>
+<p>output of println &#8211;&gt;
+{&#8220;assigOnDate&#8221;:&#8221;null&#8221;,
+&#8220;assignBy&#8221;:&#8221;null&#8221;,
+&#8220;departmentName&#8221;:&#8221;HARYANA STATE POLLUTION CONTROL BOARD&#8221;,
+&#8220;formFilledBy&#8221;:&#8221;null&#8221;,
+&#8220;formFilledOnDate&#8221;:&#8221;2017-09-11T07:05:59.713Z&#8221;,
+&#8220;formFilledStatus&#8221;:&#8221;true&#8221;,
+&#8220;id&#8221;:&#8221;d51302a5-fabf-4dbb-9996-b5a8659596f5&#8221;,
+&#8220;isAssigned&#8221;:&#8221;false&#8221;,
+&#8220;isDimmed&#8221;:&#8221;false&#8221;,
+&#8220;isPaymentMade&#8221;:&#8221;false&#8221;,
+&#8220;isPaymentVerified&#8221;:&#8221;false&#8221;,
+&#8220;isRequired&#8221;:&#8221;true&#8221;,
+&#8220;lastactiondate&#8221;:&#8221;2017-09-11T05:30:34.657Z&#8221;,
+&#8220;latestComments&#8221;:&#8221;Service Marked as Required&#8221;,
+&#8220;paymentMadeOnDate&#8221;:&#8221;null&#8221;,
+&#8220;projectid&#8221;:&#8221;a0ed14e3-70cb-4c2f-9247-9bbac0e7f6f9&#8221;,
+&#8220;requireMarkedBy&#8221;:&#8221;jonsnow&#8221;,
+&#8220;requireMarkedOnDate&#8221;:&#8221;2017-09-11T05:30:34.657Z&#8221;,
+&#8220;serviceDuration&#8221;:&#8221;45&#8221;,
+&#8220;serviceFee&#8221;:&#8221;45&#8221;,
+&#8220;serviceName&#8221;:&#8221;Consent to Operate - Air-Water&#8221;,
+&#8220;serviceStage&#8221;:&#8221;Stage-III&#8221;,
+&#8220;serviceid&#8221;:&#8221;6bd18359-09f4-4c71-85d9-e4f313ccfb8d&#8221;,
+&#8220;status&#8221;:&#8221;Pending&#8221;}</p>
+<dl class="docutils">
+<dt>&#8220;{&#8221; +</dt>
+<dd>&#8220;&#8221;assigOnDate&#8221;:&#8221;&#8221; + assigOnDate +&#8221;&#8221;,&#8221; +
+&#8220;&#8221;assignBy&#8221;:&#8221;&#8220;+ assignBy +&#8221;&#8221;,&#8221; +
+&#8220;&#8221;departmentName&#8221;:&#8221;&#8221; + departmentName + &#8220;&#8221;,&#8221; +
+&#8220;&#8221;formFilledBy&#8221;:&#8221;&#8221; + formFilledBy + &#8220;&#8221;,&#8221; +
+&#8220;&#8221;formFilledOnDate&#8221;:&#8221;&#8221; + formFilledOnDate + &#8220;&#8221;,&#8221; +
+&#8220;&#8221;formFilledStatus&#8221;:&#8221;&#8221; + true + &#8220;&#8221;,&#8221; +
+&#8220;&#8221;id&#8221;:&#8221;&#8221; + id + &#8220;&#8221;,&#8221; +
+&#8220;&#8221;isAssigned&#8221;:&#8221;&#8221; + isAssigned + &#8220;&#8221;,&#8221; +
+&#8220;&#8221;isDimmed&#8221;:&#8221;&#8221; + isDimmed + &#8220;&#8221;,&#8221; +
+&#8220;&#8221;isPaymentMade&#8221;:&#8221;&#8221; + isPaymentMade + &#8220;&#8221;,&#8221; +
+&#8220;&#8221;isPaymentVerified&#8221;:&#8221;&#8221; + isPaymentVerified + &#8220;&#8221;,&#8221; +
+&#8220;&#8221;isRequired&#8221;:&#8221;&#8221; + isRequired + &#8220;&#8221;,&#8221; +
+&#8220;&#8221;lastactiondate&#8221;:&#8221;&#8221; + lastactiondate + &#8220;&#8221;,&#8221; +
+&#8220;&#8221;latestComments&#8221;:&#8221;&#8221; + latestComments + &#8220;&#8221;,&#8221; +
+&#8220;&#8221;paymentMadeOnDate&#8221;:&#8221;&#8221; + paymentMadeOnDate + &#8220;&#8221;,&#8221; +
+&#8220;&#8221;projectid&#8221;:&#8221;&#8221; + projectid + &#8220;&#8221;,&#8221; +
+&#8220;&#8221;requireMarkedBy&#8221;:&#8221;&#8221; + requireMarkedBy + &#8220;&#8221;,&#8221; +
+&#8220;&#8221;requireMarkedOnDate&#8221;:&#8221;&#8221; + requireMarkedOnDate + &#8220;&#8221;,&#8221; +
+&#8220;&#8221;serviceDuration&#8221;:&#8221;&#8221; + serviceDuration + &#8220;&#8221;,&#8221; +
+&#8220;&#8221;serviceFee&#8221;:&#8221;&#8221; + serviceFee + &#8220;&#8221;,&#8221; +
+&#8220;&#8221;serviceName&#8221;:&#8221;&#8221; + serviceName + &#8220;&#8221;,&#8221; +
+&#8220;&#8221;serviceStage&#8221;:&#8221;&#8221; + serviceStage + &#8220;&#8221;,&#8221; +
+&#8220;&#8221;serviceid&#8221;:&#8221;&#8221; + serviceid + &#8220;&#8221;,&#8221; +
+&#8220;&#8221;status&#8221;:&#8221;&#8221; + status + &#8220;&#8221;&#8221; +
+&#8220;}&#8221;).getBytes(&#8220;UTF8&#8221;</dd>
+</dl>
+<hr class="docutils" />
+<p>myIndustry13
+projectid: 3795e7b5-e4a9-48ef-bd1c-3aa4ef677ece
+service id: 6bd18359-09f4-4c71-85d9-e4f313ccfb8d
+project service id: 123654</p>
+<hr class="docutils" />
+<p>Industry - Dorne(local)
+HWM application no. - 143384</p>
+<p>hspcb035</p>
+<p>Live inspection draw - 09-2017
+Prabha Coaters,
+Plot No. 437, EPZ, Sector-58, Faridabad</p>
+<p>ASHOKA INDUSTRIES,
+Plot No. 581, Sectror 58, EPZ, Faridabad
+143395
+&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;
+14-09-2017:</p>
+<p>CTE application no. - 143430</p>
+<p>164.100.163.19/api/webapi/hrocmms/login/</p>
+<p>hrocmms.nic.in/api/webapi/hrocmms/login/</p>
+<p>143532</p>
+<p>CTE application no. -
+140839</p>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="issues.html" class="btn btn-neutral float-right" title="Issues" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="stickyNote.html" class="btn btn-neutral" title="Sticky Notes" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Bhanu Sharma.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
