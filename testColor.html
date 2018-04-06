@@ -1,0 +1,45 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    function changeColor(id){
+        // alert(id);
+
+        /*
+        different id:
+        1. homeId
+        2. consentManagementId
+        3. labManagementId
+        4. bmwId
+        5. hwmId
+        6. bmwAnnualReportId
+        7. eWasteId
+        8. auditTrailManagementId
+        9. misId
+        10. inspectionManagementId
+        11. logoutId
+         */
+
+        var spans = document.getElementsByTagName('span');
+        for(i=0;i<spans.length;i++){
+            spans[i].style.color = "#512E5F"
+        }
+        /*var clickedSpan = document.getElementById(id);
+        clickedSpan.style.color = "#00FFFF";*/
+        jQuery("#"+id).css("color","#00FFFF");
+
+    }
+
+    jQuery.get("demo_test.asp", function(data, status){
+            alert("Data: " + data + "\nStatus: " + status);
+        });
+
+</script>
+<body>
+    <h1><span id="homeId" onclick="changeColor(this.id)">home</span></h1>
+
+    <br><br><br>
+    <h2><span id="consentId" onclick="changeColor(this.id)">consent</span></h2>    
+</body>
+
+
+KSPCB052    
+shreya@378

@@ -614,3 +614,23 @@ Date: 18-09-207
 staging investharyana - 
 CTE application no. - 
 140839
+CTO Application no. - 140862
+
+-------------------------------
+local CTE application: 143607
+121453
+--------------------------
+myIndustry2
+CTE application no.:
+140924
+------------------------------
+cte - 
+140946
+
+
+18-09-2017:
+1. Provided test link for CTE integration.
+2. Single window - Fixed the apply consent for CTE when new registration is done.
+3. Single Window - Fixed routing of CTE.
+4. Merged satish code to fix BMW certificate issue. 
+
