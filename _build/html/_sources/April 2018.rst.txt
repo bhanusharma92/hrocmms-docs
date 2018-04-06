@@ -1,6 +1,8 @@
 April 2018
 ==========
 
+BankTransactionDetails
+
 ============== ============== ================ ======
 Transaction Id Application No Transaction type Amount
 ============== ============== ================ ======
@@ -8,16 +10,14 @@ Transaction Id Application No Transaction type Amount
 2              123            Credit           20
 ============== ============== ================ ======
 
+FeeBankOtherDetails
+
 ============== =========   ======
 Application No Fee For     Amount
 ============== =========   ======
 123            CTO Air     10
 123            CTO Water   20
 ============== =========   ====== 
-
-
-
-
 
 
 +---------------+---------------+----------------+---------------+-----------------+-----------+---------------+
