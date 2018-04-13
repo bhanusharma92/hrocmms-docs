@@ -41,7 +41,18 @@ MS (46)             --
 =================== ==========================
 
 
+13-04-2018
+
+1. 5180972 - HWM application routed to other region - 2 times
+    currently pending with - HSPCB072 role - 4199581
+    role - 4199581 - Regional Officer - group id - 4195965(Yamuna Nagar) 
+    role id from - 4199554 
+
+Last activity : 13-04-2018 03:59
+NOte by: aa bb(JEE HWM)
+Forwarded to MS
+
+2. 4623484 - live application forwarded to other group
 
 
-18PAN606948
 
